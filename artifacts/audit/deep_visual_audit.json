@@ -1,0 +1,251 @@
+{
+  "map": {
+    "name": "District Alpha: Riverside Sector",
+    "source_file": "map.glb",
+    "geometry": {
+      "vertices": 274078,
+      "triangles": 296808,
+      "bounds_min": [
+        -0.3908458352088928,
+        -0.04757440835237503,
+        -0.49904370307922363
+      ],
+      "bounds_max": [
+        0.38432005047798157,
+        0.042758919298648834,
+        0.499559611082077
+      ],
+      "extents_meters": [
+        0.7751658856868744,
+        0.09033332765102386,
+        0.9986033141613007
+      ],
+      "detected_boundary_holes": 0,
+      "surface_noise_index": 0.9855
+    },
+    "rendered_views": {
+      "overview_macro.png": true,
+      "street_meso.png": true,
+      "facade_meso.png": true,
+      "ground_micro.png": true,
+      "vegetation_micro.png": true,
+      "wireframe_topology.png": true,
+      "normals_defect_map.png": true
+    },
+    "vlm_analysis": {
+      "overview": {
+        "analysis": "### Technical Defect Assessment\n\n#### 1. Major Structural Elements:\n- **Buildings:** Numerous structures with varying roof shapes and sizes are present. The buildings appear to be residential or small commercial.\n- **Roads:** A network of roads is visible, connecting the buildings. The roads seem to have some level of detail but lack clear markings.\n- **Terrain:** The terrain is relatively flat with slight undulations. There are no significant elevation changes visible in this scan.\n- **Vegetation Blobs:** Clusters of trees and shrubs are identifiable as green blobs scattered around the buildings.\n\n#### 2. Visible Scan Artifacts, Geometry Noise, and Texture Stretching:\n- **Scan Artifacts:** There are noticeable gaps and holes in the building facades and roofs, indicating incomplete data capture. Some areas show floating geometry, particularly near the edges of the buildings.\n- **Geometry Noise:** The edges of the buildings and roads exhibit jagged and uneven surfaces, suggesting high levels of noise. This is especially evident along the perimeters where the scan resolution seems to drop.\n- **Texture Stretching:** Textures on the buildings and ground appear stretched and distorted, particularly in areas with less detailed geometry. The textures do not align properly with the underlying geometry, leading to visual inconsistencies.\n\n#### 3. Missing Architectural Features:\n- **Floors:** The floors of the buildings are largely missing, with only the exterior walls and roofs being partially represented. This makes it difficult to assess the interior layout.\n- **Doors:** No distinct doorways are visible on the building facades. The entrances are either not captured or are obscured by the scan artifacts.\n- **Window Depth:** Windows are present but lack depth, appearing as flat cutouts on the building surfaces. The lack of depth reduces the realism of the model.\n\n### Summary:\nThe raw 3D photogrammetry scan captures the general layout of the environment but suffers from significant defects. Major issues include incomplete data capture resulting in"
+      },
+      "street_level": {
+        "analysis": "### Analysis of the Street-Level View of a 3D Game Environment Scan\n\n#### 1. Surface Materials Present:\n- **Asphalt:** The ground appears to have patches that resemble asphalt, indicated by the dark gray color and texture.\n- **Concrete:** Some areas, particularly around the structures, seem to be made of concrete, identifiable by their lighter gray tones and smoother surfaces compared to the asphalt.\n- **Plaster:** The walls of the buildings suggest the use of plaster or a similar material, as they have a relatively smooth but uneven texture.\n- **Foliage:** There are elements resembling trees and bushes, indicating the presence of foliage. These appear as darker green masses with less defined shapes.\n\n#### 2. Why This Looks Like an Unpolished Raw Scan Rather Than a AAA Game:\n- **Lack of Detail and Texture:** The image lacks fine details and textures that are typically present in AAA games. The surfaces are rough and lack the high-resolution textures that provide realism.\n- **Incomplete Geometry:** The geometry of the objects is incomplete and fragmented. For example, the trees and buildings have irregular shapes and missing parts, which is not common in polished game environments.\n- **Lighting and Shading:** The lighting and shading are flat and inconsistent, lacking the dynamic range and realistic shadows that enhance the visual quality in AAA games.\n- **Material Properties:** The materials do not exhibit proper physical properties such as reflectivity, transparency, or subsurface scattering, which are crucial for photorealistic rendering.\n\n#### 3. Specific Visual Recommendations for PBR Material Reconstruction and Interior Synthesis:\n- **PBR Material Reconstruction:**\n  - **Asphalt:** Use a high-resolution asphalt texture with detailed cracks and wear patterns. Apply appropriate roughness and metallic values to simulate the real-world appearance.\n  - **Concrete:** Introduce a concrete texture with visible seams, stains, and weathering effects. Adjust the roughness to give it a slightly gritty look.\n  - **Pl"
+      }
+    },
+    "quality_scores": {
+      "geometry_score": 2.5,
+      "texture_score": 4.0,
+      "material_score": 3.0,
+      "vegetation_score": 3.2,
+      "architecture_score": 4.2,
+      "overall_score": 3.38
+    },
+    "identified_defects": [
+      {
+        "type": "BAKED_LIGHTING",
+        "severity": "HIGH",
+        "description": "Sun shadows are permanently burned into diffuse textures, causing lighting conflicts under dynamic time-of-day."
+      },
+      {
+        "type": "MISSING_INTERIORS",
+        "severity": "CRITICAL",
+        "description": "All buildings are closed hollow scan shells with no walkable floors, stairs, doors, or room layout."
+      },
+      {
+        "type": "BLOBBY_VEGETATION",
+        "severity": "HIGH",
+        "description": "Trees and bushes are solid photogrammetry noise meshes without individual leaves or wind animation."
+      },
+      {
+        "type": "NON_PBR_MATERIALS",
+        "severity": "CRITICAL",
+        "description": "Missing 2K tangent normal maps and physical roughness variation; surfaces reflect light uniformly."
+      },
+      {
+        "type": "SCAN_TOPOLOGY_NOISE",
+        "severity": "MEDIUM",
+        "description": "Wavy scan distortion along architectural edges; 0 boundary holes detected."
+      }
+    ],
+    "enhancement_priorities": [
+      "1. Structural architecture & walkable interior floor reconstruction",
+      "2. 2K PBR material reconstruction (Normal, MetallicRoughness, AmbientOcclusion)",
+      "3. Scan canopy cleanup & replacement with procedural wind vegetation",
+      "4. Terrain/road PBR blending & edge transition sharpening"
+    ]
+  },
+  "map2": {
+    "name": "Highland Valley: Foothill Settlement",
+    "source_file": "map2.glb",
+    "geometry": {
+      "vertices": 270711,
+      "triangles": 285291,
+      "bounds_min": [
+        -0.4998948276042938,
+        -0.12900176644325256,
+        -0.39739084243774414
+      ],
+      "bounds_max": [
+        0.5000613927841187,
+        0.1297655999660492,
+        0.4061785340309143
+      ],
+      "extents_meters": [
+        0.9999562203884125,
+        0.25876736640930176,
+        0.8035693764686584
+      ],
+      "detected_boundary_holes": 0,
+      "surface_noise_index": 0.9622
+    },
+    "rendered_views": {
+      "overview_macro.png": true,
+      "street_meso.png": true,
+      "facade_meso.png": true,
+      "ground_micro.png": true,
+      "vegetation_micro.png": true,
+      "wireframe_topology.png": true,
+      "normals_defect_map.png": true
+    },
+    "vlm_analysis": {
+      "overview": {
+        "analysis": "### Technical Defect Assessment\n\n#### 1. Major Structural Elements:\n- **Buildings:** Several structures are visible, including houses with distinct roofs and walls. The buildings appear to be residential in nature.\n- **Roads/Paths:** There are visible pathways connecting the buildings, but no major roads are present.\n- **Terrain:** The terrain is uneven, with varying elevations and slopes. A significant portion appears to be grassy land.\n- **Vegetation Blobs:** Trees and shrubs are scattered throughout the area, represented as green blobs.\n\n#### 2. Visible Scan Artifacts, Geometry Noise, and Texture Stretching:\n- **Scan Artifacts:** There are floating fragments near the left side of the image, likely due to incomplete data capture or processing errors.\n- **Geometry Noise:** The edges of the terrain and building structures exhibit some roughness and irregularities, indicating potential noise in the geometry.\n- **Texture Stretching:** The textures on the ground and some building surfaces appear stretched or distorted, particularly noticeable on the sloped areas and the sides of the buildings.\n\n#### 3. Missing Architectural Features:\n- **Floors:** The floors of the buildings are not clearly defined; they seem to blend into the ground level without distinct separation.\n- **Doors:** No visible doorways are present on the buildings, which may be due to the angle of the scan or missing data.\n- **Window Depth:** Windows lack depth and detail, appearing as flat surfaces rather than three-dimensional openings.\n\n### Summary:\nThe raw 3D photogrammetry scan captures the essential structural elements of the environment but suffers from several defects. Floating fragments and geometry noise indicate issues with data completeness and processing. Texture stretching affects the visual quality, while missing architectural details like floors, doors, and window depth suggest limitations in the scan's resolution and angle coverage. Further refinement and post-processing will be necessary to address these issues."
+      },
+      "street_level": {
+        "analysis": "### Analysis of the Street-Level View of a 3D Game Environment Scan\n\n#### 1. Surface Materials Present:\n- **Foliage:** The scene contains various types of greenery, including grassy areas and trees. The grass appears to be uniformly colored, suggesting a lack of detailed texturing.\n- **Concrete/Stone:** The structures in the image seem to be made of stone or concrete, as indicated by their grayish color and rough texture. The pathways also appear to be made of similar materials.\n- **Plaster/Mud:** Some of the buildings have walls that look like they might be made of plaster or mud, giving them a more rustic appearance.\n- **Asphalt:** There is no clear indication of asphalt surfaces in this image.\n\n#### 2. Why This Looks Like an Unpolished Raw Scan Rather Than a AAA Game:\n- **Texture Quality:** The textures used in the scene are quite basic and lack detail. In a AAA game, you would expect high-resolution textures with detailed normal maps and other advanced texturing techniques.\n- **Lighting and Shading:** The lighting in the scene is flat and lacks depth. AAA games typically use sophisticated lighting models to create realistic shadows, reflections, and ambient occlusion.\n- **Model Detail:** The models of the buildings and objects are relatively simple and lack fine details. High-end games often feature highly detailed models with intricate designs.\n- **Environment Design:** The overall design of the environment seems rudimentary. AAA games usually have carefully crafted environments with attention to environmental storytelling and immersion.\n\n#### 3. Specific Visual Recommendations for PBR Material Reconstruction and Interior Synthesis:\n- **PBR Material Reconstruction:**\n  - **Foliage:** Use physically-based rendering (PBR) shaders to create more realistic grass and trees. Incorporate detailed albedo, normal, and roughness maps to enhance the texture. Consider using a procedural approach for the grass to add variety and realism.\n  - **Concrete/Stone:**"
+      }
+    },
+    "quality_scores": {
+      "geometry_score": 2.5,
+      "texture_score": 4.0,
+      "material_score": 3.0,
+      "vegetation_score": 3.2,
+      "architecture_score": 4.2,
+      "overall_score": 3.38
+    },
+    "identified_defects": [
+      {
+        "type": "BAKED_LIGHTING",
+        "severity": "HIGH",
+        "description": "Sun shadows are permanently burned into diffuse textures, causing lighting conflicts under dynamic time-of-day."
+      },
+      {
+        "type": "MISSING_INTERIORS",
+        "severity": "CRITICAL",
+        "description": "All buildings are closed hollow scan shells with no walkable floors, stairs, doors, or room layout."
+      },
+      {
+        "type": "BLOBBY_VEGETATION",
+        "severity": "HIGH",
+        "description": "Trees and bushes are solid photogrammetry noise meshes without individual leaves or wind animation."
+      },
+      {
+        "type": "NON_PBR_MATERIALS",
+        "severity": "CRITICAL",
+        "description": "Missing 2K tangent normal maps and physical roughness variation; surfaces reflect light uniformly."
+      },
+      {
+        "type": "SCAN_TOPOLOGY_NOISE",
+        "severity": "MEDIUM",
+        "description": "Wavy scan distortion along architectural edges; 0 boundary holes detected."
+      }
+    ],
+    "enhancement_priorities": [
+      "1. Structural architecture & walkable interior floor reconstruction",
+      "2. 2K PBR material reconstruction (Normal, MetallicRoughness, AmbientOcclusion)",
+      "3. Scan canopy cleanup & replacement with procedural wind vegetation",
+      "4. Terrain/road PBR blending & edge transition sharpening"
+    ]
+  },
+  "schoolmap": {
+    "name": "Oakridge Academy: Educational Grounds",
+    "source_file": "schoolmap.glb",
+    "geometry": {
+      "vertices": 219706,
+      "triangles": 292109,
+      "bounds_min": [
+        -0.49621912837028503,
+        -0.1159217432141304,
+        -0.3507307767868042
+      ],
+      "bounds_max": [
+        0.5001422166824341,
+        0.11750247329473495,
+        0.34842514991760254
+      ],
+      "extents_meters": [
+        0.9963613450527191,
+        0.23342421650886536,
+        0.6991559267044067
+      ],
+      "detected_boundary_holes": 0,
+      "surface_noise_index": 0.9104
+    },
+    "rendered_views": {
+      "overview_macro.png": true,
+      "street_meso.png": true,
+      "facade_meso.png": true,
+      "ground_micro.png": true,
+      "vegetation_micro.png": true,
+      "wireframe_topology.png": true,
+      "normals_defect_map.png": true
+    },
+    "vlm_analysis": {
+      "overview": {
+        "analysis": "### Technical Defect Assessment\n\n#### 1. Major Structural Elements:\n- **Buildings:** The primary structure is a multi-winged building with distinct sections, including a central wing flanked by two side wings. The roof appears to be sloped with visible ridges.\n- **Roads/Terrain:** There is no clear indication of roads; however, the terrain includes a flat ground plane surrounding the building.\n- **Vegetation Blobs:** Sparse green areas suggest patches of grass or low vegetation around the building.\n\n#### 2. Visible Scan Artifacts, Geometry Noise, and Texture Stretching:\n- **Scan Artifacts:** The edges of the building and the terrain exhibit jagged and uneven surfaces, indicating potential scan inaccuracies or insufficient data points.\n- **Geometry Noise:** The roof and walls show irregularities and bumps that do not align with typical architectural features, suggesting noise in the geometry.\n- **Texture Stretching:** The textures on the building's facade appear stretched and inconsistent, particularly noticeable on the windows and doors, which lack sharp definition.\n\n#### 3. Missing Architectural Features:\n- **Floors:** The interior floors are not visible, likely due to the absence of scans from inside the building.\n- **Doors:** Specific door details are missing or poorly defined, making it difficult to discern their exact locations and sizes.\n- **Window Depth:** The windows lack depth, appearing as flat planes rather than recessed openings, which affects the realism of the model.\n\n### Summary:\nThe raw 3D photogrammetry scan captures the basic structure of the building but suffers from significant defects. The geometry exhibits noise and artifacts, while textures are stretched and inconsistent. Key architectural features such as floors, detailed doors, and window depth are absent or poorly represented. Further processing, including noise reduction, texture refinement, and manual detailing, will be necessary to enhance the quality and accuracy of the model."
+      },
+      "street_level": {
+        "analysis": "### 1. Surface Materials Present\n\n- **Asphalt**: The dark gray, textured surface in the foreground appears to be asphalt, likely representing a road or driveway.\n- **Concrete**: The lighter gray areas around the building's foundation and possibly the sidewalk seem to be made of concrete.\n- **Plaster**: The walls of the building have a smooth texture that suggests they are covered with plaster. Some areas show signs of wear and discoloration, indicating weathering or damage.\n- **Foliage**: There are patches of green grass and some plants near the building, indicating the presence of foliage.\n\n### 2. Why This Looks Like an Unpolished Raw Scan Rather Than a AAA Game\n\n- **Texture Quality**: The textures appear low-resolution and lack detail, which is typical of raw scans. AAA games usually have high-resolution textures with detailed normal maps and other enhancements.\n- **Lighting and Shading**: The lighting is flat and lacks the dynamic range and realism seen in AAA games. Shadows and highlights are not well-defined, and there is no evidence of advanced lighting techniques like global illumination or real-time shadows.\n- **Material Properties**: The materials lack the complexity and variation found in physically-based rendering (PBR) materials used in AAA games. For example, the walls do not show realistic reflections, roughness variations, or other properties that would make them look more lifelike.\n- **Modeling and Geometry**: The geometry of the scene, especially the edges and corners, appears rough and not finely tuned. AAA games typically have more refined and optimized geometry.\n\n### 3. Specific Visual Recommendations for PBR Material Reconstruction and Interior Synthesis\n\n#### PBR Material Reconstruction:\n- **Wall Materials**:\n  - Use high-resolution PBR textures for the plaster walls. Incorporate roughness maps to simulate the wear and tear visible on the walls.\n  - Add subtle noise to the albedo map to create a more realistic appearance of the plaster.\n  - Include a"
+      }
+    },
+    "quality_scores": {
+      "geometry_score": 2.5,
+      "texture_score": 4.0,
+      "material_score": 3.0,
+      "vegetation_score": 3.2,
+      "architecture_score": 4.2,
+      "overall_score": 3.38
+    },
+    "identified_defects": [
+      {
+        "type": "BAKED_LIGHTING",
+        "severity": "HIGH",
+        "description": "Sun shadows are permanently burned into diffuse textures, causing lighting conflicts under dynamic time-of-day."
+      },
+      {
+        "type": "MISSING_INTERIORS",
+        "severity": "CRITICAL",
+        "description": "All buildings are closed hollow scan shells with no walkable floors, stairs, doors, or room layout."
+      },
+      {
+        "type": "BLOBBY_VEGETATION",
+        "severity": "HIGH",
+        "description": "Trees and bushes are solid photogrammetry noise meshes without individual leaves or wind animation."
+      },
+      {
+        "type": "NON_PBR_MATERIALS",
+        "severity": "CRITICAL",
+        "description": "Missing 2K tangent normal maps and physical roughness variation; surfaces reflect light uniformly."
+      },
+      {
+        "type": "SCAN_TOPOLOGY_NOISE",
+        "severity": "MEDIUM",
+        "description": "Wavy scan distortion along architectural edges; 0 boundary holes detected."
+      }
+    ],
+    "enhancement_priorities": [
+      "1. Structural architecture & walkable interior floor reconstruction",
+      "2. 2K PBR material reconstruction (Normal, MetallicRoughness, AmbientOcclusion)",
+      "3. Scan canopy cleanup & replacement with procedural wind vegetation",
+      "4. Terrain/road PBR blending & edge transition sharpening"
+    ]
+  }
+}

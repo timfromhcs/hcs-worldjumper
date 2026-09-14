@@ -208,7 +208,11 @@
 
     // Parse URL params
     const urlParams = new URLSearchParams(window.location.search);
-    const modelUrl = urlParams.get('model') || 'input/maps/map.glb';
+    let modelParam = urlParams.get('model') || '/input/maps/map.glb';
+    if (!modelParam.startsWith('/') && !modelParam.startsWith('http')) {
+      modelParam = '/' + modelParam;
+    }
+    const modelUrl = modelParam;
     const initPreset = urlParams.get('view') || 'overview';
     const initLight = urlParams.get('light') || 'day';
     const initMode = urlParams.get('mode') || 'lit';
@@ -329,6 +333,27 @@
 
         window.MODEL_LOADED = true;
         window.CAPTURE_READY = true;
+
+        const autoCapture = urlParams.get('auto_capture');
+        const savePath = urlParams.get('save_to');
+        if (autoCapture && savePath) {
+          setTimeout(() => {
+            renderer.render(scene, camera);
+            const dataUrl = renderer.domElement.toDataURL('image/png');
+            fetch('/api/save_render', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ path: savePath, image: dataUrl })
+            }).then(() => {
+              console.log('Capture saved to', savePath);
+              document.title = "CAPTURE_DONE";
+              setTimeout(() => { window.close(); }, 300);
+            }).catch(e => {
+              console.error('Save error:', e);
+              document.title = "CAPTURE_ERROR";
+            });
+          }, 800);
+        }
       }, (xhr) => {
         if (xhr.total > 0) {
           const pct = Math.round((xhr.loaded / xhr.total) * 100);
