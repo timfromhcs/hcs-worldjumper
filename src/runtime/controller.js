@@ -11,6 +11,7 @@ export class PlayerController {
     this.audio = audioManager;
 
     this.position = new THREE.Vector3(0, 2, 10);
+    this.homePosition = new THREE.Vector3(0, 2, 10);
     this.velocity = new THREE.Vector3();
     this.yaw = 0;
     this.pitch = 0;
@@ -81,6 +82,10 @@ export class PlayerController {
     if (e.code === 'Space') this.keys.jump = true;
     if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') this.keys.sprint = true;
     if (e.code === 'KeyC') this.keys.crouch = !this.keys.crouch; // Toggle crouch
+    if (e.code === 'KeyH') {
+      this.teleport(this.homePosition, false);
+      console.log('HOME key pressed: Returned to safe spawn position', this.homePosition);
+    }
   }
 
   onKeyUp(e) {
@@ -96,14 +101,18 @@ export class PlayerController {
     this.colliders = meshList || [];
   }
 
-  teleport(pos) {
+  teleport(pos, setAsHome = true) {
     this.position.copy(pos);
     this.velocity.set(0, 0, 0);
+    if (setAsHome) {
+      this.homePosition.copy(pos);
+    }
+    // Only snap downward if within reasonable local clearance (0.5m above)
     if (this.colliders.length > 0) {
-      const ray = new THREE.Raycaster(new THREE.Vector3(pos.x, 100, pos.z), new THREE.Vector3(0, -1, 0), 0, 200);
+      const ray = new THREE.Raycaster(new THREE.Vector3(pos.x, pos.y + 0.5, pos.z), new THREE.Vector3(0, -1, 0), 0, 2.0);
       const hits = ray.intersectObjects(this.colliders, false);
       if (hits.length > 0) {
-        this.position.y = hits[0].point.y + 0.1;
+        this.position.y = hits[0].point.y + 0.05;
       }
     }
   }

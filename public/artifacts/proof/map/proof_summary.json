@@ -1,0 +1,107 @@
+{
+  "map": "map",
+  "proofs": [
+    {
+      "feature": "interiors",
+      "file": "interior_walkthrough_view1.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\interiors\\interior_walkthrough_view1.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "interiors",
+      "file": "interior_room_furniture.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\interiors\\interior_room_furniture.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "interiors",
+      "file": "interior_staircase_doors.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\interiors\\interior_staircase_doors.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "vegetation",
+      "file": "vegetation_tree_grove.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\vegetation\\vegetation_tree_grove.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "vegetation",
+      "file": "vegetation_ground_cover.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\vegetation\\vegetation_ground_cover.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "vegetation",
+      "file": "vegetation_wireframe_hierarchy.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\vegetation\\vegetation_wireframe_hierarchy.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "materials",
+      "file": "pbr_daylight_specular.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\materials\\pbr_daylight_specular.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "materials",
+      "file": "pbr_golden_hour_reflection.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\materials\\pbr_golden_hour_reflection.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "materials",
+      "file": "pbr_normal_map_tangents.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\materials\\pbr_normal_map_tangents.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "collision",
+      "file": "collision_walkable_floors.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\collision\\collision_walkable_floors.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "collision",
+      "file": "collision_world_bounds.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\collision\\collision_world_bounds.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lighting",
+      "file": "lighting_daylight.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lighting\\lighting_daylight.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lighting",
+      "file": "lighting_golden_hour.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lighting\\lighting_golden_hour.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lighting",
+      "file": "lighting_overcast.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lighting\\lighting_overcast.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lighting",
+      "file": "lighting_night.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lighting\\lighting_night.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lod",
+      "file": "lod0_master_view.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lod\\lod0_master_view.png",
+      "status": "VERIFIED"
+    },
+    {
+      "feature": "lod",
+      "file": "lod_wireframe_density.png",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\artifacts\\proof\\map\\lod\\lod_wireframe_density.png",
+      "status": "VERIFIED"
+    }
+  ]
+}

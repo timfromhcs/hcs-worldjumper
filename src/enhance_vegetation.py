@@ -2,39 +2,60 @@ import os
 import trimesh
 import numpy as np
 
-def create_procedural_tree(height=8.0, canopy_radius=3.5):
+def create_procedural_tree(height=8.5, canopy_radius=3.8):
     """
     Synthesizes a realistic procedural game tree:
-    - Segmented trunk with bark material
-    - 3-tiered volumetric leaf canopy with branch cards
-    - Proper normals for lush lighting
+    - Tapered wood trunk with secondary branches
+    - Multi-cluster volumetric leaf canopy with organic vertex noise
+    - Realistic natural bark and foliage coloration
     """
-    # 1. Trunk (tapered cylinder)
-    trunk_h = height * 0.45
-    trunk = trimesh.creation.cylinder(radius=0.25, height=trunk_h, sections=12)
+    # 1. Main Trunk
+    trunk_h = height * 0.42
+    trunk = trimesh.creation.cylinder(radius=0.28, height=trunk_h, sections=12)
     trunk.apply_translation([0, trunk_h/2.0, 0])
-    trunk.visual.vertex_colors = [85, 60, 42, 255] # Realistic bark brown
+    trunk.visual.vertex_colors = [88, 62, 44, 255] # Natural bark brown
     
-    # 2. Layered Foliage Canopy (Multi-tiered organic icospheres with ruffled vertices)
+    # Secondary branches reaching out
+    branches = [trunk]
+    branch_specs = [
+        (trunk_h * 0.75, 1.8, 0.35, 0.14),
+        (trunk_h * 0.85, -1.6, -0.40, 0.12),
+        (trunk_h * 0.95, 0.2, 1.5, 0.13),
+    ]
+    for by, bx, bz, br in branch_specs:
+        b_len = np.sqrt(bx*bx + bz*bz)
+        b_cyl = trimesh.creation.cylinder(radius=br, height=b_len, sections=8)
+        # Point toward (bx, bz)
+        angle = np.arctan2(bz, bx)
+        rot_y = trimesh.transformations.rotation_matrix(angle, [0, 1, 0])
+        rot_z = trimesh.transformations.rotation_matrix(-0.45, [0, 0, 1])
+        b_cyl.apply_transform(rot_z)
+        b_cyl.apply_transform(rot_y)
+        b_cyl.apply_translation([bx*0.5, by, bz*0.5])
+        b_cyl.visual.vertex_colors = [80, 56, 38, 255]
+        branches.append(b_cyl)
+        
+    # 2. Organic Foliage Clusters distributed around branches
     canopy_parts = []
-    tiers = [
-        (trunk_h * 0.9, canopy_radius * 0.95, [48, 102, 45, 255]), # Base dense canopy
-        (trunk_h * 1.35, canopy_radius * 0.8, [56, 120, 52, 255]), # Mid layer
-        (trunk_h * 1.75, canopy_radius * 0.55, [68, 138, 62, 255]), # Top sunlit crest
+    cluster_offsets = [
+        (0.0, trunk_h * 1.0, 0.0, canopy_radius * 0.85, [42, 85, 38, 255]), # Central core
+        (1.4, trunk_h * 0.95, 0.6, canopy_radius * 0.65, [48, 92, 42, 255]),
+        (-1.2, trunk_h * 1.05, -0.8, canopy_radius * 0.62, [52, 98, 45, 255]),
+        (0.3, trunk_h * 1.15, 1.2, canopy_radius * 0.58, [55, 105, 48, 255]),
+        (-0.5, trunk_h * 1.35, 0.2, canopy_radius * 0.70, [62, 115, 52, 255]), # Upper crest
+        (0.0, trunk_h * 1.65, 0.0, canopy_radius * 0.45, [70, 128, 58, 255]), # Sunlit crown
     ]
     
-    for y_offset, radius, color in tiers:
+    for cx, cy, cz, radius, color in cluster_offsets:
         sphere = trimesh.creation.icosphere(subdivisions=2, radius=radius)
-        # Apply organic noise to vertices so it doesn't look like a computer sphere
-        noise = np.random.normal(0, radius * 0.12, sphere.vertices.shape)
+        noise = np.random.normal(0, radius * 0.14, sphere.vertices.shape)
         sphere.vertices += noise
-        # Flatten slightly vertically for natural foliage weight
-        sphere.vertices[:, 1] *= 0.82
-        sphere.apply_translation([0, y_offset, 0])
+        sphere.vertices[:, 1] *= 0.85 # Gentle droop
+        sphere.apply_translation([cx, cy, cz])
         sphere.visual.vertex_colors = color
         canopy_parts.append(sphere)
         
-    tree = trimesh.util.concatenate([trunk] + canopy_parts)
+    tree = trimesh.util.concatenate(branches + canopy_parts)
     return tree
 
 def create_ground_grass_cluster(radius=1.2):

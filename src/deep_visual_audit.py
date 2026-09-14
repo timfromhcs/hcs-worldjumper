@@ -84,6 +84,12 @@ def render_view_headless(model_rel_path, output_png, view_preset="overview", lig
     if os.path.exists(abs_out):
         os.remove(abs_out)
         
+    if os.path.isabs(model_rel_path):
+        model_rel_path = os.path.relpath(model_rel_path, root)
+    model_rel_path = model_rel_path.replace('\\', '/')
+    if not model_rel_path.startswith('/'):
+        model_rel_path = '/' + model_rel_path
+        
     url = f"{VIEWER_URL}?model={model_rel_path}&view={view_preset}&light={lighting}&mode={mode}&auto_capture=1&save_to={rel_out}"
     
     cmd = [

@@ -1,0 +1,57 @@
+{
+  "task_registry": {
+    "vlm_quality_inspection": {
+      "model": "zai-org/GLM-4.5V",
+      "fallback_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "endpoint": "https://router.huggingface.co/v1/chat/completions",
+      "max_tokens": 512,
+      "temperature": 0.1,
+      "timeout_sec": 30
+    },
+    "delighting_neutral_albedo": {
+      "method": "frequency_decomposition_luminance_normalization",
+      "shadow_threshold": 0.35,
+      "highlight_threshold": 0.92,
+      "ambient_boost": 1.15
+    },
+    "super_resolution": {
+      "target_resolution": [2048, 2048],
+      "resampling": "LANCZOS_EDGE_PRESERVE",
+      "quality_gate": {
+        "min_psnr_db": 28.0,
+        "rollback_on_degradation": true
+      }
+    },
+    "pbr_material_reconstruction": {
+      "normal_bump_strength": 3.2,
+      "roughness_ranges": {
+        "asphalt": [0.75, 0.90],
+        "concrete": [0.70, 0.85],
+        "plaster": [0.65, 0.80],
+        "wood": [0.55, 0.70],
+        "glass": [0.08, 0.20],
+        "metal": [0.20, 0.35],
+        "foliage": [0.50, 0.65]
+      },
+      "metallic_ranges": {
+        "dielectric": 0.04,
+        "metal_trim": 0.85
+      },
+      "ambient_occlusion": {
+        "radius": 10,
+        "intensity": 1.8
+      }
+    },
+    "asset_generation": {
+      "allowed_types": ["props", "furniture", "lighting_fixtures", "plants"],
+      "collision_fit_validation": true,
+      "scale_verification": true
+    }
+  },
+  "cost_control": {
+    "max_requests_per_map": 20,
+    "max_retries": 3,
+    "caching_enabled": true,
+    "cache_dir": "cache/cloud_ai"
+  }
+}

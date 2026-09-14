@@ -1,0 +1,17 @@
+{
+  "map": {
+    "file": "map.glb",
+    "size": 13511072,
+    "sha256": "bea4ec441ba2081165fcfd93a9a172453c4fa54992910ea73f55e19509ac0ce7"
+  },
+  "map2": {
+    "file": "map2.glb",
+    "size": 13184496,
+    "sha256": "a0a4f9f05258fde5d639384e992b7bc2cdba953a3611b22644ec969c1fbdf925"
+  },
+  "schoolmap": {
+    "file": "schoolmap.glb",
+    "size": 11757352,
+    "sha256": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295"
+  }
+}

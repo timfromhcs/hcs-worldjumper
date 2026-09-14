@@ -1,0 +1,2274 @@
+{
+  "map_name": "map",
+  "source_asset": "input/maps/map.glb",
+  "source_sha256": "bea4ec441ba2081165fcfd93a9a172453c4fa54992910ea73f55e19509ac0ce7",
+  "source_size_bytes": 13511072,
+  "pipeline_duration_seconds": 13.546440839767456,
+  "stages": {
+    "stage_1": {
+      "stage": "STAGE_1_CLEANED",
+      "vertices": 274078,
+      "faces": 296800,
+      "bounds": [
+        [
+          -44.6825018286488,
+          0.0,
+          -61.08331506953929
+        ],
+        [
+          48.46750575023629,
+          10.855160567163828,
+          58.91668493046072
+        ]
+      ],
+      "extents": [
+        93.1500075788851,
+        10.855160567163828,
+        120.0
+      ],
+      "scale_factor_applied": 120.16783671580811,
+      "output_path": "work/stages\\map\\stage_1_cleaned.glb",
+      "sha256": "1433d881a61e105256dfd6957e357d15c129ef5f76082c0425247caa3b15dfb1"
+    },
+    "stage_2": {
+      "stage": "STAGE_2_RECONSTRUCTED",
+      "terrain_faces": 38488,
+      "elevated_faces": 258312,
+      "buildings_detected": [
+        {
+          "center": [
+            -39.65897042751783,
+            2.80079487859048,
+            -56.0695247516687
+          ],
+          "size": [
+            12.0,
+            5.409468730973516,
+            12.0
+          ],
+          "base_y": 0.5087807479426963,
+          "roof_y": 5.918249478916212,
+          "face_count": 1799
+        },
+        {
+          "center": [
+            -39.65897042751783,
+            3.256978586917889,
+            -36.0695247516687
+          ],
+          "size": [
+            12.0,
+            7.775220444981875,
+            12.0
+          ],
+          "base_y": 0.3247620156963353,
+          "roof_y": 8.099982460678211,
+          "face_count": 2040
+        },
+        {
+          "center": [
+            -39.65897042751783,
+            1.2351444157455915,
+            -16.069524751668702
+          ],
+          "size": [
+            12.0,
+            3.5673525624823794,
+            12.0
+          ],
+          "base_y": 0.15020607136292577,
+          "roof_y": 3.717558633845305,
+          "face_count": 2341
+        },
+        {
+          "center": [
+            -39.65897042751783,
+            2.7022906809873475,
+            3.930475248331298
+          ],
+          "size": [
+            12.0,
+            6.675631693879773,
+            12.0
+          ],
+          "base_y": 0.03348064632684326,
+          "roof_y": 6.709112340206617,
+          "face_count": 5610
+        },
+        {
+          "center": [
+            -39.65897042751783,
+            2.042533080392402,
+            23.930475248331298
+          ],
+          "size": [
+            12.0,
+            3.648618273299282,
+            12.0
+          ],
+          "base_y": 0.2152039269219399,
+          "roof_y": 3.8638222002212217,
+          "face_count": 1306
+        },
+        {
+          "center": [
+            -39.65897042751783,
+            2.1020069143284363,
+            43.9304752483313
+          ],
+          "size": [
+            12.0,
+            4.819178605238632,
+            12.0
+          ],
+          "base_y": 0.5425449123178657,
+          "roof_y": 5.361723517556498,
+          "face_count": 3580
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            2.9643623700118433,
+            -46.0695247516687
+          ],
+          "size": [
+            12.0,
+            4.291089357237576,
+            12.0
+          ],
+          "base_y": 1.5037272028733095,
+          "roof_y": 5.794816560110886,
+          "face_count": 4005
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            2.8342956769133743,
+            -26.069524751668702
+          ],
+          "size": [
+            12.0,
+            5.456636313672074,
+            12.0
+          ],
+          "base_y": 0.9035511292120972,
+          "roof_y": 6.360187442884171,
+          "face_count": 4496
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            3.257580206678646,
+            -6.069524751668702
+          ],
+          "size": [
+            12.0,
+            7.709467759924199,
+            12.0
+          ],
+          "base_y": 0.22279609259603994,
+          "roof_y": 7.932263852520239,
+          "face_count": 4472
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            4.322747694849869,
+            13.930475248331298
+          ],
+          "size": [
+            12.0,
+            9.909973917234876,
+            12.0
+          ],
+          "base_y": 0.5992988091316809,
+          "roof_y": 10.509272726366556,
+          "face_count": 7719
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            1.7097268837818203,
+            33.9304752483313
+          ],
+          "size": [
+            12.0,
+            3.2521379797584227,
+            12.0
+          ],
+          "base_y": 0.6116842204627991,
+          "roof_y": 3.8638222002212217,
+          "face_count": 4381
+        },
+        {
+          "center": [
+            -29.65897042751783,
+            2.3899254944441775,
+            53.9304752483313
+          ],
+          "size": [
+            12.0,
+            5.399823251118174,
+            12.0
+          ],
+          "base_y": 0.5457141964380764,
+          "roof_y": 5.945537447556251,
+          "face_count": 2373
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            3.3976795864053178,
+            -56.0695247516687
+          ],
+          "size": [
+            12.0,
+            4.051722572005152,
+            12.0
+          ],
+          "base_y": 1.7707388304259755,
+          "roof_y": 5.822461402431128,
+          "face_count": 2547
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            3.3844341558783784,
+            -36.0695247516687
+          ],
+          "size": [
+            12.0,
+            4.4785807076055395,
+            12.0
+          ],
+          "base_y": 1.7950879572963327,
+          "roof_y": 6.273668664901872,
+          "face_count": 2175
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            3.2193267634003906,
+            -16.069524751668702
+          ],
+          "size": [
+            12.0,
+            7.028231563336125,
+            12.0
+          ],
+          "base_y": 0.8808052222950122,
+          "roof_y": 7.909036785631137,
+          "face_count": 3203
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            3.927263668741058,
+            3.930475248331298
+          ],
+          "size": [
+            12.0,
+            6.5157047212649015,
+            12.0
+          ],
+          "base_y": 0.9006247752932944,
+          "roof_y": 7.416329496558196,
+          "face_count": 2712
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            1.8176852717373013,
+            23.930475248331298
+          ],
+          "size": [
+            12.0,
+            4.979107517713835,
+            12.0
+          ],
+          "base_y": 0.59225875755169,
+          "roof_y": 5.571366275265525,
+          "face_count": 2735
+        },
+        {
+          "center": [
+            -19.65897042751783,
+            1.8385276751796031,
+            43.9304752483313
+          ],
+          "size": [
+            12.0,
+            3.4462936013826373,
+            12.0
+          ],
+          "base_y": 0.5657017711849986,
+          "roof_y": 4.011995372567636,
+          "face_count": 5481
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            5.08478203592198,
+            -46.0695247516687
+          ],
+          "size": [
+            12.0,
+            9.037158979641823,
+            12.0
+          ],
+          "base_y": 1.8008311376352697,
+          "roof_y": 10.837990117277092,
+          "face_count": 4628
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            4.226929858451071,
+            -26.069524751668702
+          ],
+          "size": [
+            12.0,
+            5.916014881056568,
+            12.0
+          ],
+          "base_y": 1.5965971208831728,
+          "roof_y": 7.512612001939741,
+          "face_count": 5927
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            4.241394832266544,
+            -6.069524751668702
+          ],
+          "size": [
+            12.0,
+            6.964618917273224,
+            12.0
+          ],
+          "base_y": 1.0278406665574977,
+          "roof_y": 7.992459583830722,
+          "face_count": 2545
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            3.5638049271869683,
+            13.930475248331298
+          ],
+          "size": [
+            12.0,
+            5.0384730307709304,
+            12.0
+          ],
+          "base_y": 0.8848887775110622,
+          "roof_y": 5.923361808281992,
+          "face_count": 2950
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            1.4172599591487685,
+            33.9304752483313
+          ],
+          "size": [
+            12.0,
+            3.470841750461919,
+            12.0
+          ],
+          "base_y": 0.5178039336607165,
+          "roof_y": 3.9886456841226354,
+          "face_count": 3039
+        },
+        {
+          "center": [
+            -9.65897042751783,
+            2.0982727279960387,
+            53.9304752483313
+          ],
+          "size": [
+            12.0,
+            5.210209597954397,
+            12.0
+          ],
+          "base_y": 0.6129136442523571,
+          "roof_y": 5.823123242206754,
+          "face_count": 4992
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            3.4252937325963213,
+            -56.0695247516687
+          ],
+          "size": [
+            12.0,
+            3.283920203755766,
+            12.0
+          ],
+          "base_y": 1.9444403408937454,
+          "roof_y": 5.228360544649512,
+          "face_count": 2452
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            3.3316535348863323,
+            -36.0695247516687
+          ],
+          "size": [
+            12.0,
+            3.928488973848802,
+            12.0
+          ],
+          "base_y": 2.063124353373673,
+          "roof_y": 5.991613327222475,
+          "face_count": 2498
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            2.481129250862351,
+            -16.069524751668702
+          ],
+          "size": [
+            12.0,
+            3.864703764152736,
+            12.0
+          ],
+          "base_y": 1.454605611920436,
+          "roof_y": 5.319309376073172,
+          "face_count": 1229
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            5.051932585916212,
+            3.930475248331298
+          ],
+          "size": [
+            12.0,
+            8.159348976307353,
+            12.0
+          ],
+          "base_y": 0.9654596825845344,
+          "roof_y": 9.124808658891887,
+          "face_count": 3184
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            4.396862117510804,
+            23.930475248331298
+          ],
+          "size": [
+            12.0,
+            9.270522386779081,
+            12.0
+          ],
+          "base_y": 0.5416621266473932,
+          "roof_y": 9.812184513426475,
+          "face_count": 7109
+        },
+        {
+          "center": [
+            0.3410295724821708,
+            2.018348088240336,
+            43.9304752483313
+          ],
+          "size": [
+            12.0,
+            5.2549820068907875,
+            12.0
+          ],
+          "base_y": 0.507534014630188,
+          "roof_y": 5.762516021520976,
+          "face_count": 3269
+        },
+        {
+          "center": [
+            10.34102957248217,
+            3.9903653690363527,
+            -46.0695247516687
+          ],
+          "size": [
+            12.0,
+            5.839038014905709,
+            12.0
+          ],
+          "base_y": 2.120950396070237,
+          "roof_y": 7.959988410975946,
+          "face_count": 2790
+        },
+        {
+          "center": [
+            10.34102957248217,
+            3.694389487786435,
+            -26.069524751668702
+          ],
+          "size": [
+            12.0,
+            4.44454925285981,
+            12.0
+          ],
+          "base_y": 2.0349662361340655,
+          "roof_y": 6.479515488993875,
+          "face_count": 4267
+        },
+        {
+          "center": [
+            10.34102957248217,
+            2.20099322042139,
+            -6.069524751668702
+          ],
+          "size": [
+            12.0,
+            3.243324112431081,
+            12.0
+          ],
+          "base_y": 0.8953164221084752,
+          "roof_y": 4.138640534539556,
+          "face_count": 1626
+        },
+        {
+          "center": [
+            10.34102957248217,
+            5.469072028418331,
+            13.930475248331298
+          ],
+          "size": [
+            12.0,
+            8.711781879000643,
+            12.0
+          ],
+          "base_y": 0.9895643870532291,
+          "roof_y": 9.701346266053873,
+          "face_count": 4973
+        },
+        {
+          "center": [
+            10.34102957248217,
+            3.053252799616301,
+            33.9304752483313
+          ],
+          "size": [
+            12.0,
+            8.70764684287582,
+            12.0
+          ],
+          "base_y": 0.4769125732107022,
+          "roof_y": 9.184559416086522,
+          "face_count": 4386
+        },
+        {
+          "center": [
+            10.34102957248217,
+            3.645485799555737,
+            53.9304752483313
+          ],
+          "size": [
+            12.0,
+            4.960767933590941,
+            12.0
+          ],
+          "base_y": 0.6042554507165502,
+          "roof_y": 5.565023384307492,
+          "face_count": 1199
+        },
+        {
+          "center": [
+            20.34102957248217,
+            4.934291030617016,
+            -56.0695247516687
+          ],
+          "size": [
+            12.0,
+            6.706608540094837,
+            12.0
+          ],
+          "base_y": 2.5864713633192173,
+          "roof_y": 9.293079903414055,
+          "face_count": 3725
+        },
+        {
+          "center": [
+            20.34102957248217,
+            4.175335842254018,
+            -36.0695247516687
+          ],
+          "size": [
+            12.0,
+            4.061089656255855,
+            12.0
+          ],
+          "base_y": 2.4666432062942683,
+          "roof_y": 6.527732862550123,
+          "face_count": 2509
+        },
+        {
+          "center": [
+            20.34102957248217,
+            3.4236174019223404,
+            -16.069524751668702
+          ],
+          "size": [
+            12.0,
+            5.860536255885126,
+            12.0
+          ],
+          "base_y": 1.073795360910567,
+          "roof_y": 6.934331616795693,
+          "face_count": 2307
+        },
+        {
+          "center": [
+            20.34102957248217,
+            4.7224052628365785,
+            3.930475248331298
+          ],
+          "size": [
+            12.0,
+            7.1469405701703135,
+            12.0
+          ],
+          "base_y": 0.8953164221084752,
+          "roof_y": 8.042256992278789,
+          "face_count": 2041
+        },
+        {
+          "center": [
+            20.34102957248217,
+            2.073935717268375,
+            23.930475248331298
+          ],
+          "size": [
+            12.0,
+            5.471952135841437,
+            12.0
+          ],
+          "base_y": 0.8062453475061323,
+          "roof_y": 6.278197483347569,
+          "face_count": 2630
+        },
+        {
+          "center": [
+            20.34102957248217,
+            2.6271406755911366,
+            43.9304752483313
+          ],
+          "size": [
+            12.0,
+            4.677874142578004,
+            12.0
+          ],
+          "base_y": 0.5296120127134273,
+          "roof_y": 5.207486155291431,
+          "face_count": 2955
+        },
+        {
+          "center": [
+            30.34102957248217,
+            4.416003768408844,
+            -46.0695247516687
+          ],
+          "size": [
+            12.0,
+            3.8063839803707618,
+            12.0
+          ],
+          "base_y": 3.1121118104456826,
+          "roof_y": 6.918495790816444,
+          "face_count": 3087
+        },
+        {
+          "center": [
+            30.34102957248217,
+            3.8910426539693947,
+            -26.069524751668702
+          ],
+          "size": [
+            12.0,
+            4.618658786834627,
+            12.0
+          ],
+          "base_y": 2.2747008160873037,
+          "roof_y": 6.89335960292193,
+          "face_count": 2677
+        },
+        {
+          "center": [
+            30.34102957248217,
+            3.18048498385776,
+            -6.069524751668702
+          ],
+          "size": [
+            12.0,
+            5.437976107008904,
+            12.0
+          ],
+          "base_y": 0.7674484393331215,
+          "roof_y": 6.205424546342026,
+          "face_count": 3484
+        },
+        {
+          "center": [
+            30.34102957248217,
+            4.37888068353359,
+            13.930475248331298
+          ],
+          "size": [
+            12.0,
+            6.736856931450737,
+            12.0
+          ],
+          "base_y": 0.939703410874326,
+          "roof_y": 7.676560342325064,
+          "face_count": 2954
+        },
+        {
+          "center": [
+            30.34102957248217,
+            2.7325311312665304,
+            33.9304752483313
+          ],
+          "size": [
+            12.0,
+            7.522209759365698,
+            12.0
+          ],
+          "base_y": 0.5909512916888296,
+          "roof_y": 8.113161051054528,
+          "face_count": 1960
+        },
+        {
+          "center": [
+            30.34102957248217,
+            2.6693716765179105,
+            53.9304752483313
+          ],
+          "size": [
+            12.0,
+            4.911069751796662,
+            12.0
+          ],
+          "base_y": 0.6010272246862925,
+          "roof_y": 5.512096976482955,
+          "face_count": 4068
+        },
+        {
+          "center": [
+            40.34102957248217,
+            4.639869146051736,
+            -56.0695247516687
+          ],
+          "size": [
+            12.0,
+            5.094672272087077,
+            12.0
+          ],
+          "base_y": 3.3587419969942913,
+          "roof_y": 8.45341426908137,
+          "face_count": 5280
+        },
+        {
+          "center": [
+            40.34102957248217,
+            3.533201030620492,
+            -36.0695247516687
+          ],
+          "size": [
+            12.0,
+            3.510088839130725,
+            12.0
+          ],
+          "base_y": 2.203807128103333,
+          "roof_y": 5.713895967234058,
+          "face_count": 3936
+        },
+        {
+          "center": [
+            40.34102957248217,
+            4.795755409853429,
+            -16.069524751668702
+          ],
+          "size": [
+            12.0,
+            5.566913698926575,
+            12.0
+          ],
+          "base_y": 1.1501946709529822,
+          "roof_y": 6.717108369879557,
+          "face_count": 1476
+        },
+        {
+          "center": [
+            40.34102957248217,
+            4.069494715628109,
+            3.930475248331298
+          ],
+          "size": [
+            12.0,
+            6.649479877187145,
+            12.0
+          ],
+          "base_y": 1.1788325305743628,
+          "roof_y": 7.828312407761508,
+          "face_count": 3269
+        },
+        {
+          "center": [
+            40.34102957248217,
+            2.5800635763111837,
+            23.930475248331298
+          ],
+          "size": [
+            12.0,
+            6.037760328883324,
+            12.0
+          ],
+          "base_y": 0.9121687349009857,
+          "roof_y": 6.949929063784309,
+          "face_count": 2652
+        },
+        {
+          "center": [
+            40.34102957248217,
+            3.5175853147331284,
+            43.9304752483313
+          ],
+          "size": [
+            12.0,
+            7.495157362514562,
+            12.0
+          ],
+          "base_y": 0.618003688539965,
+          "roof_y": 8.113161051054528,
+          "face_count": 3846
+        },
+        {
+          "center": [
+            50.34102957248217,
+            3.940731142368115,
+            -26.069524751668702
+          ],
+          "size": [
+            12.0,
+            3.5810841063154477,
+            12.0
+          ],
+          "base_y": 2.0094570727859775,
+          "roof_y": 5.590541179101425,
+          "face_count": 786
+        },
+        {
+          "center": [
+            50.34102957248217,
+            2.6727564133360633,
+            13.930475248331298
+          ],
+          "size": [
+            12.0,
+            3.879330842642201,
+            12.0
+          ],
+          "base_y": 1.1777059193823298,
+          "roof_y": 5.057036762024531,
+          "face_count": 595
+        },
+        {
+          "center": [
+            50.34102957248217,
+            1.9068109927882113,
+            53.9304752483313
+          ],
+          "size": [
+            12.0,
+            5.249959527798602,
+            12.0
+          ],
+          "base_y": 0.9039070189727593,
+          "roof_y": 6.153866546771361,
+          "face_count": 625
+        }
+      ],
+      "output_path": "work/stages\\map\\stage_2_reconstructed.glb",
+      "sha256": "1433d881a61e105256dfd6957e357d15c129ef5f76082c0425247caa3b15dfb1"
+    },
+    "stage_3": {
+      "stage": "STAGE_3_ENRICHED",
+      "interior_structures_count": 1416,
+      "buildings_with_interiors": 57,
+      "interior_metadata": [
+        {
+          "building_id": "building_1",
+          "center": [
+            -39.65897042751783,
+            2.80079487859048,
+            -56.0695247516687
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_2",
+          "center": [
+            -39.65897042751783,
+            3.256978586917889,
+            -36.0695247516687
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_3",
+          "center": [
+            -39.65897042751783,
+            1.2351444157455915,
+            -16.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_4",
+          "center": [
+            -39.65897042751783,
+            2.7022906809873475,
+            3.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_5",
+          "center": [
+            -39.65897042751783,
+            2.042533080392402,
+            23.930475248331298
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_6",
+          "center": [
+            -39.65897042751783,
+            2.1020069143284363,
+            43.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_7",
+          "center": [
+            -29.65897042751783,
+            2.9643623700118433,
+            -46.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_8",
+          "center": [
+            -29.65897042751783,
+            2.8342956769133743,
+            -26.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_9",
+          "center": [
+            -29.65897042751783,
+            3.257580206678646,
+            -6.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_10",
+          "center": [
+            -29.65897042751783,
+            4.322747694849869,
+            13.930475248331298
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_11",
+          "center": [
+            -29.65897042751783,
+            1.7097268837818203,
+            33.9304752483313
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_12",
+          "center": [
+            -29.65897042751783,
+            2.3899254944441775,
+            53.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_13",
+          "center": [
+            -19.65897042751783,
+            3.3976795864053178,
+            -56.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_14",
+          "center": [
+            -19.65897042751783,
+            3.3844341558783784,
+            -36.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_15",
+          "center": [
+            -19.65897042751783,
+            3.2193267634003906,
+            -16.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_16",
+          "center": [
+            -19.65897042751783,
+            3.927263668741058,
+            3.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_17",
+          "center": [
+            -19.65897042751783,
+            1.8176852717373013,
+            23.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_18",
+          "center": [
+            -19.65897042751783,
+            1.8385276751796031,
+            43.9304752483313
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_19",
+          "center": [
+            -9.65897042751783,
+            5.08478203592198,
+            -46.0695247516687
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_20",
+          "center": [
+            -9.65897042751783,
+            4.226929858451071,
+            -26.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_21",
+          "center": [
+            -9.65897042751783,
+            4.241394832266544,
+            -6.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_22",
+          "center": [
+            -9.65897042751783,
+            3.5638049271869683,
+            13.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_23",
+          "center": [
+            -9.65897042751783,
+            1.4172599591487685,
+            33.9304752483313
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_24",
+          "center": [
+            -9.65897042751783,
+            2.0982727279960387,
+            53.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_25",
+          "center": [
+            0.3410295724821708,
+            3.4252937325963213,
+            -56.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_26",
+          "center": [
+            0.3410295724821708,
+            3.3316535348863323,
+            -36.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_27",
+          "center": [
+            0.3410295724821708,
+            2.481129250862351,
+            -16.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_28",
+          "center": [
+            0.3410295724821708,
+            5.051932585916212,
+            3.930475248331298
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_29",
+          "center": [
+            0.3410295724821708,
+            4.396862117510804,
+            23.930475248331298
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_30",
+          "center": [
+            0.3410295724821708,
+            2.018348088240336,
+            43.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_31",
+          "center": [
+            10.34102957248217,
+            3.9903653690363527,
+            -46.0695247516687
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_32",
+          "center": [
+            10.34102957248217,
+            3.694389487786435,
+            -26.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_33",
+          "center": [
+            10.34102957248217,
+            2.20099322042139,
+            -6.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_34",
+          "center": [
+            10.34102957248217,
+            5.469072028418331,
+            13.930475248331298
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_35",
+          "center": [
+            10.34102957248217,
+            3.053252799616301,
+            33.9304752483313
+          ],
+          "floors": 3,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_36",
+          "center": [
+            10.34102957248217,
+            3.645485799555737,
+            53.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_37",
+          "center": [
+            20.34102957248217,
+            4.934291030617016,
+            -56.0695247516687
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_38",
+          "center": [
+            20.34102957248217,
+            4.175335842254018,
+            -36.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_39",
+          "center": [
+            20.34102957248217,
+            3.4236174019223404,
+            -16.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_40",
+          "center": [
+            20.34102957248217,
+            4.7224052628365785,
+            3.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_41",
+          "center": [
+            20.34102957248217,
+            2.073935717268375,
+            23.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_42",
+          "center": [
+            20.34102957248217,
+            2.6271406755911366,
+            43.9304752483313
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_43",
+          "center": [
+            30.34102957248217,
+            4.416003768408844,
+            -46.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_44",
+          "center": [
+            30.34102957248217,
+            3.8910426539693947,
+            -26.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_45",
+          "center": [
+            30.34102957248217,
+            3.18048498385776,
+            -6.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_46",
+          "center": [
+            30.34102957248217,
+            4.37888068353359,
+            13.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_47",
+          "center": [
+            30.34102957248217,
+            2.7325311312665304,
+            33.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_48",
+          "center": [
+            30.34102957248217,
+            2.6693716765179105,
+            53.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_49",
+          "center": [
+            40.34102957248217,
+            4.639869146051736,
+            -56.0695247516687
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_50",
+          "center": [
+            40.34102957248217,
+            3.533201030620492,
+            -36.0695247516687
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_51",
+          "center": [
+            40.34102957248217,
+            4.795755409853429,
+            -16.069524751668702
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_52",
+          "center": [
+            40.34102957248217,
+            4.069494715628109,
+            3.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_53",
+          "center": [
+            40.34102957248217,
+            2.5800635763111837,
+            23.930475248331298
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_54",
+          "center": [
+            40.34102957248217,
+            3.5175853147331284,
+            43.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_55",
+          "center": [
+            50.34102957248217,
+            3.940731142368115,
+            -26.069524751668702
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_56",
+          "center": [
+            50.34102957248217,
+            2.6727564133360633,
+            13.930475248331298
+          ],
+          "floors": 1,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        },
+        {
+          "building_id": "building_57",
+          "center": [
+            50.34102957248217,
+            1.9068109927882113,
+            53.9304752483313
+          ],
+          "floors": 2,
+          "provenance": "AI_RECONSTRUCTED_INTERIOR",
+          "features": [
+            "floor_slabs",
+            "ceilings",
+            "corridors",
+            "doors",
+            "rooms",
+            "desks",
+            "chairs",
+            "cabinets",
+            "lighting",
+            "stairs"
+          ]
+        }
+      ],
+      "output_path": "work/stages\\map\\stage_3_enriched.glb",
+      "sha256": "a28b97444c3e6467aa9f668e9de05eed306dcfe691da16de610455a88c05de06"
+    },
+    "stage_4": {
+      "stage": "STAGE_4_MATERIALIZED",
+      "albedo_path": "work/stages\\map\\textures_pbr\\albedo.png",
+      "normal_path": "work/stages\\map\\textures_pbr\\normal.png",
+      "metallic_roughness_path": "work/stages\\map\\textures_pbr\\metallicRoughness.png",
+      "resolution": "2048x2048",
+      "albedo_sha256": "e0b3b3d2631a541e85daa81393ecbcb86636399017609e6260e0686a968be6fb",
+      "normal_sha256": "d122a62ec563cdb03c92736a0c6975ef9fecf3a81b539fcaaebf4f88f57ad6bf",
+      "metallic_roughness_sha256": "85670a128da492849c2d9a39c2846b8f39abc3f3ab34ee0a667d76839f78b864",
+      "provenance": "PROCEDURALLY_GENERATED_PBR_MAPS"
+    },
+    "stage_5": {
+      "stage": "STAGE_5_VEGETATED",
+      "trees_created": 25,
+      "bushes_created": 40,
+      "wind_simulation_enabled": true,
+      "deterministic_seed": 42,
+      "output_path": "work/stages\\map\\stage_5_vegetated.glb",
+      "sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+    },
+    "stage_6": {
+      "stage": "STAGE_6_PHYSICS_READY",
+      "total_colliders": 1482,
+      "physics_json": "work/stages\\map\\physics_manifest.json",
+      "output_path": "work/stages\\map\\stage_6_physics_ready.glb",
+      "sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+    },
+    "stage_7": {
+      "final_world_glb": "output\\map\\world.glb",
+      "final_sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01",
+      "regions": [
+        {
+          "region": "region_NW",
+          "bounds": [
+            [
+              -45.55897042751783,
+              -0.05872105305683717,
+              -61.9695247516687
+            ],
+            [
+              5.341029572482171,
+              12.100621043847493,
+              -1.0695247516687019
+            ]
+          ],
+          "geometry_count": 346,
+          "path": "output\\map\\regions\\region_NW.glb",
+          "sha256": "4358eeeee08072dc4b549d978b452e9c6ccf39eba83ee3381ffb49587b3f5a84"
+        },
+        {
+          "region": "region_NE",
+          "bounds": [
+            [
+              5.341029572482171,
+              -0.05872105305683717,
+              -61.9695247516687
+            ],
+            [
+              56.24102957248217,
+              12.100621043847493,
+              -1.0695247516687019
+            ]
+          ],
+          "geometry_count": 257,
+          "path": "output\\map\\regions\\region_NE.glb",
+          "sha256": "f300eb3fa62bd05726d400cbd913e32e6bb7cad65be33932c159e57778328e65"
+        },
+        {
+          "region": "region_SW",
+          "bounds": [
+            [
+              -45.55897042751783,
+              -0.05872105305683717,
+              -1.0695247516687019
+            ],
+            [
+              5.341029572482171,
+              12.100621043847493,
+              59.8304752483313
+            ]
+          ],
+          "geometry_count": 444,
+          "path": "output\\map\\regions\\region_SW.glb",
+          "sha256": "11354737abcfefa914374a6d47b2dbb782b48da8d5c16117e6454c7d7230089f"
+        },
+        {
+          "region": "region_SE",
+          "bounds": [
+            [
+              5.341029572482171,
+              -0.05872105305683717,
+              -1.0695247516687019
+            ],
+            [
+              56.24102957248217,
+              12.100621043847493,
+              59.8304752483313
+            ]
+          ],
+          "geometry_count": 435,
+          "path": "output\\map\\regions\\region_SE.glb",
+          "sha256": "0f86ab648c59a365f016650efc03323f6759d24890ac6f33985689806a087fcc"
+        }
+      ],
+      "lod": {
+        "LOD0": {
+          "path": "output\\map\\lod\\world_lod0.glb",
+          "sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+        }
+      }
+    }
+  },
+  "final_output": "output\\map\\world.glb",
+  "final_sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+}
