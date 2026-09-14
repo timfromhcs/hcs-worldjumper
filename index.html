@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCS WorldJumper - Photorealistic Game World Exploration</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; width: 100vw; height: 100vh;
+      overflow: hidden; background: #030712; font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    #game-canvas {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;
+    }
+    #compat-fallback {
+      display: none; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: #090d16; color: #f8fafc; z-index: 9999;
+      flex-direction: column; align-items: center; justify-content: center; text-align: center;
+      padding: 40px;
+    }
+    #compat-fallback h1 { color: #ef4444; font-size: 32px; margin-bottom: 12px; }
+    #compat-fallback p { color: #94a3b8; max-width: 540px; line-height: 1.6; }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/node_modules/three/build/three.module.js",
+      "three/addons/": "/node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+
+  <div id="compat-fallback">
+    <h1>Hardware Acceleration Unavailable</h1>
+    <p>HCS WorldJumper requires WebGPU or WebGL2 graphics support. Please enable hardware acceleration in your browser settings or update your GPU drivers to explore these reconstructed game worlds.</p>
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { AudioManager } from '/src/runtime/audio.js';
+    import { PlayerController } from '/src/runtime/controller.js';
+    import { WeatherSystem } from '/src/runtime/weather.js';
+    import { UIManager } from '/src/runtime/ui.js';
+
+    class GameApp {
+      constructor() {
+        this.canvas = document.getElementById('game-canvas');
+        this.renderer = null;
+        this.backendName = 'Detecting...';
+        this.scene = null;
+        this.camera = null;
+        this.currentWorldModel = null;
+        this.colliders = [];
+        this.clock = new THREE.Clock();
+
+        this.audio = new AudioManager();
+        this.weather = null;
+        this.controller = null;
+        this.ui = new UIManager(this);
+
+        this.currentMapId = 'map';
+        this.manifest = null;
+        this.frameCount = 0;
+        this.lastFpsTime = 0;
+        this.currentFps = 60;
+        this.currentFrameTime = 16.6;
+
+        window.HCS_APP = this;
+      }
+
+      async start() {
+        // 1. Initialize UI immediately
+        await this.ui.init();
+
+        // 2. Initialize Renderer (WebGPU preferred, WebGL2 fallback)
+        const initialized = await this.initRenderer();
+        if (!initialized) {
+          document.getElementById('compat-fallback').style.display = 'flex';
+          return;
+        }
+
+        // 3. Setup Scene & Camera
+        this.scene = new THREE.Scene();
+        this.scene.background = new THREE.Color(0x87ceeb);
+
+        this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 2000);
+        this.camera.position.set(0, 2.0, 15);
+
+        // 4. Initialize Subsystems
+        this.weather = new WeatherSystem(this.scene, this.audio);
+        this.controller = new PlayerController(this.camera, this.canvas, this.audio);
+        this.audio.init(); // background non-blocking
+
+        window.addEventListener('resize', () => this.onResize());
+
+        // 5. Start Render Loop
+        this.animate();
+        console.log(`HCS WorldJumper Started [Backend: ${this.backendName}]`);
+
+        // 6. Handle URL testing & direct-navigation parameters
+        const params = new URLSearchParams(window.location.search);
+        const reqScreen = params.get('screen');
+        const reqModel = params.get('model');
+        const reqView = params.get('view');
+        const reqWeather = params.get('weather');
+        const reqDebug = params.get('debug');
+
+        if (reqScreen === 'world_selector') {
+          document.getElementById('screen-main-menu').classList.add('hidden');
+          document.getElementById('screen-world-selector').classList.remove('hidden');
+        } else if (reqScreen === 'settings') {
+          document.getElementById('screen-settings').classList.remove('hidden');
+        }
+
+        if (reqModel) {
+          document.getElementById('screen-main-menu').classList.add('hidden');
+          document.getElementById('screen-world-selector').classList.add('hidden');
+          document.getElementById('hud-game').classList.remove('hidden');
+          const mapId = reqModel.includes('schoolmap') ? 'schoolmap' : reqModel.includes('map2') ? 'map2' : 'map';
+          this.loadWorld(mapId, () => {
+            if (reqWeather) this.weather.setWeather(reqWeather);
+            if (reqView === 'street') {
+              this.controller.teleport(new THREE.Vector3(10, 1.8, 20));
+            } else if (reqView === 'interior') {
+              this.controller.teleport(new THREE.Vector3(0, 3.2, 0));
+            } else if (reqView === 'vegetation') {
+              this.controller.teleport(new THREE.Vector3(-35, 2.0, -30));
+              this.controller.yaw = Math.PI * 0.8;
+            }
+          });
+        }
+
+        if (reqDebug === '1') {
+          this.ui.toggleDebug();
+        }
+      }
+
+      async initRenderer() {
+        let rendererOk = false;
+
+        // Try WebGPU first
+        if (navigator.gpu) {
+          try {
+            const adapter = await navigator.gpu.requestAdapter();
+            if (adapter) {
+              const device = await adapter.requestDevice();
+              if (device) {
+                const { WebGPURenderer } = await import('/node_modules/three/build/three.webgpu.js');
+                this.renderer = new WebGPURenderer({
+                  canvas: this.canvas,
+                  antialias: true,
+                  preserveDrawingBuffer: true,
+                  powerPreference: 'high-performance'
+                });
+                this.backendName = 'WebGPU (Hardware Accelerated)';
+                rendererOk = true;
+              }
+            }
+          } catch (e) {
+            console.warn("WebGPU init failed, attempting WebGL2 fallback:", e);
+          }
+        }
+
+        // WebGL2 Fallback
+        if (!rendererOk) {
+          try {
+            this.renderer = new THREE.WebGLRenderer({
+              canvas: this.canvas,
+              antialias: true,
+              preserveDrawingBuffer: true,
+              powerPreference: 'high-performance'
+            });
+            this.backendName = 'WebGL2 (High-Performance Fallback)';
+            rendererOk = true;
+          } catch (e) {
+            console.error("WebGL2 init failed:", e);
+          }
+        }
+
+        if (rendererOk) {
+          this.renderer.setSize(window.innerWidth, window.innerHeight);
+          this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+          this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+          this.renderer.toneMappingExposure = 1.0;
+          this.renderer.shadowMap.enabled = true;
+          this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        }
+
+        return rendererOk;
+      }
+
+      onResize() {
+        if (!this.camera || !this.renderer) return;
+        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+
+      loadWorld(mapId, onComplete) {
+        this.currentMapId = mapId;
+        const worldPath = `/output/${mapId}/world.glb`;
+        console.log(`Loading game world: ${worldPath}...`);
+
+        // Dispose previous world model if present
+        if (this.currentWorldModel) {
+          this.scene.remove(this.currentWorldModel);
+          this.currentWorldModel.traverse((child) => {
+            if (child.isMesh) {
+              if (child.geometry) child.geometry.dispose();
+              if (child.material) {
+                if (Array.isArray(child.material)) child.material.forEach(m => m.dispose());
+                else child.material.dispose();
+              }
+            }
+          });
+          this.currentWorldModel = null;
+        }
+        this.colliders = [];
+
+        const loader = new GLTFLoader();
+        loader.load(worldPath, (gltf) => {
+          this.currentWorldModel = gltf.scene;
+          this.scene.add(this.currentWorldModel);
+
+          // Extract colliders and setup shadow casting
+          this.currentWorldModel.traverse((child) => {
+            if (child.isMesh) {
+              child.castShadow = true;
+              child.receiveShadow = true;
+              this.colliders.push(child);
+            }
+          });
+
+          this.controller.setColliders(this.colliders);
+
+          // Get spawn coordinates from manifest
+          const mapConfig = this.ui.manifest ? this.ui.manifest.maps.find(m => m.id === mapId) : null;
+          const spawn = (mapConfig && mapConfig.spawn_point) ? mapConfig.spawn_point : [0, 2.5, 15];
+          this.controller.teleport(new THREE.Vector3(spawn[0], spawn[1], spawn[2]));
+
+          if (mapConfig && mapConfig.environment_defaults) {
+            this.weather.setWeather(mapConfig.environment_defaults.weather || 'clear');
+          }
+
+          if (onComplete) onComplete();
+          console.log(`World ${mapId} loaded (${this.colliders.length} colliders active)`);
+        }, undefined, (err) => {
+          console.error(`Error loading world asset: ${worldPath}`, err);
+          if (onComplete) onComplete();
+        });
+      }
+
+      startPOV() {
+        this.canvas.requestPointerLock();
+        this.audio.resume();
+        this.audio.setWeatherState(this.weather.currentWeather);
+      }
+
+      animate() {
+        requestAnimationFrame(() => this.animate());
+
+        const delta = this.clock.getDelta();
+        const time = this.clock.getElapsedTime();
+
+        // 1. Update Controller
+        if (this.controller) {
+          this.controller.update(delta);
+        }
+
+        // 2. Update Weather & Environment
+        if (this.weather) {
+          this.weather.update(delta, this.controller.position, this.currentWorldModel);
+        }
+
+        // 3. Render
+        if (this.renderer && this.scene && this.camera) {
+          this.renderer.render(this.scene, this.camera);
+        }
+
+        // 4. Update HUD and Metrics
+        this.frameCount++;
+        if (time - this.lastFpsTime >= 0.5) {
+          this.currentFps = Math.round(this.frameCount / (time - this.lastFpsTime));
+          this.currentFrameTime = (1000.0 / Math.max(1, this.currentFps)).toFixed(1);
+          this.frameCount = 0;
+          this.lastFpsTime = time;
+
+          const yawDeg = (-this.controller.yaw * (180 / Math.PI));
+          const hour = Math.floor(this.weather.timeOfDay);
+          const min = Math.floor((this.weather.timeOfDay % 1) * 60);
+          const timeStr = `${hour.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}`;
+          
+          this.ui.updateHUD(this.controller.position, yawDeg, timeStr, this.weather.currentWeather.toUpperCase());
+
+          if (this.renderer.info) {
+            this.ui.updateDebug({
+              backend: this.backendName,
+              fps: this.currentFps,
+              frameTime: this.currentFrameTime,
+              triangles: this.renderer.info.render.triangles,
+              drawCalls: this.renderer.info.render.calls,
+              pos: this.controller.position,
+              surface: this.controller.currentSurface.toUpperCase(),
+              weather: this.weather.currentWeather.toUpperCase(),
+              colliderCount: this.colliders.length
+            });
+          }
+        }
+      }
+    }
+
+    // Auto-launch Game App
+    const initApp = () => {
+      const app = new GameApp();
+      app.start();
+    };
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+</html>

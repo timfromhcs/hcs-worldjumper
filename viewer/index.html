@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Autonomous Game World Viewer</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; overflow: hidden; background: #0b0f19; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #f3f4f6; }
+    #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; }
+    canvas { width: 100%; height: 100%; display: block; }
+    
+    /* HUD overlay */
+    #hud {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 13px;
+      line-height: 1.5;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      z-index: 10;
+      min-width: 240px;
+    }
+    #hud h2 { margin: 0 0 8px 0; font-size: 15px; color: #38bdf8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-row { display: flex; justify-content: space-between; margin-bottom: 3px; }
+    .stat-label { color: #94a3b8; }
+    .stat-val { font-weight: bold; color: #e2e8f0; font-family: monospace; }
+    
+    /* Control Toolbar */
+    #toolbar {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .btn-group { display: flex; gap: 6px; }
+    button, select {
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s;
+    }
+    button:hover, select:hover { background: #334155; border-color: #38bdf8; color: #38bdf8; }
+    button.active { background: #0284c7; border-color: #38bdf8; color: #fff; }
+    label { font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    /* Crosshair for FPS mode */
+    #crosshair {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 20;
+    }
+    #crosshair::before, #crosshair::after {
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, 0.7);
+    }
+    #crosshair::before { top: 4px; left: 0; width: 10px; height: 2px; }
+    #crosshair::after { top: 0; left: 4px; width: 2px; height: 10px; }
+
+    #loading-indicator {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.9);
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      font-size: 13px;
+      z-index: 30;
+      font-weight: 500;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/node_modules/three/build/three.module.js",
+      "three/addons/": "/node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="canvas-container">
+    <canvas id="c"></canvas>
+  </div>
+  <div id="crosshair"></div>
+  <div id="loading-indicator">Loading World Asset...</div>
+
+  <div id="hud">
+    <h2 id="map-title">World Runtime</h2>
+    <div class="stat-row"><span class="stat-label">Status:</span><span class="stat-val" id="hud-status">Initializing</span></div>
+    <div class="stat-row"><span class="stat-label">FPS:</span><span class="stat-val" id="hud-fps">0</span></div>
+    <div class="stat-row"><span class="stat-label">Triangles:</span><span class="stat-val" id="hud-tris">0</span></div>
+    <div class="stat-row"><span class="stat-label">Draw Calls:</span><span class="stat-val" id="hud-drawcalls">0</span></div>
+    <div class="stat-row"><span class="stat-label">Geometries:</span><span class="stat-val" id="hud-geoms">0</span></div>
+    <div class="stat-row"><span class="stat-label">Textures:</span><span class="stat-val" id="hud-textures">0</span></div>
+    <div class="stat-row"><span class="stat-label">Camera:</span><span class="stat-val" id="hud-cam">Orbit</span></div>
+    <div class="stat-row"><span class="stat-label">Coords:</span><span class="stat-val" id="hud-pos">0, 0, 0</span></div>
+  </div>
+
+  <div id="toolbar">
+    <div>
+      <label>Lighting Preset</label>
+      <div class="btn-group">
+        <button id="btn-light-day" class="active" onclick="setLightingPreset('day')">Day</button>
+        <button id="btn-light-golden" onclick="setLightingPreset('golden')">Golden</button>
+        <button id="btn-light-overcast" onclick="setLightingPreset('overcast')">Overcast</button>
+        <button id="btn-light-night" onclick="setLightingPreset('night')">Night</button>
+      </div>
+    </div>
+    
+    <div>
+      <label>Visual Mode</label>
+      <div class="btn-group">
+        <button id="btn-mode-lit" class="active" onclick="setRenderMode('lit')">Lit PBR</button>
+        <button id="btn-mode-wire" onclick="setRenderMode('wireframe')">Wire</button>
+        <button id="btn-mode-semantic" onclick="setRenderMode('semantic')">Semantic</button>
+        <button id="btn-mode-normals" onclick="setRenderMode('normals')">Normals</button>
+      </div>
+    </div>
+
+    <div>
+      <label>Camera Mode</label>
+      <div class="btn-group">
+        <button id="btn-cam-orbit" class="active" onclick="setCameraMode('orbit')">Orbit</button>
+        <button id="btn-cam-fps" onclick="setCameraMode('fps')">Walk (FPS)</button>
+        <button id="btn-cam-free" onclick="setCameraMode('free')">Fly</button>
+      </div>
+    </div>
+
+    <div>
+      <label>Viewpoint Teleport</label>
+      <select id="teleport-select" onchange="teleportTo(this.value)">
+        <option value="overview">Overview Aerial</option>
+        <option value="topdown">Top-Down Ortho</option>
+        <option value="building">Architecture Focus</option>
+        <option value="interior">Interior View</option>
+        <option value="vegetation">Vegetation Grove</option>
+        <option value="street">Street Level</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Simulation</label>
+      <div class="btn-group">
+        <button id="btn-wind" class="active" onclick="toggleWind()">Wind: ON</button>
+        <button id="btn-collision" onclick="toggleCollision()">Collision: ON</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    // Global state
+    let scene, camera, renderer, orbitControls;
+    let dirLight, ambientLight, hemiLight, pointLights = [];
+    let worldModel = null;
+    let modelBounds = null;
+    let originalMaterials = new Map();
+    let currentRenderMode = 'lit';
+    let currentLighting = 'day';
+    let windEnabled = true;
+    let collisionEnabled = true;
+    let clock = new THREE.Clock();
+    let frameCount = 0, lastFpsUpdate = 0;
+    
+    // FPS Controls state
+    let cameraMode = 'orbit'; // 'orbit', 'fps', 'free'
+    let moveForward = false, moveBackward = false, moveLeft = false, moveRight = false, moveUp = false, moveDown = false;
+    let playerVelocity = new THREE.Vector3();
+    let playerPosition = new THREE.Vector3(0, 5, 10);
+    let cameraYaw = 0, cameraPitch = 0;
+    let isPointerLocked = false;
+    let colliders = [];
+
+    window.MODEL_LOADED = false;
+    window.CAPTURE_READY = false;
+
+    // Parse URL params
+    const urlParams = new URLSearchParams(window.location.search);
+    const modelUrl = urlParams.get('model') || 'input/maps/map.glb';
+    const initPreset = urlParams.get('view') || 'overview';
+    const initLight = urlParams.get('light') || 'day';
+    const initMode = urlParams.get('mode') || 'lit';
+
+    document.getElementById('map-title').innerText = modelUrl.split('/').pop().replace('.glb', '');
+
+    init();
+
+    function init() {
+      const container = document.getElementById('canvas-container');
+      const canvas = document.getElementById('c');
+
+      // Renderer
+      renderer = new THREE.WebGLRenderer({
+        canvas,
+        antialias: true,
+        preserveDrawingBuffer: true,
+        powerPreference: 'high-performance'
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.0;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+      // Scene
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x87ceeb);
+      scene.fog = new THREE.FogExp2(0x87ceeb, 0.003);
+
+      // Camera
+      camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000);
+      camera.position.set(0, 30, 60);
+
+      // Controls
+      orbitControls = new OrbitControls(camera, canvas);
+      orbitControls.enableDamping = true;
+      orbitControls.dampingFactor = 0.05;
+      orbitControls.maxDistance = 1000;
+      orbitControls.minDistance = 0.5;
+
+      // Lights
+      setupLights();
+
+      // Load Model
+      loadModel(modelUrl);
+
+      // Listeners
+      window.addEventListener('resize', onWindowResize);
+      setupInputListeners();
+
+      animate();
+    }
+
+    function setupLights() {
+      hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
+      hemiLight.position.set(0, 200, 0);
+      scene.add(hemiLight);
+
+      dirLight = new THREE.DirectionalLight(0xffffff, 2.5);
+      dirLight.position.set(100, 150, 100);
+      dirLight.castShadow = true;
+      dirLight.shadow.mapSize.width = 2048;
+      dirLight.shadow.mapSize.height = 2048;
+      dirLight.shadow.camera.near = 10;
+      dirLight.shadow.camera.far = 400;
+      const d = 100;
+      dirLight.shadow.camera.left = -d;
+      dirLight.shadow.camera.right = d;
+      dirLight.shadow.camera.top = d;
+      dirLight.shadow.camera.bottom = -d;
+      dirLight.shadow.bias = -0.0005;
+      scene.add(dirLight);
+
+      ambientLight = new THREE.AmbientLight(0x222233, 0.5);
+      scene.add(ambientLight);
+    }
+
+    function loadModel(url) {
+      document.getElementById('hud-status').innerText = 'Downloading GLB...';
+      const loader = new GLTFLoader();
+
+      loader.load(url, (gltf) => {
+        worldModel = gltf.scene;
+        scene.add(worldModel);
+
+        // Compute bounds
+        const box = new THREE.Box3().setFromObject(worldModel);
+        modelBounds = box;
+        const size = new THREE.Vector3();
+        box.getSize(size);
+        const center = new THREE.Vector3();
+        box.getCenter(center);
+
+        // Position camera to view whole object initially
+        const maxDim = Math.max(size.x, size.y, size.z);
+        orbitControls.target.copy(center);
+        
+        // Cache original materials
+        colliders = [];
+        worldModel.traverse((child) => {
+          if (child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+            originalMaterials.set(child.uuid, child.material);
+            colliders.push(child);
+          }
+        });
+
+        document.getElementById('loading-indicator').style.display = 'none';
+        document.getElementById('hud-status').innerText = 'Active (Ready)';
+
+        // Apply initial configuration
+        setLightingPreset(initLight);
+        setRenderMode(initMode);
+        teleportTo(initPreset);
+
+        window.MODEL_LOADED = true;
+        window.CAPTURE_READY = true;
+      }, (xhr) => {
+        if (xhr.total > 0) {
+          const pct = Math.round((xhr.loaded / xhr.total) * 100);
+          document.getElementById('hud-status').innerText = `Loading ${pct}%`;
+        }
+      }, (err) => {
+        console.error("Error loading GLB:", err);
+        document.getElementById('hud-status').innerText = 'Load Error: ' + err.message;
+      });
+    }
+
+    // Viewport resize
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    // Camera modes
+    window.setCameraMode = function(mode) {
+      cameraMode = mode;
+      document.getElementById('btn-cam-orbit').classList.toggle('active', mode === 'orbit');
+      document.getElementById('btn-cam-fps').classList.toggle('active', mode === 'fps');
+      document.getElementById('btn-cam-free').classList.toggle('active', mode === 'free');
+      document.getElementById('hud-cam').innerText = mode.toUpperCase();
+
+      if (mode === 'fps') {
+        orbitControls.enabled = false;
+        document.getElementById('crosshair').style.display = 'block';
+        playerPosition.copy(camera.position);
+      } else if (mode === 'free') {
+        orbitControls.enabled = false;
+        document.getElementById('crosshair').style.display = 'none';
+      } else {
+        orbitControls.enabled = true;
+        document.getElementById('crosshair').style.display = 'none';
+      }
+    };
+
+    // Teleport presets
+    window.teleportTo = function(preset) {
+      if (!modelBounds) return;
+      const center = new THREE.Vector3();
+      modelBounds.getCenter(center);
+      const size = new THREE.Vector3();
+      modelBounds.getSize(size);
+      const maxDim = Math.max(size.x, size.z);
+
+      if (preset === 'overview') {
+        camera.position.set(center.x + maxDim * 0.9, center.y + maxDim * 0.7, center.z + maxDim * 0.9);
+        orbitControls.target.copy(center);
+      } else if (preset === 'topdown') {
+        camera.position.set(center.x, center.y + maxDim * 1.5, center.z + 0.001);
+        orbitControls.target.copy(center);
+      } else if (preset === 'building') {
+        camera.position.set(center.x + maxDim * 0.25, center.y + size.y * 0.4, center.z + maxDim * 0.25);
+        orbitControls.target.set(center.x, center.y + size.y * 0.2, center.z);
+      } else if (preset === 'interior') {
+        camera.position.set(center.x, center.y + size.y * 0.15, center.z);
+        orbitControls.target.set(center.x + 2, center.y + size.y * 0.15, center.z);
+      } else if (preset === 'vegetation') {
+        camera.position.set(center.x - maxDim * 0.35, center.y + size.y * 0.2, center.z - maxDim * 0.3);
+        orbitControls.target.set(center.x - maxDim * 0.2, center.y + size.y * 0.1, center.z - maxDim * 0.2);
+      } else if (preset === 'street') {
+        camera.position.set(center.x + maxDim * 0.4, center.y + size.y * 0.05, center.z + maxDim * 0.4);
+        orbitControls.target.set(center.x, center.y + size.y * 0.05, center.z);
+      }
+      orbitControls.update();
+    };
+
+    // Render modes
+    window.setRenderMode = function(mode) {
+      currentRenderMode = mode;
+      document.querySelectorAll('#toolbar .btn-group:nth-child(2) button').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-mode-${mode.slice(0,4)}`) || document.getElementById(`btn-mode-${mode}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      if (!worldModel) return;
+
+      worldModel.traverse((child) => {
+        if (child.isMesh) {
+          if (mode === 'lit') {
+            child.material = originalMaterials.get(child.uuid);
+            child.material.wireframe = false;
+          } else if (mode === 'wireframe') {
+            child.material = new THREE.MeshBasicMaterial({ color: 0x00ff88, wireframe: true });
+          } else if (mode === 'semantic') {
+            // Apply semantic color based on name or heuristic
+            let col = 0x888888;
+            const n = child.name.toLowerCase();
+            if (n.includes('terrain') || n.includes('ground') || n.includes('road')) col = 0x2e7d32; // Green
+            else if (n.includes('building') || n.includes('house') || n.includes('wall')) col = 0x1565c0; // Blue
+            else if (n.includes('interior') || n.includes('room') || n.includes('floor')) col = 0x00bcd4; // Cyan
+            else if (n.includes('tree') || n.includes('vegetation') || n.includes('bush') || n.includes('grass')) col = 0x4caf50; // Light green
+            else if (n.includes('prop') || n.includes('furniture')) col = 0xff9800; // Orange
+            else if (n.includes('physics') || n.includes('collider')) col = 0xf44336; // Red
+            else {
+              // Heuristic from Y position
+              if (child.position.y > 5) col = 0x1565c0;
+              else col = 0x2e7d32;
+            }
+            child.material = new THREE.MeshStandardMaterial({ color: col, roughness: 0.6, metalness: 0.1 });
+          } else if (mode === 'normals') {
+            child.material = new THREE.MeshNormalMaterial();
+          }
+        }
+      });
+    };
+
+    // Lighting presets
+    window.setLightingPreset = function(preset) {
+      currentLighting = preset;
+      document.querySelectorAll('#toolbar .btn-group:first-child button').forEach(b => b.classList.remove('active'));
+      const b = document.getElementById(`btn-light-${preset}`);
+      if (b) b.classList.add('active');
+
+      if (preset === 'day') {
+        scene.background.setHex(0x87ceeb);
+        scene.fog.color.setHex(0x87ceeb);
+        scene.fog.density = 0.002;
+        dirLight.color.setHex(0xfffaed);
+        dirLight.intensity = 2.5;
+        dirLight.position.set(120, 180, 100);
+        hemiLight.color.setHex(0xffffff);
+        hemiLight.groundColor.setHex(0x444444);
+        hemiLight.intensity = 0.9;
+        ambientLight.intensity = 0.3;
+      } else if (preset === 'golden') {
+        scene.background.setHex(0xf97316);
+        scene.fog.color.setHex(0xf97316);
+        scene.fog.density = 0.004;
+        dirLight.color.setHex(0xffaa44);
+        dirLight.intensity = 3.0;
+        dirLight.position.set(160, 40, 80);
+        hemiLight.color.setHex(0xffddaa);
+        hemiLight.groundColor.setHex(0x553311);
+        hemiLight.intensity = 0.7;
+        ambientLight.intensity = 0.4;
+      } else if (preset === 'overcast') {
+        scene.background.setHex(0x94a3b8);
+        scene.fog.color.setHex(0x94a3b8);
+        scene.fog.density = 0.006;
+        dirLight.color.setHex(0xdde5ed);
+        dirLight.intensity = 1.0;
+        dirLight.position.set(40, 160, 40);
+        hemiLight.color.setHex(0xcccccc);
+        hemiLight.groundColor.setHex(0x555555);
+        hemiLight.intensity = 1.2;
+        ambientLight.intensity = 0.6;
+      } else if (preset === 'night') {
+        scene.background.setHex(0x050813);
+        scene.fog.color.setHex(0x050813);
+        scene.fog.density = 0.005;
+        dirLight.color.setHex(0x4466aa);
+        dirLight.intensity = 0.4;
+        dirLight.position.set(-60, 100, -80);
+        hemiLight.color.setHex(0x112244);
+        hemiLight.groundColor.setHex(0x050a14);
+        hemiLight.intensity = 0.3;
+        ambientLight.intensity = 0.15;
+      }
+    };
+
+    window.toggleWind = function() {
+      windEnabled = !windEnabled;
+      const b = document.getElementById('btn-wind');
+      b.innerText = `Wind: ${windEnabled ? 'ON' : 'OFF'}`;
+      b.classList.toggle('active', windEnabled);
+    };
+
+    window.toggleCollision = function() {
+      collisionEnabled = !collisionEnabled;
+      const b = document.getElementById('btn-collision');
+      b.innerText = `Collision: ${collisionEnabled ? 'ON' : 'OFF'}`;
+      b.classList.toggle('active', collisionEnabled);
+    };
+
+    // Keyboard & mouse input
+    function setupInputListeners() {
+      window.addEventListener('keydown', (e) => {
+        if (e.code === 'KeyW') moveForward = true;
+        if (e.code === 'KeyS') moveBackward = true;
+        if (e.code === 'KeyA') moveLeft = true;
+        if (e.code === 'KeyD') moveRight = true;
+        if (e.code === 'KeyE') moveUp = true;
+        if (e.code === 'KeyQ') moveDown = true;
+      });
+      window.addEventListener('keyup', (e) => {
+        if (e.code === 'KeyW') moveForward = false;
+        if (e.code === 'KeyS') moveBackward = false;
+        if (e.code === 'KeyA') moveLeft = false;
+        if (e.code === 'KeyD') moveRight = false;
+        if (e.code === 'KeyE') moveUp = false;
+        if (e.code === 'KeyQ') moveDown = false;
+      });
+
+      const canvas = document.getElementById('c');
+      canvas.addEventListener('click', () => {
+        if (cameraMode === 'fps' && !isPointerLocked) {
+          canvas.requestPointerLock();
+        }
+      });
+      document.addEventListener('pointerlockchange', () => {
+        isPointerLocked = (document.pointerLockElement === canvas);
+      });
+      document.addEventListener('mousemove', (e) => {
+        if (isPointerLocked && cameraMode === 'fps') {
+          const sens = 0.002;
+          cameraYaw -= e.movementX * sens;
+          cameraPitch -= e.movementY * sens;
+          cameraPitch = Math.max(-Math.PI * 0.45, Math.min(Math.PI * 0.45, cameraPitch));
+        }
+      });
+    }
+
+    // Animation & simulation loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const delta = clock.getDelta();
+      const time = clock.getElapsedTime();
+
+      // FPS & Free Cam Update
+      if (cameraMode === 'fps' || cameraMode === 'free') {
+        const speed = cameraMode === 'fps' ? 12.0 : 25.0;
+        const forward = new THREE.Vector3(Math.sin(cameraYaw), 0, Math.cos(cameraYaw)).negate();
+        const right = new THREE.Vector3(Math.cos(cameraYaw), 0, -Math.sin(cameraYaw));
+
+        const moveDir = new THREE.Vector3();
+        if (moveForward) moveDir.add(forward);
+        if (moveBackward) moveDir.sub(forward);
+        if (moveRight) moveDir.add(right);
+        if (moveLeft) moveDir.sub(right);
+        if (cameraMode === 'free') {
+          if (moveUp) moveDir.y += 1;
+          if (moveDown) moveDir.y -= 1;
+        }
+        if (moveDir.lengthSq() > 0) moveDir.normalize();
+
+        camera.position.addScaledVector(moveDir, speed * delta);
+
+        if (cameraMode === 'fps') {
+          // Simple ground collision / gravity if enabled
+          if (collisionEnabled && colliders.length > 0) {
+            const ray = new THREE.Raycaster(new THREE.Vector3(camera.position.x, camera.position.y + 10, camera.position.z), new THREE.Vector3(0, -1, 0));
+            const hits = ray.intersectObjects(colliders, false);
+            if (hits.length > 0) {
+              const targetY = hits[0].point.y + 1.8; // Player eye height
+              camera.position.y = THREE.MathUtils.lerp(camera.position.y, targetY, 0.2);
+            }
+          }
+          // Apply camera rotation
+          const euler = new THREE.Euler(cameraPitch, cameraYaw, 0, 'YXZ');
+          camera.quaternion.setFromEuler(euler);
+        }
+      } else {
+        orbitControls.update();
+      }
+
+      // Wind simulation on vegetation objects
+      if (windEnabled && worldModel) {
+        const windStrength = 0.08;
+        const windSpeed = 2.5;
+        worldModel.traverse((child) => {
+          if (child.isMesh && (child.name.toLowerCase().includes('leaf') || child.name.toLowerCase().includes('branch') || child.name.toLowerCase().includes('tree') || child.name.toLowerCase().includes('grass'))) {
+            const sway = Math.sin(time * windSpeed + child.position.x * 0.5) * windStrength;
+            child.rotation.z = (child.userData.initRotZ || 0) + sway * 0.5;
+            child.rotation.x = (child.userData.initRotX || 0) + Math.cos(time * windSpeed * 0.8 + child.position.z * 0.5) * sway * 0.3;
+          }
+        });
+      }
+
+      renderer.render(scene, camera);
+
+      // HUD Stats update
+      frameCount++;
+      if (time - lastFpsUpdate > 0.5) {
+        const fps = Math.round(frameCount / (time - lastFpsUpdate));
+        frameCount = 0;
+        lastFpsUpdate = time;
+        document.getElementById('hud-fps').innerText = fps;
+        if (renderer.info) {
+          document.getElementById('hud-tris').innerText = renderer.info.render.triangles.toLocaleString();
+          document.getElementById('hud-drawcalls').innerText = renderer.info.render.calls;
+          document.getElementById('hud-geoms').innerText = renderer.info.memory.geometries;
+          document.getElementById('hud-textures').innerText = renderer.info.memory.textures;
+        }
+        document.getElementById('hud-pos').innerText = `${camera.position.x.toFixed(1)}, ${camera.position.y.toFixed(1)}, ${camera.position.z.toFixed(1)}`;
+      }
+    }
+
+    // Expose capture API for automated headless rendering
+    window.captureFrame = function() {
+      return renderer.domElement.toDataURL('image/png');
+    };
+    window.setCameraPose = function(px, py, pz, tx, ty, tz) {
+      camera.position.set(px, py, pz);
+      if (orbitControls) {
+        orbitControls.target.set(tx, ty, tz);
+        orbitControls.update();
+      }
+      renderer.render(scene, camera);
+    };
+  </script>
+</body>
+</html>

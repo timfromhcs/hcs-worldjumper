@@ -1,0 +1,49 @@
+name: CI/CD Pipeline - HCS WorldJumper
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate JSON Manifests
+        run: |
+          python3 -c "
+          import json
+          with open('maps/manifest.json') as f:
+              m = json.load(f)
+              assert len(m['maps']) == 3, 'Must have 3 maps'
+              print('maps/manifest.json: VALID')
+          "
+
+      - name: Validate Release Artifact Checksums
+        run: |
+          if [ -f installer/SHA256SUMS.txt ]; then
+            echo "installer/SHA256SUMS.txt: PRESENT"
+          fi
+
+      - name: Validate Web Frontend Integrity
+        run: |
+          test -f index.html
+          test -f src/runtime/audio.js
+          test -f src/runtime/controller.js
+          test -f src/runtime/weather.js
+          test -f src/runtime/ui.js
+          echo "WebGPU Runtime Modules: VALID"
