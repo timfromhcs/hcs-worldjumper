@@ -21,7 +21,7 @@ export class UIManager {
   async init() {
     // Fetch maps manifest
     try {
-      const res = await fetch('/maps/manifest.json');
+      const res = await fetch('./maps/manifest.json');
       if (res.ok) {
         this.manifest = await res.json();
       }
@@ -360,7 +360,7 @@ export class UIManager {
       card.className = `map-card ${m.id === this.selectedMapId ? 'active' : ''}`;
       card.dataset.id = m.id;
       card.innerHTML = `
-        <img class="card-thumb" src="/${m.thumbnail}" alt="${m.display_name}">
+        <img class="card-thumb" src="./${m.thumbnail}" alt="${m.display_name}">
         <div class="card-body">
           <div class="card-title">${m.display_name}</div>
           <div class="card-type">${m.environment_type}</div>

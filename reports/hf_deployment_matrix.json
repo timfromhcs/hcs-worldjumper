@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-09-15T00:19:33Z",
+  "deployment_url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html",
+  "environment": "Hugging Face Static Space",
+  "tests": {
+    "main_menu": {
+      "status": "PASS",
+      "backend": "WebGPU (Hardware Accelerated)",
+      "title": "HCS WorldJumper - Photorealistic Game World Exploration"
+    },
+    "world_selector": {
+      "status": "PASS",
+      "cards_count": 3,
+      "maps": [
+        "District Alpha: Riverside Sector",
+        "Highland Valley: Foothill Settlement",
+        "Oakridge Academy: Educational Grounds"
+      ]
+    },
+    "map1_district_alpha": {
+      "status": "PASS",
+      "colliders": 1482,
+      "position": {
+        "x": 0,
+        "y": 7.554505481946778,
+        "z": 15
+      },
+      "fps": 11
+    },
+    "map2_highland_valley": {
+      "status": "PASS",
+      "colliders": 8292,
+      "position": {
+        "x": 5,
+        "y": 19.82535743713379,
+        "z": 20
+      },
+      "fps": 5
+    },
+    "map3_oakridge_academy": {
+      "status": "PASS",
+      "colliders": 2835,
+      "position": {
+        "x": -10,
+        "y": 21.409072875976562,
+        "z": 25
+      },
+      "fps": 8
+    }
+  }
+}

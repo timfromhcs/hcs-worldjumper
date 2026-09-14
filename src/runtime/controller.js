@@ -99,6 +99,13 @@ export class PlayerController {
   teleport(pos) {
     this.position.copy(pos);
     this.velocity.set(0, 0, 0);
+    if (this.colliders.length > 0) {
+      const ray = new THREE.Raycaster(new THREE.Vector3(pos.x, 100, pos.z), new THREE.Vector3(0, -1, 0), 0, 200);
+      const hits = ray.intersectObjects(this.colliders, false);
+      if (hits.length > 0) {
+        this.position.y = hits[0].point.y + 0.1;
+      }
+    }
   }
 
   update(delta) {
@@ -133,8 +140,18 @@ export class PlayerController {
     this.velocity.x += (targetVelX - this.velocity.x) * Math.min(1.0, delta * lerpRate);
     this.velocity.z += (targetVelZ - this.velocity.z) * Math.min(1.0, delta * lerpRate);
 
-    // Gravity
-    this.velocity.y += this.gravity * delta;
+    // Gravity (only if colliders exist to prevent void falling before world loads)
+    if (this.colliders.length > 0) {
+      this.velocity.y += this.gravity * delta;
+    } else {
+      this.velocity.y = 0;
+    }
+
+    // Void floor fallback recovery
+    if (this.position.y < -15.0) {
+      this.position.y = 2.0;
+      this.velocity.set(0, 0, 0);
+    }
 
     // Jump
     if (this.isGrounded && this.keys.jump) {
@@ -178,7 +195,7 @@ export class PlayerController {
     if (this.colliders.length > 0) {
       const rayOrigin = new THREE.Vector3(this.position.x, this.position.y + 1.2, this.position.z);
       this.downRay.set(rayOrigin, new THREE.Vector3(0, -1, 0));
-      this.downRay.far = 3.5;
+      this.downRay.far = 12.0;
 
       const groundHits = this.downRay.intersectObjects(this.colliders, false);
       if (groundHits.length > 0) {
@@ -186,7 +203,7 @@ export class PlayerController {
         const groundY = hit.point.y;
         
         // Check if player is on or slightly below ground
-        if (this.position.y <= groundY + 0.15) {
+        if (this.position.y <= groundY + 0.2) {
           this.position.y = groundY;
           this.velocity.y = 0;
           this.isGrounded = true;

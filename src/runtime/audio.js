@@ -19,16 +19,16 @@ export class AudioManager {
     };
 
     this.audioFiles = {
-      ambience_outdoor: '/assets/audio/ambience_outdoor.wav',
-      ambience_indoor: '/assets/audio/ambience_indoor.wav',
-      weather_rain: '/assets/audio/weather_rain.wav',
-      weather_wind: '/assets/audio/weather_wind.wav',
-      weather_thunder: '/assets/audio/weather_thunder.wav',
-      footstep_concrete: '/assets/audio/footstep_concrete.wav',
-      footstep_wood: '/assets/audio/footstep_wood.wav',
-      footstep_grass: '/assets/audio/footstep_grass.wav',
-      ui_click: '/assets/audio/ui_click.wav',
-      ui_transition: '/assets/audio/ui_transition.wav'
+      ambience_outdoor: './assets/audio/ambience_outdoor.wav',
+      ambience_indoor: './assets/audio/ambience_indoor.wav',
+      weather_rain: './assets/audio/weather_rain.wav',
+      weather_wind: './assets/audio/weather_wind.wav',
+      weather_thunder: './assets/audio/weather_thunder.wav',
+      footstep_concrete: './assets/audio/footstep_concrete.wav',
+      footstep_wood: './assets/audio/footstep_wood.wav',
+      footstep_grass: './assets/audio/footstep_grass.wav',
+      ui_click: './assets/audio/ui_click.wav',
+      ui_transition: './assets/audio/ui_transition.wav'
     };
 
     this.lastFootstepTime = 0;

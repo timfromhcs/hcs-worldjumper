@@ -1,0 +1,557 @@
+[
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html",
+    "status": 200,
+    "mimeType": "text/html"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/index-DMmhW4r6.js",
+    "status": 200,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/three.webgpu-BViYegCk.js",
+    "status": 200,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/maps/manifest.json",
+    "status": 200,
+    "mimeType": "application/json"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap",
+    "status": 200,
+    "mimeType": "text/css"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/15e16e91b4de0faace19cce13446921c21fc610a2470e3ff99b04b8afd5b21ac?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427974&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTVlMTZlOTFiNGRlMGZhYWNlMTljY2UxMzQ0NjkyMWMyMWZjNjEwYTI0NzBlM2ZmOTliMDRiOGFmZDViMjFhYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=WRnL9fFubssh%7EEHOpAUMRlfVTAhwlxppEHTcFEigoglNJZoxSyCBWjVYCHkWGvOKBpRxaeAWDSoixRupVDWxLKEm-GuOw01EgWkSZZr360CRpRlwe57IiZgzwhfK%7EaGRZ2LMIZyKkcWqhsm5Lu2FhwDKoBRRCqYP7XWxkElhYth3-SWnC7AZKLiYJh-%7Ek%7Epbg8idpDeoTjgOlekUmYlWgQzIzs5Sc1OJIhvGqXXJqOFFloLUQEQJkv5fvKYuIZD1%7E4b%7EDYa5vzKUyKEYC%7EQG7Lt8Q3u4vNDBeHDAGiYk6HR%7EUu4RHjkUQytHZjSPws0bn6Gce3VswZYcmI4MVlo%7EIg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ed8c278109b3caab58da50a238d0589872c86d6bef3965a95f62f413659931c1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427974&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZWQ4YzI3ODEwOWIzY2FhYjU4ZGE1MGEyMzhkMDU4OTg3MmM4NmQ2YmVmMzk2NWE5NWY2MmY0MTM2NTk5MzFjMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Ip2LE3tLYZI58lxFCVVOxRP9b5bMnYjYHUhJjlsODVjLhaKw%7EdVeGIPOLrQu6GjW-GlpXf1YGh0fDTtb%7EQ3UokZwWKycHyMiwMz-loTB1RQUzlEo1OBFM2mjCYRLP566wRYhyN1VzVv0eYoz7sr1jH405Bj1gMMg8jqFsIDKXfCJMVWNQuV-bjF57Qa9JO3Spf9W2fgYawjdZytIljJm1kKcIY2HqdqOOUeYo7tCxeCSuLNYxHom4BMRqP67Ez3WgH5U0bCUJ7Pf%7ERdMTQiTzUyZl5OzPmJnIXxPeAa6XiYA9XnJKrjSr0cWZus57olcKC0fL3OU-cX15Sk3gE4njQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/5ba6c3fd47954faf18f639226bedd0f5e4b490672f1dd265b58c4f195b686ae8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427974&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNWJhNmMzZmQ0Nzk1NGZhZjE4ZjYzOTIyNmJlZGQwZjVlNGI0OTA2NzJmMWRkMjY1YjU4YzRmMTk1YjY4NmFlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=pYyfUfnlesiK3ITeXA-OtLTmmfZzP06FclHtVjBqPdXhDRpwrHIAA4%7EQxgfbIDthlQB4IdU8QlrXoh6u3J7YQ-0QZmUEF-4OsVjebPiLr0vMydHps%7Ec%7ERY1invBtM0kEfRsEQ7S786Fmj52iKba62--ZKnWvm3Yas4PSPASa3yCh6zt3TSxX6HmjQj-979vWmMxliNiiCoZgIwZNMBfQ%7EunrVSsTh%7EzttqIn6b98PhKiE3N3OUMW9DPaw9eJTCH2UfEG-1XTRRaTNX%7EzXBs9ETes4uLiB5FlDjuXoXqJvZmrjucGuJkE1lnMVhrxd0ZuWMf3iQ-9hicd5EmlGBqSEA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/782af8dd90619e9f5fbffe9740f706e3e944fe8d0e62d795b6e6713321cf2bcf?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_outdoor.wav%3B+filename%3D%22ambience_outdoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427974&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzgyYWY4ZGQ5MDYxOWU5ZjVmYmZmZTk3NDBmNzA2ZTNlOTQ0ZmU4ZDBlNjJkNzk1YjZlNjcxMzMyMWNmMmJjZj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=n5T0TH1ZIyG3SVZvddVyyXiA-VVGaJVKtf2mIEyfCPcxh1x0i0q39s2ie2sdvfHIjQuh6gsQKvcl%7EWsOx6xNhDA7uPxdjriVqqFc3LIbCNnrAILIEbw7EUy5ZySF5Ytsca%7EF1R6YuYUP0%7EDRaQucal-lEBTkL146ZjLfOh20b7X041fJPAwMTLujtiKaeASr-%7EpBYHvvxm1DlD5-nqOVqiZiHZtTKyj6ZmxkOLJzaCOl6EGqYk3bYz%7EOn-XRtYyEUXO3OL832a5PmY2DKRtiNeP73RLIrulKo-b5frThBYOr1Lt81oKC4IHVCc5CA6kLWBi5ChERXjIQdPWiep4TaQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/d395e34a1f7d9d537c9993ba68d915c9b4bc4a65e753de1dfb9dc566a81310ec?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_indoor.wav%3B+filename%3D%22ambience_indoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427974&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZDM5NWUzNGExZjdkOWQ1MzdjOTk5M2JhNjhkOTE1YzliNGJjNGE2NWU3NTNkZTFkZmI5ZGM1NjZhODEzMTBlYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=c-xeTfx7j11MDHoVk%7E%7EANdAfrb3ENCjGKJ4nLCG05Eix7YyawsZ2-N6pBsBFAuE%7EmWHqKXI1NBmqXG0gTAkV4wnJqhyz7Fy73oQEYG-LMbfF%7EqLAOGvzStKTjAxNeXEGWk1LMcrqVzI9rxjFgwZoFmhy54ce72me3Kk1S7OwN0SpmlfhrUluA50ZE6LHV3uJZQkO1jUKSLuauqsbQYNmb5JUdQjHfj0tRZrauU2vtp1RtoJlV6g-seILwdAuzl3vmv6u3OArMrTcVHZa4XYFsfF68BcwA9xiqPDVbGunBP40h7TbSvj9NkwKbgQBe8lPtZLueIffX2olawJa1C6A%7EQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/240d8d4b3564d7e8b3d538120d72411dd4b6c253c41cb7c648755fb340a92923?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_rain.wav%3B+filename%3D%22weather_rain.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427975&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjQwZDhkNGIzNTY0ZDdlOGIzZDUzODEyMGQ3MjQxMWRkNGI2YzI1M2M0MWNiN2M2NDg3NTVmYjM0MGE5MjkyMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=xJ%7E-rO3dCBAgeHO5K5za8pMaP2aA5NC6yRn5qS5z3ldpusXYZcxZA3MyGDay-U53VO351%7Ekgy0BDqS2EsP4H-nlmjDxvkZKULPDxRoVQQ2AlPGhOW%7E8099mElTGNIo9zb6g3HNn5nLRFYPAZXWatKs0QE210XV1JwItuuwPA6dpejUTDzf1yyKEqqC%7EkyBtEPfqZczB67yf6IYEb23jbvV6ToqJd-z%7EDcJtP8tQlktPJsTWIzgumneNynXQjiDc3wcJWjqREhaMWs832lN9JAkOKpm8bRXNTDljzcZXmrFW994M8xa6qvEK8YVMMXMWD6PzkEkq7Qvg0dpOZjCAkWA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/924ac3251cd52d9d2115a7faa9752f913ba0a5aea23eabf6e21da41f2a9684e0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_wind.wav%3B+filename%3D%22weather_wind.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427975&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvOTI0YWMzMjUxY2Q1MmQ5ZDIxMTVhN2ZhYTk3NTJmOTEzYmEwYTVhZWEyM2VhYmY2ZTIxZGE0MWYyYTk2ODRlMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=W7jTUljhVGzCqPYk7tpw5TjmYw9zXv-vO-5XKN-JjbnchdTMJYFCQQJwYl09cpjaTZjLVBZEebKh541FhWJI0fRmo2b0cS2RUXeSZUbReWiPPdOuGvbO46cZLi-x1Q6zlwBpJQY43Myf-R8Pis5F-9WTZ71WwAosK%7EbPE%7ER7Kt2ylx2LMBOiGk4Ei1cVH22lz1UJwO%7EgnfIo8%7EtZJbavWj0IQ6TNTf2LcFH4OZDKnBq-tJSP1JiDqOJ32Uy8SS5urrs-y7jqIAIJi7f%7EIN6g4s5dYIBXH3zvk4VF8t1lOL5I8dODbwNR%7EcPSs749DcqG18OTelxs5YjAW4OD4V8t6w__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/174ccc1fd856c56c578c8f47a74f75c1e109477f9411187658b79c6250803749?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_thunder.wav%3B+filename%3D%22weather_thunder.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427975&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTc0Y2NjMWZkODU2YzU2YzU3OGM4ZjQ3YTc0Zjc1YzFlMTA5NDc3Zjk0MTExODc2NThiNzljNjI1MDgwMzc0OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=3tbGTipS6Xc4XkyVWOxFJrt%7EG7Ph7cm61vdbnuHSPwZGCcJfmu2VRrRvE0kpYl6y14C6gzwsn6lmJoF2k7PcSWid9KFlLnZWw9nH%7E9B-WDDy0jyNd%7E5bXO2965ayUOuBHqyMSrrdxxKx92YPbfKD04guv0qxC2t-PtcI1O2BmRq77iAUx%7ENGW7152J9S7ZGsnkmfUh0NyOHQ-mZGqTXQspvnrQE13Vl55GIQm08FBWWU8RmxRyKRcVPkq-ZhOXsXzEwkDc%7EZ14XigZ5mrayO47ZfeuZs2FVPlb0ge5H5WUL1k%7E3HP%7EC2zszWraW0%7E2Izi2AsMpsv3%7EzeznflXWTEBA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/e09f0a36ceacc09353b374c104b2599a5043d4212a8c1177af166ab2981c819d?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_concrete.wav%3B+filename%3D%22footstep_concrete.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427976&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZTA5ZjBhMzZjZWFjYzA5MzUzYjM3NGMxMDRiMjU5OWE1MDQzZDQyMTJhOGMxMTc3YWYxNjZhYjI5ODFjODE5ZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Umxl53RdzjMqfQdXMy-dIcq5JgJs7btS01kUnIaZaF%7EZC1uIDoxNh0enZrUMjsbtXjPbMAmoUG95dhzv4ezy5GLWK00sw7cJkIf9YsWQfMCOAK1QReZRPAzMK5Ws4AoQmcjOSYRszjnYMnSc3LIz6seoqYeViCFvrkj3C0PDkVePFP1yG7frGHkL8duRLyICFmW9zmxjlg1A49RjC1q7V9NMlk3BbDQUwDTQNYj%7EH49Kujq5m4pSxxwvs7NlyBLUI6kXgnk5446684EO2IcbcckHJ3%7EhIGo%7ELhefZq%7EIy6bsnS61vuB3o5uiUdYpUDKn%7ExeevocghLN0BYO7iZEEgw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/24c9680c23c1045baaaa3def7871021bd2af4cb4d2fd5b776fd3a9ed1ccd02fa?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_wood.wav%3B+filename%3D%22footstep_wood.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427976&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjRjOTY4MGMyM2MxMDQ1YmFhYWEzZGVmNzg3MTAyMWJkMmFmNGNiNGQyZmQ1Yjc3NmZkM2E5ZWQxY2NkMDJmYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=dlsMbx8IL2iQCsZkD4aLldjoEsXg3kdWhCPJCJIcnhTD1SGIVDivCQ6Kqe%7EUAuFUA60yVO21YYzMSF8jEhtnAscCrm6gVlA77BRaGHcopLbhZRgmHzzkm8DHv63EHSqkYdLnlCSE0qgdkkx6orb7lxSr187f7sEVcrHqrqdvYtPpnL1q8OGacCaOCpAelhVx8rkV6uOxhmCab%7ENe5AsnOjJCrR8kL0DCOr6OcnjsJGUByKRHMz3KrV4vWhT34m5kHgHnjZ9xCJkaLz%7EoPpSbFitZfpoina4LoJx4N7J0Ve7dQ5%7EameI2LEj0E58w7rxyvOXqmXCiL7QFFNZYoerhPA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/7b5907f05814f909623710238e8d8c1583086b387c9349dce5c5cf3de8723ee8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_grass.wav%3B+filename%3D%22footstep_grass.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427976&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvN2I1OTA3ZjA1ODE0ZjkwOTYyMzcxMDIzOGU4ZDhjMTU4MzA4NmIzODdjOTM0OWRjZTVjNWNmM2RlODcyM2VlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=19RxNcsmtdYijkLYNbfikVpVfj578BhpAAfu8deW2WzH5RgrUgai2%7EVgoBHo678Sf-SzKmj7JvsKGP0QcxyjfT2ACrQM2m%7E0gYIPqIsWHgF4wH%7EhtbnSRWON4qpyVMYo9nudSIoR3YcksoAaZIhFf3PvQ%7EcOPu5iEhr8uRhyhNnGP6JDSPYGueKbB7NOSm%7E06YtHEb5%7ErzFgzdg1phcvGsvRtpsXyBp9ao5m-hBUlfobWmkjXOKh0gZYlC9TICXw6lclU13kgEB3ofTdA5Fj67vnKYWMn2aCvYK9IQywC7EeVqBCpBsXgKJUSWqkhKzbEg7ZJkwdSlZVAtlhJh%7ER2Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/beb493b59761695ee9f1fe34fe11fb7a4d9edaf08ac4f26e83fd9c17c4e6e991?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_click.wav%3B+filename%3D%22ui_click.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427977&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYmViNDkzYjU5NzYxNjk1ZWU5ZjFmZTM0ZmUxMWZiN2E0ZDllZGFmMDhhYzRmMjZlODNmZDljMTdjNGU2ZTk5MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=mb-IA0sa%7E3ir6blZtv7JaGtvOc6EflgQR5nBUyJJOVQK8C3kVhrWTtebWwfrMyZQydnDbQp2Pgz0ou1oIdEtRUmpjop6Vskk%7Ef-i1fett%7ENLJd2jyPcUH5y9RpZX2ZsTdLK%7EMgUqf%7EBFIyYG32khyHiuwNkE9T3rUPQ-Ik4HofIwsFp1tpCiHpQUtFKJNsMa%7E%7EqOFo84yck6QFTCe6cylOgPu%7ETATZj2FUK7fEU2fjLkdTcx5Pu0OVxsJp1eiNuph4p0WQfcTo6C0fgD2a7vyeAouedGOhkjQewV-uLSOz7pcNX8C3l2bode7p7YojGQp2ijdRRqLX9R3emL5bS5KQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html?screen=world_selector",
+    "status": 200,
+    "mimeType": "text/html"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/index-DMmhW4r6.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/three.webgpu-BViYegCk.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/maps/manifest.json",
+    "status": 200,
+    "mimeType": "application/json"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap",
+    "status": 200,
+    "mimeType": "text/css"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/5ba6c3fd47954faf18f639226bedd0f5e4b490672f1dd265b58c4f195b686ae8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNWJhNmMzZmQ0Nzk1NGZhZjE4ZjYzOTIyNmJlZGQwZjVlNGI0OTA2NzJmMWRkMjY1YjU4YzRmMTk1YjY4NmFlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Ipf8a%7EiM0NMg1%7ExGVUZ8WPWn-%7E3eLpZct-bzM1NhnzsYJZdthfb57Ayb3oC0gUQykq5lLQawCtDibWexT1bt07TYF7KfaulVgF5jNkDuyl49uj23kQtCNt40uugsorrouijva-GjPc%7E7PXqv-fLy1pECbiLLs14OrTTWi2sehKqiI0RAAytvA1OvvmLrwIVf5wKN56xHj9vFNmEmC8pPb9B2G5qO1ttZ940P%7E9oAI9W5j1-v-rTO0JJL9yefwbC74ZAlj%7E3G6QcR4HaGx6FIfLcp05Qwju3f1NaqN64xJPxFPnik-WdaC%7EgH-DTzmjxBkmq6wXU6Tz27zHZhMxwGCA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/15e16e91b4de0faace19cce13446921c21fc610a2470e3ff99b04b8afd5b21ac?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTVlMTZlOTFiNGRlMGZhYWNlMTljY2UxMzQ0NjkyMWMyMWZjNjEwYTI0NzBlM2ZmOTliMDRiOGFmZDViMjFhYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=n69%7Ev2CoJWSgVsgdnC1QV4AGgUYoKtGKxw3q6SOOWPk7KeDyYdr0ibxVJBWO76B-I6-J0a%7EL10IO4plQwekp5pPGDTAbwqnn08r-aLUDahxwfJsg6vE2xfL8kj5De0YssI6FvwzsgPYDrXhwRA%7E7TM1XMyvQwe%7EepXY%7EiflzrFhtT5txG6K8dMF3XT6TuYSwVzWCCt6M9ICG3eJqDaBnCD7TTuThGb6YIQ0TzoDBRWTXQJqAynd11hbGcSZ5zCTE7W2lJlVm8RjdYtpNoUUZelgMKCm2q0-xDvzwtTvQy190rPiEK7FrjMWKzZ2IPTTvMY3HiOavAtwn0Z64C0iirw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/782af8dd90619e9f5fbffe9740f706e3e944fe8d0e62d795b6e6713321cf2bcf?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_outdoor.wav%3B+filename%3D%22ambience_outdoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzgyYWY4ZGQ5MDYxOWU5ZjVmYmZmZTk3NDBmNzA2ZTNlOTQ0ZmU4ZDBlNjJkNzk1YjZlNjcxMzMyMWNmMmJjZj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=EuGa6HZiYfcmkBxyVSXmCfYGPde9Zw6EVgsduKihq1OdiLWB1rLoTpu6ayAO8ti0gCpCtzzOiEs4QV6BSwO52DWH3ln0Vt3SoPA1m1YwdZnmGSyRz1HYnmCzjkPa1EDIajV0CGQOg043jyT9P8E2fYy%7EVNewLtc2LwWiYcqyNc4KKBVgq5gvG4sVsSb1d149kz0MmPLnoHdsAsMBWynV1OKeHqnyEJL8KFCLMW4CeBIdbFvL4LwmsA07fER8IhqWBEZXsObu2%7EYjUlE9m0JFNLZ5JZTN68KK5Al3uEqWIA8ylisVCBSCst-64h-rIpX3JtH0UCWo-32NlOxGjQPO5Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ed8c278109b3caab58da50a238d0589872c86d6bef3965a95f62f413659931c1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZWQ4YzI3ODEwOWIzY2FhYjU4ZGE1MGEyMzhkMDU4OTg3MmM4NmQ2YmVmMzk2NWE5NWY2MmY0MTM2NTk5MzFjMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=mL6WY5zAUEGdWRNff8IxaTanK-7ouW8DuLWC3a1PCNntlozXoUgyKcTkPhfu8c5pt9n%7EqRgr-XwU0MWmnzYDb6GZnNqgED6Rba-zjSpURO80b97HRqZQsYYfVWA4sriOV8urIBxQrEHgI-eM%7E4Rq7FNCr4sH%7EYUXb5oqcUbUxD7AJutTKdXIfNMFbJT7wyWWIurvLBKyRm8gxrCs3b4WyhhInQ2srHXtABivCIeMJnwtDX79n9xn2PZ1mlTHa3AbXUJZafMkdokCfYD9Vr6R3BJ8nfR5DhuYB3OO4o51IjEmeENdPdcLdpLmZXatVdiv2CJutmiIztXXcruo3W5XZA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/d395e34a1f7d9d537c9993ba68d915c9b4bc4a65e753de1dfb9dc566a81310ec?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_indoor.wav%3B+filename%3D%22ambience_indoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZDM5NWUzNGExZjdkOWQ1MzdjOTk5M2JhNjhkOTE1YzliNGJjNGE2NWU3NTNkZTFkZmI5ZGM1NjZhODEzMTBlYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=l9gIXlDDGOiFRBoxz7zAviGYvLse%7EckU35N9yFknU9%7EsE65cOHZEEEMA1ZsuDgj59nZKMCv6ciA4k7eFitrfDOlnfux8JAe7qilgRD-qOpZEVXMo0cGwbtRW9OotNp89pM4o4lWPc%7EJb59-z0cSyfOH02xFIi6euNglHOdOVQ%7EzX41q-aCTIEvZxPY2%7E9St4sNfhOOouaQN3%7E5rzgJXciWROPXk0geC5Ic4YiHnoeDWv7AIElEUNe5xl8ibNL1OA807GvFqy2E1U4MSpiX9CnXhn-9XXkXk9u-C%7EdtWvrMwUkQP4LOk%7Eia4P800iego9egKn0qqBYDF2gkSGk6Z8LA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/240d8d4b3564d7e8b3d538120d72411dd4b6c253c41cb7c648755fb340a92923?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_rain.wav%3B+filename%3D%22weather_rain.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjQwZDhkNGIzNTY0ZDdlOGIzZDUzODEyMGQ3MjQxMWRkNGI2YzI1M2M0MWNiN2M2NDg3NTVmYjM0MGE5MjkyMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=f%7EDeKVVaQ2a-wkomKOObNlFFjLngjQvJmTd%7EUT%7ESwcbWOcWpNQrwSq0hf6T4Vkon0-xYNNoCxMF6O1ybJ8M4bba7dXHOxGe2M8xha7QfTt9ZbvP2B%7EBTuREokWLPh0-X3HGITJXN3nKbOwf7GMEl8Khdhd-nsGCxhnvFEiw944haK9iYjBQpMkoXzvGwz1rbLH6akZyHzQEQqt6o%7E7xx1y3Eax3-TLu88qWuy4Fm3JFDMi-rPB68cJbBYgCSKKHa4axCQ-r6SJKEGvabb5BQuamlFEthry28z9L08jgevrfBLimhHKjF3OTd0WQ0n1dyVpci0163bh9brxukozg9XQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/924ac3251cd52d9d2115a7faa9752f913ba0a5aea23eabf6e21da41f2a9684e0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_wind.wav%3B+filename%3D%22weather_wind.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427978&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvOTI0YWMzMjUxY2Q1MmQ5ZDIxMTVhN2ZhYTk3NTJmOTEzYmEwYTVhZWEyM2VhYmY2ZTIxZGE0MWYyYTk2ODRlMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=rMURKm%7Eh56kVbLQHhUmVdxsemYAWPiKMUrVki1MjNU9Z30yk3olPsenkIfjLf1VtXK9a3WVRYVzdm1cs4Y7zHfMgD7Vy9p9vYYJ6jAZi6XW5fMDCHK6J4Vdtb%7Eqfn51ERSdqkbLtmgSDJEvwRmpO-Pyt5wgSGrKwDbIPRQR6EMtb%7EOBrt1F8eETSEPpI56bT7F3hAyBbXdkX-jOxvGnM2MlX0Wm4wYpaHrJUjgl00Bi5AQyOqx5EQLEItHhrBLd1xsVW4Gb8VzoDUFKYMGRz1sb9AFlcE%7EwPKAdPlgXlx5ZTeloaJfBNCdc4Svkc%7EMpWrwzLyO9jB8dK77rTJ8ffTw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/174ccc1fd856c56c578c8f47a74f75c1e109477f9411187658b79c6250803749?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_thunder.wav%3B+filename%3D%22weather_thunder.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427979&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTc0Y2NjMWZkODU2YzU2YzU3OGM4ZjQ3YTc0Zjc1YzFlMTA5NDc3Zjk0MTExODc2NThiNzljNjI1MDgwMzc0OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=m8agjjExS2uS9TSzYZLBlCV4tettc9KAq4qHiMgHoNuUQKu7TcAT13A6PNQdr0m0EAoUgWL8jhHnkmnwF37dt2C8tj47c1KkqlmxRJYDyHuPGMDKqVDtJfkBWcdVI9pWBksDghzT74FaSloqJ-yvY3h26JsbmtnTFDEY-liFRhZsdRiK6DZTn2jSMZsyDUn06zmvEYI5I2fkPJ4SuMNOiq8UNVJxZMP1od43d46GjHckS51Pfweb%7EglFQcOovM4wM1MQXUaVHV5CWnZP0-4nMQIAVSLRW-PPrYZij%7ERcx3o%7E93ZwRSDxPzbWhn9mQgkl6yYB7P-GuTPDCP4EiWDJ5w__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/e09f0a36ceacc09353b374c104b2599a5043d4212a8c1177af166ab2981c819d?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_concrete.wav%3B+filename%3D%22footstep_concrete.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427979&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZTA5ZjBhMzZjZWFjYzA5MzUzYjM3NGMxMDRiMjU5OWE1MDQzZDQyMTJhOGMxMTc3YWYxNjZhYjI5ODFjODE5ZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=nDyhn8uM%7E84-Fd1bD0NdFoRwgVYQvFDnH0bl%7EsFkZVbOBBe9KF-tyTwDkdSA1gsmmmZUpH2cVQ2vrREthwyu7kCOrG3o2CyZBZCi5k3ODJeiybcB111f%7ElQnc4oqYFw11Z-q6Gb-W6Q5RioWxsxuBLvhqYJOytjdsWzOpha45wY8pK3-HPjR%7EhY7glqcIyuyucgou5we2qluAhsY%7EF6FpmHxDGxwF38jiONUAA5PhyMB2NSDBIMPCEuz1UvqNcHnq3PQsIv4Q1rv%7Ee5K8SRU89pxChnZvxx-NPYaBIDZVPxhoq%7EFeWRu3yT4YNQjTvq2pYZ3RievLvBYSH5XowBe2g__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/24c9680c23c1045baaaa3def7871021bd2af4cb4d2fd5b776fd3a9ed1ccd02fa?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_wood.wav%3B+filename%3D%22footstep_wood.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427979&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjRjOTY4MGMyM2MxMDQ1YmFhYWEzZGVmNzg3MTAyMWJkMmFmNGNiNGQyZmQ1Yjc3NmZkM2E5ZWQxY2NkMDJmYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=eeiWeez42uwbXsLTDQBj8iGlbSCabryuNHOHYM72qMQwZJLnf7gxJU3FFoZYbEm9%7EuB0bhwPxDSiNGy1FhWPJkZ120jY-JSBStOUINFMppTwQG3Hb8pwKIzAX1ecipXukWZ8jqENSdgEmVR3lpg3AB2fK60Um8SZ98ac%7E7D2yDAzfBFD88StcxaGl0zttrOtDfY2IijR%7EDImsHLr0zaWi2D6%7EknRNerfkA5hr4WeukBrfINpoYn8KiZPcd2koWn5Ue8H9OXPqAdsdt4N%7EAWHTNak2yJl2zLIErldvdgAjbOcL9JJw7O4X%7EfxsZwHAUuiSWcYYaPHza-Wp3xW2VGMNg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/7b5907f05814f909623710238e8d8c1583086b387c9349dce5c5cf3de8723ee8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_grass.wav%3B+filename%3D%22footstep_grass.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427979&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvN2I1OTA3ZjA1ODE0ZjkwOTYyMzcxMDIzOGU4ZDhjMTU4MzA4NmIzODdjOTM0OWRjZTVjNWNmM2RlODcyM2VlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=3sLRtCrLM9PhTVygZzMNRcI1vg7MpXbI3JznCtoEMD1AKvkRjYrm2nEBiInWWA3tb8O4y6J4B3Be6%7E3Po4aLS1e%7EoXnV0aPgWbN-7GvUNIIcMWRT4sC1j2UV1IjI9DTVxpcFiG7dnb5Ks8y2%7EbSpo96wDXz43N5wMI3KLbb6elOJ1AmdbwP3ZwGKWqUvOqk-v2uUC9mkFElXjoo5pxkKcgZawJHCVtzfN5wwmTsIjYNWg-Btct5qqSkezX2OS2U5EhzXZM72lilS5cgFZixK1rZqxsoCmMkLVoLkdVyHg1R%7EpioftvKFU8lw9AvExBjM8iqTuNRjF1DMYhOETf4Jtg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/beb493b59761695ee9f1fe34fe11fb7a4d9edaf08ac4f26e83fd9c17c4e6e991?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_click.wav%3B+filename%3D%22ui_click.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427980&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYmViNDkzYjU5NzYxNjk1ZWU5ZjFmZTM0ZmUxMWZiN2E0ZDllZGFmMDhhYzRmMjZlODNmZDljMTdjNGU2ZTk5MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Tu4tqeBPuaL%7EX7A0sMFXKmi6UWUkQ8BlnpskJkstvAXkDTYanPs%7EknMcdOJrR2OiScZqzOx1iNGinAr2spfyuj0QQDvllVt15Rh2yR5LQBqxuPyFL35AhNr2U2RLDgy7BkNqIrdvvYwFWY9QLN2hpe9FQTLjeEZV60RxTfhHpb-X8OlU%7EPbCxGBR4MDPbZ644D-qLLiwegbu0NS4LTiBMbfwzTgqqD7ktg3ph825YOWWFohQmUfRBbf7wHNZFSeZERya-P1T8-SqLpbMUS3%7E6DrghAE%7E1Oktv6km8l-LGraFmvKaRhEAl2Ta6SeN-NDr25VRToHj6-LvKE-ZYhmupg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/c85f6cb93e6d3e275ca0521758a2e0943030cbed43bc9fc36ed15000ac466ff5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_transition.wav%3B+filename%3D%22ui_transition.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427980&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYzg1ZjZjYjkzZTZkM2UyNzVjYTA1MjE3NThhMmUwOTQzMDMwY2JlZDQzYmM5ZmMzNmVkMTUwMDBhYzQ2NmZmNT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=vusKtZhxYzOQrf3KKgdlsjU3Jj9LYcJTLzoxfMjLtV6ep0%7EODSg31gOSQ%7ETxt54TMTbVdrHFE3iqUcwh0DllCKs9g%7EYrArZPam4y4p4JZeHwUTZFNd%7EABuvmO5tD9RzZdGVsGAlj72ACjlwEKp2oMs7Qt-8gR5zSvS-Htout92raxMV%7EenRWH88EjJDQJFWj8-ufcDarG98rFb%7Ehx-xWr7wtOlXHtU6FwzcZttn6rkw5IFBTe7m8rcNRmmVjglxZuS8d54Xhh8ubCqdLGVfxsPcmG5kNJbAziTC57e6BJWch-f8wmngXMk8JDQYqR%7ELIVb-oUBMIJdVZ6qz%7Ew27q7Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html?model=map",
+    "status": 200,
+    "mimeType": "text/html"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/index-DMmhW4r6.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/three.webgpu-BViYegCk.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/maps/manifest.json",
+    "status": 200,
+    "mimeType": "application/json"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap",
+    "status": 200,
+    "mimeType": "text/css"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/15e16e91b4de0faace19cce13446921c21fc610a2470e3ff99b04b8afd5b21ac?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427981&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTVlMTZlOTFiNGRlMGZhYWNlMTljY2UxMzQ0NjkyMWMyMWZjNjEwYTI0NzBlM2ZmOTliMDRiOGFmZDViMjFhYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=TMEKhwqJlZCBMoFoqJNKTd5AAk6xSUSi-fTm8a1rRp3tBJ87PgIMjEOCXP9XK1EAkWw%7EZ-hZvRCy3gf9EDEduEYpD01LO319zVptXKcMbQK1tSUyAoCWkXfiaoxzM65PDtB77h72mlgNWFGquXWLICrPZl9IkxatJ64QtcLXeCM4lr117Q4tVzBFRaE3c6Cexxn-o2p46RjCpZtuRdtA%7EUm1g8gGhn2xFflEsNsPjVM5OsqSxgByd24SYa8ldDG9B7-IGI3UGlC83ZGapYjOo1VbpwuLBCs3e2sfCqGpO5EvvJcYr0-Zt4exzH7FO0TW2IZQ0j48IBbqDFdrIelUlg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ed8c278109b3caab58da50a238d0589872c86d6bef3965a95f62f413659931c1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427981&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZWQ4YzI3ODEwOWIzY2FhYjU4ZGE1MGEyMzhkMDU4OTg3MmM4NmQ2YmVmMzk2NWE5NWY2MmY0MTM2NTk5MzFjMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=u3TgXlu1nnd13ILXd2udXElKloWlL84pyobLAr0U-3wILUExgy64Lrkjs91HJqqnqFKMCmtsgIDgn0Wny36TcdCwBj2nDYogRYKO%7Ewa4m9MkQuQ4L0OOhjaUp-T3N9sDSpdi%7EhQcWii0mEPEJkXa-if61k%7EAoa-pscbMCLg7GWULd7CvJkUr6aaWC3WP1ei80aczS0KkuDkBiCScfGMLh9mQ1gsWQpmUN-dWCsH4f66lUaiofJjpH4J8FtZHny65Y47y8i9eV23%7Ez4t-bVgZDCk7eXVWvjBo9HVnPPF2XpAxZ4ts%7EVI2ZAAPoBd9%7Ejai1dcx3Pth-ofuKh1NGMZgnA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/5ba6c3fd47954faf18f639226bedd0f5e4b490672f1dd265b58c4f195b686ae8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427981&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNWJhNmMzZmQ0Nzk1NGZhZjE4ZjYzOTIyNmJlZGQwZjVlNGI0OTA2NzJmMWRkMjY1YjU4YzRmMTk1YjY4NmFlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Xnk-bBLDHtL1kabFdBN4cz4cu2TzufgXQepiFEieuEYV-Z39EJbQ4oDzb5Nu4NovE7I2ISQEDHW8hdY8vZ6eYaPRS3LFHNOuwGtTdlCvEen1td26-M2OG6pF3m4XYCcxF4l6B6vzb3SqC7WYrIRzW-V8LrAc0oOvKpIor2TRlSOQKcjffiAsajYqrc8NrqDw7BFWQQvmP3Hkm5dcvcI7LxqxSaKnq2nSyXmPWqGhanun0y6ZwBSZXR-ilZR-RM3rdhS-aUqclb-ivc0WkgHa81FlslsSb8dnfjw0MW4jRioiiXKW0gl7e50jKJEhRwRRGwwTRUXEHHo2dVF2HphSOA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/782af8dd90619e9f5fbffe9740f706e3e944fe8d0e62d795b6e6713321cf2bcf?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_outdoor.wav%3B+filename%3D%22ambience_outdoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427981&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzgyYWY4ZGQ5MDYxOWU5ZjVmYmZmZTk3NDBmNzA2ZTNlOTQ0ZmU4ZDBlNjJkNzk1YjZlNjcxMzMyMWNmMmJjZj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=NW8236zIRdZa%7ESGSKroaCz2JDjPxD-4o40nMZm9TUfnmMPcq6gPsEjS3opejL-AsDbzrf3K0H7u%7EI-9fmRSU%7E-GwDDlTyexBW4Uz1jde73UuwnazAzQ1kdyrZQu5WfVQ5mySojIoOCHMoVkgyMaTcmi6FkJMLBJnlOVd5zUqktg5PQyyIAyGJhSvm6GjjcInr8YunsMRGL1f0%7EqpBDcFvPAyuXkz%7EIuKiRf0uimUDln3cJzj-Pt5vGIMaXRZ9tldj04wFoWHaMYQ2lCB2dJfKT7NtZfrd4fIDbm5FzRZs9Kebh2aWM4sV6OOh0IHSXg7%7EBcJT96%7EwDf4NvX1XyR%7EXA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/d395e34a1f7d9d537c9993ba68d915c9b4bc4a65e753de1dfb9dc566a81310ec?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_indoor.wav%3B+filename%3D%22ambience_indoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427982&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZDM5NWUzNGExZjdkOWQ1MzdjOTk5M2JhNjhkOTE1YzliNGJjNGE2NWU3NTNkZTFkZmI5ZGM1NjZhODEzMTBlYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=eJxvgflJsQTxFulyYhcULLFWYDGTtixheVmUFS0ybDtZvMfnQV0tn6Y46qAaaz6OtLO7mtzAlgDyDBoQfb731iVsb2byZ6PfPkmSLspVIcONYKAP2EOelhsN2tVCtrmHK5K1UEHF9VRCkt-X0LgzHZljI1dGV5D8apUjqyoMVuBvxAWswOaqKJO%7ESFIDjUWZ2U4dDXXRC0ZUrwhEs-jUEHZ8FzVdHm9cAlpOG8JBTbeLTWTQaPBvZLgA9goLCDAD39uH57r0P-dYzr8Ng9FT-MSCXOqr5VeoWdL9pJ67Ej9HyD82ztPW7CczfgPVtNH6Bt2N9T6L7A6ZFmlaA24HRA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27world.glb%3B+filename%3D%22world.glb%22%3B&response-content-type=model%2Fgltf-binary&Expires=1789427981&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzIwZDEyYjIzYzJlNTExMGRiZjNiMzMwZTI2MDhmNzNlYWRmN2MzZTBjMTlkZDhmNDY1NmFhZGM2M2IyY2MwMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=FK3FlP6dnsc%7ELoDQvdloxhKn85PN-cyfI%7E7ujwm9M0nWzPHtnlpxcegq62S3fCkxRxHCmgKOqqpvrqkIStU60qqX-6CPFOwhvnus0Ycg5MDOH1EGYHckFKcth11ewo85TB1RtG0ULcW9EwwvDVJMMMAB43lc2sV3EwZ5kNcflXABmeK9FUrChNB5sGjX3FoT4AwTjXAKjG1GTJhZKDQV08lHTcCByrvY-Dsn0cZpj7Fia1t6LdPcpiAui0%7EE9O1mmz68vcmWcrP1q3SIrWUIKBVFx4SLTvafIc7qBd5WKy-x8dQba3Jctrv9MNE3HiqFEHnZ6yex%7EKGZksKFKFm8DA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "model/gltf-binary"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/240d8d4b3564d7e8b3d538120d72411dd4b6c253c41cb7c648755fb340a92923?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_rain.wav%3B+filename%3D%22weather_rain.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427982&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjQwZDhkNGIzNTY0ZDdlOGIzZDUzODEyMGQ3MjQxMWRkNGI2YzI1M2M0MWNiN2M2NDg3NTVmYjM0MGE5MjkyMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=v9UD6xYBHxFr8EvyVs6CDf-K5iO9qzX69Kxg5w-VpfYMY9jlslPDg4A4a6QgdCFDzRmZ84TtKwZXU0KnWG2HGGF03lUCW3IMS4jIosFrusIowMP7yr7ffQ4UVhcRjJMNMuS7LzMjYEtXlYQsvhrfdIKqY5Jti58GW86bb8kCWK-6YRQzFJlEgfsMG8uJi4Of6pUxij%7EA4kuzoybEW8o5VevPmieERF2lzEQEGKhlAgeSdidCCFKrHkpvYx7Vbzxy7ACTZrvE5ml68QyfN3jaGJEXYF8bs4uwK6GFGlXR%7EOdBs4sNrQFwpmmadAAv3HvjUncsvOaBPmQwb7pDzusIdQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/924ac3251cd52d9d2115a7faa9752f913ba0a5aea23eabf6e21da41f2a9684e0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_wind.wav%3B+filename%3D%22weather_wind.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427983&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvOTI0YWMzMjUxY2Q1MmQ5ZDIxMTVhN2ZhYTk3NTJmOTEzYmEwYTVhZWEyM2VhYmY2ZTIxZGE0MWYyYTk2ODRlMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=kFWUu1jxB1LyUtAZdoqJwkZSAwMYhA-zl6Jedyz50PUIRyot70c4IXWiQ7Qi5ifBbfHIsslqAV5HN1PCu1UosUlM1PuRwBFr1Ky6ERMkxLvPzwrIkDrRYcB6rKuzVKwoSF1TtR4dp1InDWWEBQh8qImGOIecQQf0h1xAA4sALgUXsSCpHBXbeJEfInpbE3wn31LQPM0Il1esh57mCOWMgMktsje-2j%7Ez51pn7FCJf9bQt0ZEx0AjofhpU81Fo0cHJSuS9xAR0HYSiikEL6PJgjhEdNPSrk6ofi1%7E5aUOqx%7EPXZ-hULeEWFgRyFLN0oJivwxlq9A-q-rYcieDQLeNaA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/174ccc1fd856c56c578c8f47a74f75c1e109477f9411187658b79c6250803749?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_thunder.wav%3B+filename%3D%22weather_thunder.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427983&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTc0Y2NjMWZkODU2YzU2YzU3OGM4ZjQ3YTc0Zjc1YzFlMTA5NDc3Zjk0MTExODc2NThiNzljNjI1MDgwMzc0OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=vTuDM5aEv29MILcw3zF7nWEi0gIK6GUTgaZN7MKtntlOYvpuedNUHlFRSA2fIueqG7ahx4imJ1fzZAioZa8q2cNuMTVGKwoH%7EpIFYv8Z7zweyV%7EGd%7ELTEnXAYHTbwpKGTPwCPVheMAtAsMh2vEQzLS%7E4i%7EN8J9pCVfDqXaRU2zCHCpyrH4h2P9g%7E5oMSscEVST245h41k165rt6uT6fWNQYxDbe%7EfC%7Epy964K5vjS03kUuPbVFIR-WPW66fAMccBHDbpmBG9V4ZkkxJrNj3diOqGCrFNFmSKHwdSBJlPzmkGROGgZk9sxg-FuTaONynJ1xvqFf0-WM8yAupHtBnOog__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/e09f0a36ceacc09353b374c104b2599a5043d4212a8c1177af166ab2981c819d?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_concrete.wav%3B+filename%3D%22footstep_concrete.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427984&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4NH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZTA5ZjBhMzZjZWFjYzA5MzUzYjM3NGMxMDRiMjU5OWE1MDQzZDQyMTJhOGMxMTc3YWYxNjZhYjI5ODFjODE5ZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=MvOCUhqcKwC4MYLS9%7EhRYbHY%7EOIlZbecnCDaggBC6Jnd2wOy4JSBu4HLq4yZq07xkZZYQW13jDTs0d5Ciu%7Ek1K9yirHGxN88yYLlJ3av2AE8M07wgKjnwxVFUkOmNBWZWjQN16s1Ts6VFSudKlhcDhDT8wfbsLZObxW5VjlWlyivepMC%7E8BOSfgCsxlIGRvDoVD1Ac4EBW34zTPbfboqXLxdcT%7EmbEXnqqGHkrf8bRusn2VYWrEL5uXJ5FiJj9yYj7izU2mUYVW-Rw0K5u4jgLU%7E3vdNjWojnCqq1T2rLYE9SL-iCD7gJw9gHYAlEO0ZevPOZs7kr%7ESoAxK7nMer0Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/906e2488-c3f3-47c0-9637-4268288091f1",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/8adb793f-e227-44d7-aaf9-ed652eb90d9f",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/24c9680c23c1045baaaa3def7871021bd2af4cb4d2fd5b776fd3a9ed1ccd02fa?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_wood.wav%3B+filename%3D%22footstep_wood.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427985&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjRjOTY4MGMyM2MxMDQ1YmFhYWEzZGVmNzg3MTAyMWJkMmFmNGNiNGQyZmQ1Yjc3NmZkM2E5ZWQxY2NkMDJmYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=FhHZAr83yp94mXqAm5FDG2aGyLkTy0dP61cudczMJL1hepk-JfU3UZEduRowar1n%7ESH-POEQSoec07HHRR5yaCx7ucHXVOUmGu0wYrQVTQyY5sEK0HNRwIRCp4fhgPaA9Vbla5DADuheu4YgaUEqXxFFjsu1bbCTkezWW2BcnRt8K%7Ea-dvK6MACiKHx7f41JQ4qN8GljstLLwWNw%7E0r0V4QiYDubIqtcxknYUL5Y4OZBPGgzeYJYvp3kdldDJ1nBZVSYkeSos%7EC7wCyKhWw20AH3Vh5QAq0RDXIef1bzNWslX%7ESOVmXjpld6QdraDx1MRRhb%7E0dsUNlr4vKaNn3tFA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/7b5907f05814f909623710238e8d8c1583086b387c9349dce5c5cf3de8723ee8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_grass.wav%3B+filename%3D%22footstep_grass.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427985&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvN2I1OTA3ZjA1ODE0ZjkwOTYyMzcxMDIzOGU4ZDhjMTU4MzA4NmIzODdjOTM0OWRjZTVjNWNmM2RlODcyM2VlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=AR-jAqUrEY4qgyylVLr6O9MJzMMkM4rDmcntM-i-giQrCB8xeqrREZ9kfNwyZ-DlzEydd-wj-SRa9Z0FWxETAHJhg82YhZi2T0MKysESozS77vop5rMTeHpbAUBU1IRDwNYJaR%7E5v8uz%7EK2QGnQV3YAbXcxiYKfFPpbvr1PjLsTmSNmMN%7EujxNwJLYLEdeaA1uxYumhT6iRL-l1LW5oNp2ZmW0eWbR5lrqBob%7Eh3NiITbonH5siKXda26fdm79aqhwgQZGVHDlnZTbjMKH%7EFetlqcArsND9SuMftyozp15xO5EHmfVrOmFQrXztbqHCqTNxiDV-uuBXzfRazL7yWHg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/beb493b59761695ee9f1fe34fe11fb7a4d9edaf08ac4f26e83fd9c17c4e6e991?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_click.wav%3B+filename%3D%22ui_click.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427986&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYmViNDkzYjU5NzYxNjk1ZWU5ZjFmZTM0ZmUxMWZiN2E0ZDllZGFmMDhhYzRmMjZlODNmZDljMTdjNGU2ZTk5MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=ofhNE02vNVFoQd5bVN%7EynQCLP1NTfZ3RKIMBGmdN03s%7E2U0XsdV8y50HreIpylQmh0KM%7EpTzj6uhp8OwkMA8ehYNxP9RXmE7bl0CjNLOtW6no%7EyQwg-yy7Sd49aBGUhjHfjVIOjrKVVNpnXCYKiOtWY1lrHeru1qVibscodF8eXbXrqqsVBR61NerEnXQ02HD3Tm8LfjuDCdQSU9beSWAA0N4RUBnzv-xfbO1dxlbgQW0MVNz3IJ3IdfcLU52rmXIRqP74om1fMA1-wO9UP9uPG3D5ddturSdy4yytD%7EaxMY6z2ZU3x6klIRsw8sqlZb0HBu3fO7IMQCiSmiuexiVg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/c85f6cb93e6d3e275ca0521758a2e0943030cbed43bc9fc36ed15000ac466ff5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_transition.wav%3B+filename%3D%22ui_transition.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427986&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYzg1ZjZjYjkzZTZkM2UyNzVjYTA1MjE3NThhMmUwOTQzMDMwY2JlZDQzYmM5ZmMzNmVkMTUwMDBhYzQ2NmZmNT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=0MUjHV1FmCzH43qBaAB8aY1QRcm-cHm7M2oH42mTE0hJ3CaQanODhL6aTz8YCVav3XnoTjgUFqBeNRrmJ-2p9xUKaBoxj41hAU4H-Eh4z35OAHZDQCIky7tN-bDnyOD2h%7ESsQkWloeiA7Dr8RhmpVu8CA5rUd3vc8LvYYVDQm8Yb9QYfo7LSB8KwknolE2S1%7EEbHnrhpea%7E-TB8n2IkLsYru2-RfaNofg8yWqD-%7EChvDza-wqglKwVpGoip7bQrm2ZcYSbGvCSBoU9-SpeXvdE0rkEHCm1GdUu-HJLDyxyFk5Bmp-gFjrPNLQeByNndi08ug2afZfQu2mS6%7ErTR8hQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html?model=map2",
+    "status": 200,
+    "mimeType": "text/html"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/index-DMmhW4r6.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/three.webgpu-BViYegCk.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/maps/manifest.json",
+    "status": 200,
+    "mimeType": "application/json"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap",
+    "status": 200,
+    "mimeType": "text/css"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/5ba6c3fd47954faf18f639226bedd0f5e4b490672f1dd265b58c4f195b686ae8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNWJhNmMzZmQ0Nzk1NGZhZjE4ZjYzOTIyNmJlZGQwZjVlNGI0OTA2NzJmMWRkMjY1YjU4YzRmMTk1YjY4NmFlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=CpvPSW4E7ncUKbMfFuRPit4Dkpv9XRcIpL0K2zD6pAzKGVLsTHnJw9CM7dtMbCvy%7EZgYsOiMKC2mDIOqENlWL4e6i3CldEupcc96Gwv%7ElXJiAn8-AAddIyj3sICCVHbx3flXWFfV85F7pOMWYP%7Ei6jZDazeH9AqnJS0lsCtu6BfShc6EBnTPNkz5KzOFPkgVKXLE4jk83seLJUkDmKkUNkCz0rR7lK2oQ1Qsxmcxr49z2e%7Ea8v6fr4G7WA-1962pXH31HBIyFhYxDKIJd-p%7EF4GRILGzyFKO8y1BFD9HJYEn1pXVU4-T5zwhCTsQnyxk4blvhiQKxrPsBKpE4uM5qg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/782af8dd90619e9f5fbffe9740f706e3e944fe8d0e62d795b6e6713321cf2bcf?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_outdoor.wav%3B+filename%3D%22ambience_outdoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzgyYWY4ZGQ5MDYxOWU5ZjVmYmZmZTk3NDBmNzA2ZTNlOTQ0ZmU4ZDBlNjJkNzk1YjZlNjcxMzMyMWNmMmJjZj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=hBlyUW-L4JjAhRMx3%7EacZN2ui7cXmcvQgWPZJ8R5zcLadxZg3bvizOb258JFD5AU8vN9N9Wol4hYJgdPRgmVgV4toCF91NX2WD8YfEriWj-kq1gIP44zZZTfnzcKKno5hGN-m07VhbeTz7sLLqSLhrC3S-DxRZo0N9XajP8zabFFwjkdrTkDSRhpZVJ05AZEu95vQvW1Gb8byFmNvx%7Evkr9G0NNstYpHaL6ukFNAbl%7ErIzBf1PxPDjG1PD9ZFDej32USp6N1K9fNfA30BToYE2ii9r69UwS6W1uqgHETEJntqd8Y949alCWLNhn9vsHQf7DhpYGjkMKuYqL7jy7t9w__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ed8c278109b3caab58da50a238d0589872c86d6bef3965a95f62f413659931c1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZWQ4YzI3ODEwOWIzY2FhYjU4ZGE1MGEyMzhkMDU4OTg3MmM4NmQ2YmVmMzk2NWE5NWY2MmY0MTM2NTk5MzFjMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=SkY5-yCf00MuUKzPNOld7DAn-6crieQ8SpovUWc%7EOEzWFigyJk147OkKfY3nKxdFPD846zNmUdK0vKXdPA8s3-TXqwAXrLSh6OjqAtv6KvpsaqTFR%7E22gMiqmhSHVuhuvnBClmBwDmBkcVHZ5KuNgkDck3kHnTMkU%7EUsmRNtTna-msNybE0nvzZ15zilmSuhOA0GVZPWIsN9Ttf%7EMFbGEC4t1C17tAQmLrJsSBhZofj2530Usvs1X-9yZjJoXgTjSISg1crG-RCcWgHo0TbZtsgAgQGHR6JM0ijPczqZ2MVZRHNDyC5dJaBExAnkNjhmdkZ8B0oThnXsl7k%7ElT07uQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/15e16e91b4de0faace19cce13446921c21fc610a2470e3ff99b04b8afd5b21ac?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTVlMTZlOTFiNGRlMGZhYWNlMTljY2UxMzQ0NjkyMWMyMWZjNjEwYTI0NzBlM2ZmOTliMDRiOGFmZDViMjFhYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=i31i4VCFT69X8JumTzBXcyoE5BKYI9k6Q6VyTHO8F6wvku-tX8CAfvJJYObAaB0yDkUnxbgr7UvIsQtkhuK3zSED8r1iVOGl1oMr-X7a7yi%7Ex3CGxaGSszqH2Sj9BXJE5PfRioAMXOD7svY1N97GKByrXHfJE5a-pgnWkNWamEUm6lA128ZfYeKBMjTLhNFcaw92phDBG8dS5xCXfF18Bd0T051jU2LY%7EwGJit1fnJvoEmvyHSEAjADqgs1Jnq31R%7E8XpWSsLp2FXL1lCz-m8fFAWHY24vja3r0LEiqwz4C43f7q5hZYr1jdFWr1-CmmTjFIelbo139Rs8wHM6Qrzw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/d395e34a1f7d9d537c9993ba68d915c9b4bc4a65e753de1dfb9dc566a81310ec?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_indoor.wav%3B+filename%3D%22ambience_indoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZDM5NWUzNGExZjdkOWQ1MzdjOTk5M2JhNjhkOTE1YzliNGJjNGE2NWU3NTNkZTFkZmI5ZGM1NjZhODEzMTBlYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=1bugEljb91VaHlnuhHThOzvHXvIVzBHQhRhZ1AJ2HIHBS4STV9pr%7ENVfyc5VrRB7liXSs5U90RdmKHtsi9o8Py0u0ikJiod01Fa73uuKgGggYmCJyHue4CrPT2AGeDI0HSV%7ENhRx812YJx8VvqcvNbf4nXcs8lcpHR5V-pSH-mXF0uqhjLQq1cK6mUKmzfyKZaJ8Hr%7Em%7EfVoM2tXSXc3K5ofwp5EYsmnzjavN4QRpmMDbJTysEGmCkjIV5wlNrId92f1RkzJt1c7LscdDWuUCffcNRdL51nqKP4H%7EvLYsHevLNaabShfXGlcTt0NPE9M9IUQznhgaqUb-yLo4pU-bA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ae870203765dd18afd699dabfab35f953defc1793b137f4ad368ecb67582d7f3?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27world.glb%3B+filename%3D%22world.glb%22%3B&response-content-type=model%2Fgltf-binary&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYWU4NzAyMDM3NjVkZDE4YWZkNjk5ZGFiZmFiMzVmOTUzZGVmYzE3OTNiMTM3ZjRhZDM2OGVjYjY3NTgyZDdmMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=oLWyeDTOtoP7ZAUw3fGmFYMqNoXpPUvZHhm1-RL2uVXpJZw5ppKLn9pp5L9elFU5R2%7Eat6iqp1DB%7E3QEi4Ov6JfURWjwEDFCmLmkc1flKSvkOfN0Yqmy0vAw%7EAqtnX26ZHO7xZfMQOAwt4iiKFP0vbKPoQKsz3uzH2Yf2LX-eOaScijs461Qn-IoyjeXx8Vz-xa7KwO8pOuIbJdv%7ETqgQ9XJkNXwYi8ayq43dE37E9lYMA66rjev9uWFqKBD2wN-CviuOEgCae0WIaD5wXUPHVAFETd-dQb%7E%7E45zDC%7ExdOByJpJiqe1odg234nX-1puyUrFEW6MgddJ%7EC4ACyZ7Lyw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "model/gltf-binary"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/240d8d4b3564d7e8b3d538120d72411dd4b6c253c41cb7c648755fb340a92923?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_rain.wav%3B+filename%3D%22weather_rain.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427988&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjQwZDhkNGIzNTY0ZDdlOGIzZDUzODEyMGQ3MjQxMWRkNGI2YzI1M2M0MWNiN2M2NDg3NTVmYjM0MGE5MjkyMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=dYY6yVE8Et4OArOWtT%7EJUAgw9TJRgDUlgnldMuuiFTvqAJ%7EJA6jwyoEUSoloIODE7n2f8CeiAJWCfYV1iIKevpOfHKt%7EQCZl1%7E94G6ayPDGmOELrehigS-b3Ddzb7aaTu70y48KS3izsufjJ9irtV1lk%7E0cSjOm33SWh3iMlA%7Et0IO45xSfD181IFQQeoZUN5-ip5W3bABelVO2gprcJPjnQeNRr%7E2UNVTgQf0gH1YZw4QGekSihHCQXTVUn9DA3ZY2Plie78jyS-Yt%7Eh0%7ER71Pbp75pzhrkSB%7EuV-RhPJX1QVnJi-WHAFL-nZPx1nH0MlYQfJEDaS7zqnJBf5EMVA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/924ac3251cd52d9d2115a7faa9752f913ba0a5aea23eabf6e21da41f2a9684e0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_wind.wav%3B+filename%3D%22weather_wind.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427989&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvOTI0YWMzMjUxY2Q1MmQ5ZDIxMTVhN2ZhYTk3NTJmOTEzYmEwYTVhZWEyM2VhYmY2ZTIxZGE0MWYyYTk2ODRlMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Kw1vKeQ%7EFIpP9Zeh7fReHPMvGGqCyDTGJNgW3Q-8FMVvzi7p%7ErOeXL0BKgJriN9L%7EljkUIYhz2TpgECNOeFEJL920rLiB9lL1s7ME3ZovNtrOjyJ3UOix0qcu7mfWaL2bgxCLQ0j2LCnN0zpDVXnzbzi9iBI-kyrOckiWu6-DJN1U8zfFGNzg8IpDPy-N1E29oh76mlG6dSDuJi%7ETcDrTlTkXadHp2cmeeosDU02-wRQWHvmyTsiLJgf%7Ee5rjkDmhXXYvHOMpWH0-SYJ7gFpuu2JR0WRBdDB-siFfpwt85ATXxn%7EC7Aml2p0L451Skakgdd0Kf9KqdbB9eXS6mjEFQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/174ccc1fd856c56c578c8f47a74f75c1e109477f9411187658b79c6250803749?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_thunder.wav%3B+filename%3D%22weather_thunder.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427989&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk4OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTc0Y2NjMWZkODU2YzU2YzU3OGM4ZjQ3YTc0Zjc1YzFlMTA5NDc3Zjk0MTExODc2NThiNzljNjI1MDgwMzc0OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=lvDqlXpm%7ErUGfBqGEaKRGM8opmFyulP710E2JBPYnwHL-%7EaPaGCXAV32qPGTUZ6aWNWWEtbi9RJtBAlOGVlZRyRuCcD8c7XmP8FE72QoDTNbaWYYZ8BrPgNZoAmHOMAOkrFSK4JKCen%7EWTMgSOsnIqNLtBs6eCF0IPvbKqI6WT9vUW1LaejSVoKZjDKIu83YD6tqrrwcyFMFv8VkWQAwwNX%7EyimFzJE2paTkl9d%7ECrWuhvO-t1LefgV8K6pZQugY0Er2EsxETG%7Ed--Xrn%7Esl%7EaYTEswvme85cb666rdfoYOLUpv8glTi8fgDChOsWhu6Si47r0tF-SNPE0buTomF-w__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/d1effd04-9c90-41a4-bb1f-f49af6d5997b",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/2bed5dd3-b15b-4d74-b9d2-1d290e0197a9",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/e09f0a36ceacc09353b374c104b2599a5043d4212a8c1177af166ab2981c819d?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_concrete.wav%3B+filename%3D%22footstep_concrete.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427990&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZTA5ZjBhMzZjZWFjYzA5MzUzYjM3NGMxMDRiMjU5OWE1MDQzZDQyMTJhOGMxMTc3YWYxNjZhYjI5ODFjODE5ZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=efAxAhv6KmbbE16lvKmzTkjDaS8B5FFiuWpHyuA24YxjzsWM7Hj0qOD9VxcepTKhpkbrqxeqgasA1t6i8WdC0eUYQFGh8uW-9oa%7ERkyTANhTrhtqrcbyXH0XMfsHAq1IzMJycRe9vpqjOKk1KX0pGRWYLJG-H9%7EuHYIfzORBvEYeidrApInu9ippD0rF8dBsmCvTlQ-P5AF9rL%7E1oGQcR95u207pd-iQDGVvekh6ro3NmR8pIsXg6mrkzMxJub75PXAZK4k00NqyQy9-65noBZmc1gy53YO1UEW3%7EkLt4%7EEk3zbC36k89hMjEypmUyHWmbVmeD0HVSg9ozLtVFLHTw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/24c9680c23c1045baaaa3def7871021bd2af4cb4d2fd5b776fd3a9ed1ccd02fa?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_wood.wav%3B+filename%3D%22footstep_wood.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427990&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjRjOTY4MGMyM2MxMDQ1YmFhYWEzZGVmNzg3MTAyMWJkMmFmNGNiNGQyZmQ1Yjc3NmZkM2E5ZWQxY2NkMDJmYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=cDSrwbROeZM%7EpfUIfEARFDHJooFRzCfTvqP7oWCooH6SdWY3uY1FW0FU3FxBad55p72-78Ni6VhNGlm7%7EHXC4i24srcBh1bTuY9mYgcyC-ZInOyqFBJjzjFS7wSak3NE5%7EAlqcpTrpmZhIcXbQTcS9hI8FLryQc07KWDt-xYhap%7EnS9VMtewIbLFoxWXhQK2AywOsPxhBsHedHDIsSWxr0M9yADEb68EOo-r8CF9vLZAwXYWcwesZpYNffzmeMg3CS2aaAL%7Ek2nBqtZ7%7EMBowUSlYKlQ9n9vK5VyuEt0cQqw5LcQx8cS0OGcMgZVjVoLCfeAK-VYje-9yHo5Jool0Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/7b5907f05814f909623710238e8d8c1583086b387c9349dce5c5cf3de8723ee8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_grass.wav%3B+filename%3D%22footstep_grass.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427992&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvN2I1OTA3ZjA1ODE0ZjkwOTYyMzcxMDIzOGU4ZDhjMTU4MzA4NmIzODdjOTM0OWRjZTVjNWNmM2RlODcyM2VlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=nxzd6m%7Ect2qrQ0vRGsbr7hzr5FIAN9wca5Mpqgl1a%7EfGm1eTUyKKSggmh-6bShmBDExq5BHV1pPIgf3f98FNKk22asoyxvCYsOiYLahcdgGh1VzH9IF5dC-x5jlIhM7QmkKoXziwovy2VNIjlXQcb4LrelEM0AHfvO4iikyzTqKrDEBDsAMhbc6B3hA686gEme-ckEmFxlFYZcZZu-FBm%7EyIsc2GAUjKr2IYAgsOhWv81tRl8UsD9wkOW94Diq8hmMuBs4vc9qEbmEHoK2sgU9IXsRTqtbGeRul8ZJg8uGj9GRXRaaJ-9UQSOYr0Y3bkIUJ0ll9Sex9VWYfyIsmrAw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/beb493b59761695ee9f1fe34fe11fb7a4d9edaf08ac4f26e83fd9c17c4e6e991?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_click.wav%3B+filename%3D%22ui_click.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427993&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYmViNDkzYjU5NzYxNjk1ZWU5ZjFmZTM0ZmUxMWZiN2E0ZDllZGFmMDhhYzRmMjZlODNmZDljMTdjNGU2ZTk5MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=UjohG-tYjbRSwG5v28dPL68AiT2FadVhug%7EG9w3j3u2Wx0OPK%7EHGWen4Mf5dOpWTuqaaBTH3gRS5wOvCCtBt2xjbJFWZsiedE1vChLjAPrMZfRGwvwTa1mLXPXHTH0rO40EEpbLWp9RbXAdAr1BEzhRZtyxWBuwWKw8NBVFxg2afJ9iPekaSVWd8vkRwS7M%7E%7EyWPi1rEP0mWFhPLpFWxOAP2cUhgm3yokib3ejxDGX4LMvc8jQHrU7YOXjWqttfnrcVe9SWDAFX4jvy27ouhY0gAF1HDen4AsZLU-mWsNYerYZrYLQCtw14S8nXXzxoDBhN5lZhNIoz8PUIZTrImeA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/index.html?model=schoolmap",
+    "status": 200,
+    "mimeType": "text/html"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/index-DMmhW4r6.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/assets/three.webgpu-BViYegCk.js",
+    "status": 304,
+    "mimeType": "application/javascript"
+  },
+  {
+    "url": "https://timfromhcs-hcs-worldjumper.static.hf.space/maps/manifest.json",
+    "status": 200,
+    "mimeType": "application/json"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap",
+    "status": 200,
+    "mimeType": "text/css"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2",
+    "status": 200,
+    "mimeType": "font/woff2"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/5ba6c3fd47954faf18f639226bedd0f5e4b490672f1dd265b58c4f195b686ae8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNWJhNmMzZmQ0Nzk1NGZhZjE4ZjYzOTIyNmJlZGQwZjVlNGI0OTA2NzJmMWRkMjY1YjU4YzRmMTk1YjY4NmFlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=HfDQX8fqcOpuRLOM3P9DEmEzFfkVyfAhNrUlVzMhEAHesvwxD5FfccBDZwo1cgkqt4jF8zR9Ad83WZ74KwoMLrrvArfRddmXogUVdqud2Q57G2ZkyV%7Er2PqhhogP7zT-Lj8QVEStXZpnxvpALzhMq7DJXtAs1MlTS2wiM6SGZPqVm5p7hWWIpR1fYWzPol4WbXlI4TSN5sk7m3Q3dv1OUzJspnbBwNly16xwsJsGnBCmuAHksP2sD63sOl-CNf2XrcLcHMjvz%7EvHrbKzL9VFNwokiF4yFLMvcTyfAV1gMbmwRpJL8q31zcheL4cqqRRyPla%7EW8nu2turq2Pg8eRWcQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/15e16e91b4de0faace19cce13446921c21fc610a2470e3ff99b04b8afd5b21ac?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTVlMTZlOTFiNGRlMGZhYWNlMTljY2UxMzQ0NjkyMWMyMWZjNjEwYTI0NzBlM2ZmOTliMDRiOGFmZDViMjFhYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=NlMQXg7Hl8HKk0QtDJit-6zp7K1uxNeVGecOa8tl6o6tRruoepc1TtcXyAbu7u%7ECJ4Ph8N9wWz3FpUEgKBifmv7NYPc7198eU%7EEZY1IEbt0MrOmZOVfUb4GtXmi-pWAgfCi7nbtrRDRdfd1f--IheQyw6MSqTL-Suxe8H6kqSA6Gz92ZFEhVpRv41aRU72aPNKg9B1e%7E1ZXcF6AHiFLvxOUwIWbjAp0n2VVplzm84pZHJhDyhXGn-L81nODdjFpBTpNy0hCFbpa00Pf8%7EVin484TkgIbqIK0vWtXCKUIBa7hJY3O9p8iE69iNdROuUFjxavkOAtrWpTQgenTToZYOA__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/782af8dd90619e9f5fbffe9740f706e3e944fe8d0e62d795b6e6713321cf2bcf?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_outdoor.wav%3B+filename%3D%22ambience_outdoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzgyYWY4ZGQ5MDYxOWU5ZjVmYmZmZTk3NDBmNzA2ZTNlOTQ0ZmU4ZDBlNjJkNzk1YjZlNjcxMzMyMWNmMmJjZj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=t2auffH1ovYL2zE6BSdt8tMv36JJVqi7bK-uhzJsM4Y2xQ4bZAcNk5al1lmpjOSgFavubhFRZ9O9JenZvp8Z50vLHrM4gEuMqJU8lGjQoNvZDsdeZQMdPILoL-D1z2hCh%7E-jAWFBNy8Ssh1kCn5slNmIZck6-M9MVtWGwAxC2ECMv2EEBt7S75xCkBaKAXQ-%7ExFjxfmZ8xS4S8U%7Ef4Zr525jpE6qJCW7AYi9SGv3-N8Ok67oWP8CkrHkGAARIp%7E22x5DOH4LoOI%7EoQREIF3AkqOPakHGyNLRmWdpKkqHQx%7EdPbCbQVh0beEy%7E6NIUZgZYfxKR%7EtzWRrywJjRhZcTGg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/ed8c278109b3caab58da50a238d0589872c86d6bef3965a95f62f413659931c1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27overview.png%3B+filename%3D%22overview.png%22%3B&response-content-type=image%2Fpng&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZWQ4YzI3ODEwOWIzY2FhYjU4ZGE1MGEyMzhkMDU4OTg3MmM4NmQ2YmVmMzk2NWE5NWY2MmY0MTM2NTk5MzFjMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=yQI4yi%7EVRWL0Bx2M2MfIcZMT%7Es0eM4U3TpYOpmKuqE5WZgm9rxlZJKMsyi2QmMhCkrEqtfV7WWPW5nnOb2FBJn6WOMWhK3bE7lMXtkynMu0MOtkHYueDbAQL0Y4Y0G5H2qYgKBlk1VZpKjWZ7VCGbw6azqEvqAo3SkFQ8QL8Gvin2FDbqngUcE6hVHMnGKacXeYGAmdRq-I8LLS4T%7EVgIg255vrMbjQfMBPgRszDxWuZSNABbeHiqloKtR19gZZYD54tNOYxCv-wg7rf7FLOfpPV3rlK9l5ngR-ygmvq1qTuEJS6yZNOSXAxQJSIspesJ87gfHPF82vOWsT8pBuRYg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/d395e34a1f7d9d537c9993ba68d915c9b4bc4a65e753de1dfb9dc566a81310ec?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ambience_indoor.wav%3B+filename%3D%22ambience_indoor.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZDM5NWUzNGExZjdkOWQ1MzdjOTk5M2JhNjhkOTE1YzliNGJjNGE2NWU3NTNkZTFkZmI5ZGM1NjZhODEzMTBlYz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=kCH769j8I1Gf5WJ7qbaNS02zA%7EVWmfDurEYwo42B0VO9kSjAP-DENLdpdvTLmIro1tPZrTu3sdSNy2XnkVXzUHOpakk8E3q%7E4qnDU5AH0%7EvJ1ZGOVPOsXRGC9BEqVjWfUFdPh72HUFV35QoM0XjmMwY3F3XDZWXRKMewPFTXcBIACOchzln9ZAt7ZIe0lcGk7Jf-5A4xduJuJgFNAgeq0gFaDCdUuoSSvt5jDGxYYglwed5fDAV6u-VDqzlghY8zWKifVh8jYCLqsU0Gus5wzCbLP0RxDedhvtuf8HGsrCI9v-IaLbg42czs0-aVGK9Ta1XycUJFMkTLVqSiCTt%7EYg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/765b183e8067afb7b5b03785312c824b3017caba8c3b90a41c3433754991ddc9?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27world.glb%3B+filename%3D%22world.glb%22%3B&response-content-type=model%2Fgltf-binary&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvNzY1YjE4M2U4MDY3YWZiN2I1YjAzNzg1MzEyYzgyNGIzMDE3Y2FiYThjM2I5MGE0MWMzNDMzNzU0OTkxZGRjOT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=wJ7JYEClFQS42mC67RngxkSPOFxNGHKc8ybVvwtoFRDcSlaWVZD6RPPyBDGxJOO6bVQSJYC4mcb120S8zMgRw9qnycipyMmvhPjO2o0csEKQDv0P%7EH2swb3ndZqvEK%7EjIEOw6qjW0amPoHcEwLS8oqsmSJ8NQLiIUbTTRwqy87lOr3RZ6lDxE9iFKcLZxmEFN2ezZKqjiJ69CJNUlVo8uat0-PGauqj2-bwtUAQgxLo-1dlxZx%7E7qadHVHNJaSbyBlwJAOsJLKRmqyZIjHB5FNIkjm-5uPjODaB2fs8PyOTU%7EBpeBZpVtjcrDyp30u28W%7EFFOBxJI4IJ5xQ2QGsq%7Ew__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "model/gltf-binary"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/240d8d4b3564d7e8b3d538120d72411dd4b6c253c41cb7c648755fb340a92923?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_rain.wav%3B+filename%3D%22weather_rain.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427995&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjQwZDhkNGIzNTY0ZDdlOGIzZDUzODEyMGQ3MjQxMWRkNGI2YzI1M2M0MWNiN2M2NDg3NTVmYjM0MGE5MjkyMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=mrxVafxVZ5VS11rXqv1WtGGL7Dty9SpcfnK3p8LiHQxzFmRMtla3cVC58GHRE1Fb1326ivKUKT2HN1GhKlc8WyOZlUaHnBBQcyznQZKn2L%7EvgWd5fKnZHniOTSqzIVh1gWKUsExoFRu1OEGElAqDB0LKqJdSn-FMEyU9dsQL7b-XaMWmXN44X8RJj7pZbB1yOgC2e3QdLSg%7ElCAy3XyLSZTXPryxY4HkitxEkhOiFUqaM4QivBC6BzA3ocTuEJIhjXL6jF9i5JAZtlvcESs9axb2jCLtgtXhxs3E33QiH%7EnLAGqejLOb7v0zHnOJH42IIvzv0AGz7Uv1FfRXiVqntQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/924ac3251cd52d9d2115a7faa9752f913ba0a5aea23eabf6e21da41f2a9684e0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_wind.wav%3B+filename%3D%22weather_wind.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427996&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvOTI0YWMzMjUxY2Q1MmQ5ZDIxMTVhN2ZhYTk3NTJmOTEzYmEwYTVhZWEyM2VhYmY2ZTIxZGE0MWYyYTk2ODRlMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=sYtibprq7MJ%7ElIre51H0bDGy0z65pPkgaRrn7yNrYhxpriWXgkwHlIWhw1jEF57kzBo3u7wZNw4xtvSttqyIoBqvXSP8oOeC-RZnNAmxajjJy6TOUSheombFshCcIWXMO1Pqhc5StAOAVszkXJMxv-2d4eU2c-A4F7%7Ebl%7ETTUpiKM9KI1pWUL9rz%7E9Mh3-FldHHppisdv-ilpBPpG-8xh5Jxj-sVf5lEiIW2-xY1%7EsVqLeHq4r%7ECpBJZLQgl9B8zQg0zQMnKMt1q4TebvcmTnCGjnju0FWG51zYLD0-druSvqm7z0Ch7LZFxtgUMdyS3xvLqgciY2wDZK-dU65pR3Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/174ccc1fd856c56c578c8f47a74f75c1e109477f9411187658b79c6250803749?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27weather_thunder.wav%3B+filename%3D%22weather_thunder.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427996&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMTc0Y2NjMWZkODU2YzU2YzU3OGM4ZjQ3YTc0Zjc1YzFlMTA5NDc3Zjk0MTExODc2NThiNzljNjI1MDgwMzc0OT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=djflnKMd0BeX5FRacfBl33-gUtSqt6fwrx2vwAgarSbp8T1Pk8fDwhtCW2WUuAbc5XRGDNBmn94eXdG88U8MNP16MstS5Tt7NUv9w5PS9HW6jTvsDNdhHIdE5jODMgUKpb0euSRIesz0KGvRf-d0XS2nYlSmybzXd-q9TLrhBa0Jl2ZIjTbxZ7Fi96OWSxMhmvFBe1IugOZtW8ETKRHYrg1V-pcGNaitCX4G4AmiJDPB1lGZLOpDUMiYo-TRq8FiXZ8UmGWUdaeqFAPQXnrybUFQZGfLBeBZmXjBaGgo9F2eyf12SxYgXRVahQg%7EipwM0TLnossXwpY7LJX1oT5LYw__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/b387cd10-faf4-4259-bf4f-acbfeddb8772",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "blob:https://timfromhcs-hcs-worldjumper.static.hf.space/b717df8f-ee89-4378-99f8-3d4592f200fe",
+    "status": 200,
+    "mimeType": "image/png"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/e09f0a36ceacc09353b374c104b2599a5043d4212a8c1177af166ab2981c819d?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_concrete.wav%3B+filename%3D%22footstep_concrete.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427997&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvZTA5ZjBhMzZjZWFjYzA5MzUzYjM3NGMxMDRiMjU5OWE1MDQzZDQyMTJhOGMxMTc3YWYxNjZhYjI5ODFjODE5ZD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=q6ltWnte76cMdVGJaAD0IWAurV0uXeSYZg%7EoxqU34JvRAsd4UVyLNGZ4jOUfBd%7EGf7r31jjZOiUCKJLd29D4eXW2ij8tVBuAn%7EWqqi9TUUqakQRsbST7FCIG56D9t1MnoIcIyWJ%7Eliv-0O1LAr6jhBWrk3SXErab2oTXnd8UnlqhPJIBxXZ9kHcReC5Ff%7EAA-tqgXB1QbllGDJTZv3k9ARLodQnTMHOY-PgOwo6JC0w6j2y1Ln3k8kZX2Mfpu3lPqZXJfCHcTmnwwiPug365PV6C6tP6QsSq2lLQNc-hsbFBY-wd42Ea7FIZUVA1ZSvfbtVLbqNSzK%7EudYswV8eqQQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/24c9680c23c1045baaaa3def7871021bd2af4cb4d2fd5b776fd3a9ed1ccd02fa?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_wood.wav%3B+filename%3D%22footstep_wood.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427998&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvMjRjOTY4MGMyM2MxMDQ1YmFhYWEzZGVmNzg3MTAyMWJkMmFmNGNiNGQyZmQ1Yjc3NmZkM2E5ZWQxY2NkMDJmYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=tv%7EG0TUyMknq64f9UA5VFZYvJRQRLnHLsTcYqQKRb%7ENr3qhDeT9jMHDORv8-JZ8S4gNOvdf1mqRvuLQK58Bar9lxn0KzaPi4YQMWaOnr-Tg8d8TphTzCZWI%7ESDvxVRDR-smvIy7xOdy7soK1m2%7EkOJALjJaQSb8BS--CBrxfblLxkwaZNrjoBxi2Upll5XZJpCyyzph6No0Lt5s-UARM6FU9avDFIFFBTX6in7yddgsQgGVVtfUvDa53qZbIJiMJZ0%7En3abnBgviwqgcWVCkzW4kOZxyAQ1fKAqoPqMYT8H0z-MT347j7sEsJoKCTMvY%7EKlhmaG1qYqWOVV6944W6Q__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/7b5907f05814f909623710238e8d8c1583086b387c9349dce5c5cf3de8723ee8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27footstep_grass.wav%3B+filename%3D%22footstep_grass.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427998&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvN2I1OTA3ZjA1ODE0ZjkwOTYyMzcxMDIzOGU4ZDhjMTU4MzA4NmIzODdjOTM0OWRjZTVjNWNmM2RlODcyM2VlOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=KCcxOnooThCP8c-gsnzWrFH5TBi699kOC06EzyrxogmZdHijJNTVp7JJj5g0AmT3VwElGJmx-HtJOSkxmuHJf4Y3zbDoAwLwkRm-l8GSWbzTcLFJb4ve1PrdiqLPmUGZ%7EpbnNxsiUBDJh27oLvOtl0N4yqWp24bOVAJX-nNNJUGwQFppJL6cO6RqkhE206otcRrl7nwJCLV4uueT5649zV%7EgFtRlbMkc4c0V5LFF6O%7EIHx0pXSDlBE2AMH5ONi%7EW98uN5jCoN2tZSliZX10PXokJr3luCnx3EcIZNn5tYu9Cca66UkCmxd00UL2oklhwutfr-NUSlub6GgkrhuzXQQ__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/beb493b59761695ee9f1fe34fe11fb7a4d9edaf08ac4f26e83fd9c17c4e6e991?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_click.wav%3B+filename%3D%22ui_click.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789427999&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyNzk5OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYmViNDkzYjU5NzYxNjk1ZWU5ZjFmZTM0ZmUxMWZiN2E0ZDllZGFmMDhhYzRmMjZlODNmZDljMTdjNGU2ZTk5MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=y1-USSIzpG-vdAz1Rr0KRuXuytnTvZCDf-CBlPDjNBIDqsmhItxBkOpqXW7xqwLTI6fMt--UW3PxBB55TPGZthSQL2yu7cRmlLsqq4zhPRHq1-Nwr6oCEVyu3sM-SFF9CjmXIXk4CWx0YJQAGxwfpH8kvn3xajJHVUodIWzVFpSZKXZ6%7EKrk5Qgs-K9wINLEtRAUseuV5%7EgvhZxhhCjtjsAfDml32gxvTn%7EpTIz0EuOR0oZxsAqjJx38rJISLCBwB5oJ64bN1ifmjldSDzcEXxjVFSD%7ENqyaUJ4Qk8PPQLcSbX73BOR2Wz5olwxLmtKreuvvFXIUfs0l0Oo904l6Pg__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  },
+  {
+    "url": "https://cdn-lfs-us-1.hf.co/repos/4e/36/4e36c0313f7199482d211ead72821d981832ea5dfea9d003f7654d2f0754eed1/c85f6cb93e6d3e275ca0521758a2e0943030cbed43bc9fc36ed15000ac466ff5?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ui_transition.wav%3B+filename%3D%22ui_transition.wav%22%3B&response-content-type=audio%2Fwave&Expires=1789428000&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4OTQyODAwMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzRlLzM2LzRlMzZjMDMxM2Y3MTk5NDgyZDIxMWVhZDcyODIxZDk4MTgzMmVhNWRmZWE5ZDAwM2Y3NjU0ZDJmMDc1NGVlZDEvYzg1ZjZjYjkzZTZkM2UyNzVjYTA1MjE3NThhMmUwOTQzMDMwY2JlZDQzYmM5ZmMzNmVkMTUwMDBhYzQ2NmZmNT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=UvaT130tcZR4LFF%7Erv4lUp6S0CSQO3bdw7buEdFPArkKbX-R4LM3cR-b%7EvKgw80kx-BEXywRHn3xJbJ%7EpIaqP-auLXKrgKOFzPu6ovrF-MTyE4XTeIqnKoONRoqE5AJqAxHJo8cAHfSct3V93yIigJX5nIPi5NRSM7DpgxqO1TWvjCZe4v9urTh2LmeEEh3dxgB4kVyGPR-ulsRz686Tz0CCyVXPwR1KZQkxhcOM9tn44OeDzyMrgBAKS94e3Mkl0EDIyceUrsA2U1-aVc9-AylaNsegmPgN%7E4n87UCNADw6REqNhY7WH66rC6aD78TpmKrTz5aKW6M4MpHdkgfF4A__&Key-Pair-Id=K1HG1QXK3AL3BR",
+    "status": 200,
+    "mimeType": "audio/wave"
+  }
+]

@@ -22,18 +22,23 @@
     }
     #compat-fallback h1 { color: #ef4444; font-size: 32px; margin-bottom: 12px; }
     #compat-fallback p { color: #94a3b8; max-width: 540px; line-height: 1.6; }
-  </style>
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "/node_modules/three/build/three.module.js",
-      "three/addons/": "/node_modules/three/examples/jsm/"
+    #boot-diagnostic {
+      display: none; position: fixed; top: 16px; right: 16px; z-index: 100000;
+      background: rgba(185, 28, 28, 0.95); color: #fff; padding: 16px 20px;
+      border-radius: 8px; border: 1px solid #ef4444; font-family: monospace;
+      max-width: 480px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      font-size: 12px; line-height: 1.5; pointer-events: auto;
     }
-  }
-  </script>
+    #boot-diagnostic h4 { margin: 0 0 6px 0; font-size: 14px; text-transform: uppercase; }
+  </style>
 </head>
 <body>
   <canvas id="game-canvas"></canvas>
+
+  <div id="boot-diagnostic">
+    <h4 id="boot-diag-stage">Startup Diagnostic</h4>
+    <pre id="boot-diag-msg" style="margin: 0; white-space: pre-wrap; word-break: break-word;"></pre>
+  </div>
 
   <div id="compat-fallback">
     <h1>Hardware Acceleration Unavailable</h1>
@@ -41,12 +46,25 @@
   </div>
 
   <script type="module">
+    // Diagnostic error trap
+    window.showBootError = function(stage, err) {
+      console.error(`[BOOT ERROR @ ${stage}]:`, err);
+      const diag = document.getElementById('boot-diagnostic');
+      if (diag) {
+        diag.style.display = 'block';
+        document.getElementById('boot-diag-stage').innerText = `Error: ${stage}`;
+        document.getElementById('boot-diag-msg').innerText = (err && (err.stack || err.message)) ? (err.message + '\n' + (err.stack || '')) : String(err);
+      }
+    };
+    window.addEventListener('error', (e) => window.showBootError('UNCAUGHT_EXCEPTION', e.error || e.message));
+    window.addEventListener('unhandledrejection', (e) => window.showBootError('UNHANDLED_PROMISE', e.reason));
+
     import * as THREE from 'three';
-    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-    import { AudioManager } from '/src/runtime/audio.js';
-    import { PlayerController } from '/src/runtime/controller.js';
-    import { WeatherSystem } from '/src/runtime/weather.js';
-    import { UIManager } from '/src/runtime/ui.js';
+    import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+    import { AudioManager } from './src/runtime/audio.js';
+    import { PlayerController } from './src/runtime/controller.js';
+    import { WeatherSystem } from './src/runtime/weather.js';
+    import { UIManager } from './src/runtime/ui.js';
 
     class GameApp {
       constructor() {
@@ -75,69 +93,84 @@
       }
 
       async start() {
-        // 1. Initialize UI immediately
-        await this.ui.init();
+        try {
+          // 1. Initialize Renderer (WebGPU preferred, WebGL2 fallback)
+          const initialized = await this.initRenderer();
+          if (!initialized) {
+            document.getElementById('compat-fallback').style.display = 'flex';
+            return;
+          }
 
-        // 2. Initialize Renderer (WebGPU preferred, WebGL2 fallback)
-        const initialized = await this.initRenderer();
-        if (!initialized) {
-          document.getElementById('compat-fallback').style.display = 'flex';
-          return;
-        }
+          // 2. Setup Scene & Camera immediately so canvas renders from frame 1
+          this.scene = new THREE.Scene();
+          this.scene.background = new THREE.Color(0x0a1020);
 
-        // 3. Setup Scene & Camera
-        this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color(0x87ceeb);
+          this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 2000);
+          this.camera.position.set(0, 2.0, 15);
 
-        this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 2000);
-        this.camera.position.set(0, 2.0, 15);
+          // Add lighting and stylized backdrop for main menu
+          const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+          this.scene.add(ambientLight);
+          const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+          dirLight.position.set(50, 100, 50);
+          this.scene.add(dirLight);
 
-        // 4. Initialize Subsystems
-        this.weather = new WeatherSystem(this.scene, this.audio);
-        this.controller = new PlayerController(this.camera, this.canvas, this.audio);
-        this.audio.init(); // background non-blocking
+          const grid = new THREE.GridHelper(300, 60, 0x38bdf8, 0x1e293b);
+          grid.position.y = -0.5;
+          this.scene.add(grid);
 
-        window.addEventListener('resize', () => this.onResize());
+          // 3. Initialize UI
+          await this.ui.init();
 
-        // 5. Start Render Loop
-        this.animate();
-        console.log(`HCS WorldJumper Started [Backend: ${this.backendName}]`);
+          // 4. Initialize Subsystems
+          this.weather = new WeatherSystem(this.scene, this.audio);
+          this.controller = new PlayerController(this.camera, this.canvas, this.audio);
+          this.audio.init().catch(e => console.warn("Audio context init deferred:", e));
 
-        // 6. Handle URL testing & direct-navigation parameters
-        const params = new URLSearchParams(window.location.search);
-        const reqScreen = params.get('screen');
-        const reqModel = params.get('model');
-        const reqView = params.get('view');
-        const reqWeather = params.get('weather');
-        const reqDebug = params.get('debug');
+          window.addEventListener('resize', () => this.onResize());
 
-        if (reqScreen === 'world_selector') {
-          document.getElementById('screen-main-menu').classList.add('hidden');
-          document.getElementById('screen-world-selector').classList.remove('hidden');
-        } else if (reqScreen === 'settings') {
-          document.getElementById('screen-settings').classList.remove('hidden');
-        }
+          // 5. Start Render Loop
+          this.animate();
+          console.log(`HCS WorldJumper Started [Backend: ${this.backendName}]`);
 
-        if (reqModel) {
-          document.getElementById('screen-main-menu').classList.add('hidden');
-          document.getElementById('screen-world-selector').classList.add('hidden');
-          document.getElementById('hud-game').classList.remove('hidden');
-          const mapId = reqModel.includes('schoolmap') ? 'schoolmap' : reqModel.includes('map2') ? 'map2' : 'map';
-          this.loadWorld(mapId, () => {
-            if (reqWeather) this.weather.setWeather(reqWeather);
-            if (reqView === 'street') {
-              this.controller.teleport(new THREE.Vector3(10, 1.8, 20));
-            } else if (reqView === 'interior') {
-              this.controller.teleport(new THREE.Vector3(0, 3.2, 0));
-            } else if (reqView === 'vegetation') {
-              this.controller.teleport(new THREE.Vector3(-35, 2.0, -30));
-              this.controller.yaw = Math.PI * 0.8;
-            }
-          });
-        }
+          // 6. Handle URL testing & direct-navigation parameters
+          const params = new URLSearchParams(window.location.search);
+          const reqScreen = params.get('screen');
+          const reqModel = params.get('model');
+          const reqView = params.get('view');
+          const reqWeather = params.get('weather');
+          const reqDebug = params.get('debug');
 
-        if (reqDebug === '1') {
-          this.ui.toggleDebug();
+          if (reqScreen === 'world_selector') {
+            document.getElementById('screen-main-menu').classList.add('hidden');
+            document.getElementById('screen-world-selector').classList.remove('hidden');
+          } else if (reqScreen === 'settings') {
+            document.getElementById('screen-settings').classList.remove('hidden');
+          }
+
+          if (reqModel) {
+            document.getElementById('screen-main-menu').classList.add('hidden');
+            document.getElementById('screen-world-selector').classList.add('hidden');
+            document.getElementById('hud-game').classList.remove('hidden');
+            const mapId = reqModel.includes('schoolmap') ? 'schoolmap' : reqModel.includes('map2') ? 'map2' : 'map';
+            this.loadWorld(mapId, () => {
+              if (reqWeather) this.weather.setWeather(reqWeather);
+              if (reqView === 'street') {
+                this.controller.teleport(new THREE.Vector3(10, 1.8, 20));
+              } else if (reqView === 'interior') {
+                this.controller.teleport(new THREE.Vector3(0, 3.2, 0));
+              } else if (reqView === 'vegetation') {
+                this.controller.teleport(new THREE.Vector3(-35, 2.0, -30));
+                this.controller.yaw = Math.PI * 0.8;
+              }
+            });
+          }
+
+          if (reqDebug === '1') {
+            this.ui.toggleDebug();
+          }
+        } catch (err) {
+          window.showBootError('BOOTSTRAP', err);
         }
       }
 
@@ -151,13 +184,16 @@
             if (adapter) {
               const device = await adapter.requestDevice();
               if (device) {
-                const { WebGPURenderer } = await import('/node_modules/three/build/three.webgpu.js');
+                const { WebGPURenderer } = await import('three/webgpu');
                 this.renderer = new WebGPURenderer({
                   canvas: this.canvas,
                   antialias: true,
                   preserveDrawingBuffer: true,
                   powerPreference: 'high-performance'
                 });
+                if (typeof this.renderer.init === 'function') {
+                  await this.renderer.init();
+                }
                 this.backendName = 'WebGPU (Hardware Accelerated)';
                 rendererOk = true;
               }
@@ -204,7 +240,7 @@
 
       loadWorld(mapId, onComplete) {
         this.currentMapId = mapId;
-        const worldPath = `/output/${mapId}/world.glb`;
+        const worldPath = `./output/${mapId}/world.glb`;
         console.log(`Loading game world: ${worldPath}...`);
 
         // Dispose previous world model if present

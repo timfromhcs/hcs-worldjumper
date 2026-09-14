@@ -19,6 +19,11 @@ yarn-error.log*
 # Build and Cache
 work/
 cache/
+dist/
+input/
+map.glb
+map2.glb
+schoolmap.glb
 desktop/dist/
 desktop/build/
 installer/*.zip
