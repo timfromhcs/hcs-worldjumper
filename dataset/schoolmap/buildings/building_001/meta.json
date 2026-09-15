@@ -1,0 +1,48 @@
+{
+  "element_id": "building_001",
+  "map_id": "schoolmap",
+  "semantic_class": "building",
+  "world_position": [
+    -65.73506472172816,
+    4.4448553043645385,
+    20.738324662795186
+  ],
+  "world_rotation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "world_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "dimensions": [
+    12.0,
+    3.157871335296044,
+    12.0
+  ],
+  "bounds": {
+    "min": [
+      -69.77324150020603,
+      3.545427078853203,
+      14.340713804637758
+    ],
+    "max": [
+      -59.07122151889392,
+      6.356698823854353,
+      27.178363602338123
+    ]
+  },
+  "base_y": 3.554415382064654,
+  "roof_y": 6.712286717360698,
+  "face_count": 1322,
+  "vertex_count": 975,
+  "source_mesh_path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\schoolmap\\buildings\\building_001\\isolated_source.glb",
+  "local_normalized_mesh_path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\schoolmap\\buildings\\building_001\\local_normalized.glb",
+  "provenance": {
+    "source_map": "schoolmap",
+    "scale_factor": 120.43823317297662,
+    "discovery_engine": "world_understanding_stage_2"
+  }
+}

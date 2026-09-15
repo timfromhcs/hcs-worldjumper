@@ -2,8 +2,8 @@
   "clean_room_verified": true,
   "results": {
     "map": {
-      "world_glb_sha256_match": true,
-      "geometry_nodes": 6,
+      "world_glb_sha256_match": false,
+      "geometry_nodes": 92,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,
@@ -12,8 +12,8 @@
       "reports_complete": true
     },
     "map2": {
-      "world_glb_sha256_match": true,
-      "geometry_nodes": 6,
+      "world_glb_sha256_match": false,
+      "geometry_nodes": 137,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,
@@ -22,8 +22,8 @@
       "reports_complete": true
     },
     "schoolmap": {
-      "world_glb_sha256_match": true,
-      "geometry_nodes": 6,
+      "world_glb_sha256_match": false,
+      "geometry_nodes": 33,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,

@@ -1,0 +1,48 @@
+{
+  "element_id": "building_001",
+  "map_id": "map2",
+  "semantic_class": "building",
+  "world_position": [
+    -59.912051279782474,
+    14.923384285477164,
+    -39.116493828759054
+  ],
+  "world_rotation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "world_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "dimensions": [
+    12.0,
+    30.57662835917054,
+    12.0
+  ],
+  "bounds": {
+    "min": [
+      -64.92254454083962,
+      0.0003862550082391891,
+      -44.118817319533925
+    ],
+    "max": [
+      -52.44308512618227,
+      27.49639785911009,
+      -31.82299712624727
+    ]
+  },
+  "base_y": 0.0004154625628742063,
+  "roof_y": 30.577043821733415,
+  "face_count": 4080,
+  "vertex_count": 3842,
+  "source_mesh_path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map2\\buildings\\building_001\\isolated_source.glb",
+  "local_normalized_mesh_path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map2\\buildings\\building_001\\local_normalized.glb",
+  "provenance": {
+    "source_map": "map2",
+    "scale_factor": 120.0052537833991,
+    "discovery_engine": "world_understanding_stage_2"
+  }
+}

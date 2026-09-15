@@ -1,0 +1,34 @@
+{
+  "element_id": "building_001",
+  "map_id": "map",
+  "target_extents": [
+    10.64427148649736,
+    5.3662893938628855,
+    11.875662592870441
+  ],
+  "reconstructed_extents": [
+    10.64427148649736,
+    5.3662893938628855,
+    11.875662592870441
+  ],
+  "reconstructed_bounds": {
+    "min": [
+      -5.32213574324868,
+      0.0,
+      -5.9378312964352205
+    ],
+    "max": [
+      5.32213574324868,
+      5.3662893938628855,
+      5.9378312964352205
+    ]
+  },
+  "reconstructed_glb_path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstructed_element.glb",
+  "captured_renders": {
+    "front": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstruction_renders\\recon_front.png",
+    "threequarter": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstruction_renders\\recon_threequarter.png",
+    "closeup": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstruction_renders\\recon_closeup.png",
+    "top": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstruction_renders\\recon_top.png",
+    "left": "C:\\Users\\hcsme\\Desktop\\glb world builder\\dataset\\map\\buildings\\building_001\\reconstruction_renders\\recon_left.png"
+  }
+}

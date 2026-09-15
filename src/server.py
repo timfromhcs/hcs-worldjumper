@@ -55,10 +55,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return 'application/javascript'
         return super().guess_type(path)
 
+class ThreadingServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
+    daemon_threads = True
+
 if __name__ == "__main__":
     os.chdir(DIRECTORY)
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    ThreadingServer.allow_reuse_address = True
+    with ThreadingServer(("", PORT), Handler) as httpd:
         print(f"Server started at http://localhost:{PORT} serving {DIRECTORY}", flush=True)
         try:
             httpd.serve_forever()
