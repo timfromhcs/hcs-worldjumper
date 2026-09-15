@@ -25,7 +25,7 @@ def push_hf_space():
     subprocess.run(["git", "remote", "add", "space", space_url], capture_output=True)
     
     print(f"Pushing commit to Hugging Face Space https://huggingface.co/spaces/{user}/{space_name}...")
-    res = subprocess.run(["git", "push", "space", "main:main", "--force"], capture_output=True, text=True)
+    res = subprocess.run(["git", "push", "space", "main:main"], capture_output=True, text=True)
     
     if res.returncode == 0:
         print(f"SUCCESS: Deployed to Hugging Face Space https://huggingface.co/spaces/{user}/{space_name}")
