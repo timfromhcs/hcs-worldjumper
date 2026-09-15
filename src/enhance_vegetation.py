@@ -87,10 +87,13 @@ def find_vegetation_candidate_locations(scene, num_trees=18):
     locations = []
     np.random.seed(42)
     
-    # Place trees in organic groves along perimeter, borders, and courtyards
-    # Avoid center of roads
-    for _ in range(num_trees):
-        # Perimeter groves
+    # Extract collision mesh to find true ground terrain elevation
+    from src.collision_builder import extract_collision_mesh, ray_mesh_intersect
+    col_mesh = extract_collision_mesh(scene)
+
+    attempts = 0
+    while len(locations) < num_trees and attempts < num_trees * 4:
+        attempts += 1
         side = np.random.choice(["north", "south", "east", "west", "courtyard"])
         if side == "north":
             x = np.random.uniform(min_x + dx*0.05, max_x - dx*0.05)
@@ -107,11 +110,28 @@ def find_vegetation_candidate_locations(scene, num_trees=18):
         else:
             x = np.random.uniform(min_x + dx*0.35, min_x + dx*0.65)
             z = np.random.uniform(min_z + dz*0.35, min_z + dz*0.65)
-            
-        y = min_y + 0.5 # Ground level
-        h = np.random.uniform(6.5, 11.0)
-        r = np.random.uniform(2.8, 4.5)
-        locations.append((x, y, z, h, r))
+
+        ground_y = min_y + 0.1
+        if col_mesh is not None:
+            origin = np.array([x, max_y + 5.0, z])
+            locs_hit, face_idxs, _ = ray_mesh_intersect(col_mesh, origin, np.array([0.0, -1.0, 0.0]))
+            if len(locs_hit) > 0:
+                # Filter for walkable surfaces (Ny >= 0.6) and reject roofs above 60% building height
+                valid_hits = []
+                for hit_p, f_i in zip(locs_hit, face_idxs):
+                    n = col_mesh.face_normals[f_i]
+                    if n[1] >= 0.6 and hit_p[1] <= min_y + (max_y - min_y) * 0.6:
+                        valid_hits.append(hit_p[1])
+                if valid_hits:
+                    ground_y = float(np.min(valid_hits))
+                else:
+                    continue  # Hit a steep wall or high roof, skip candidate
+            else:
+                continue
+
+        h = float(np.random.uniform(6.5, 11.0))
+        r = float(np.random.uniform(2.8, 4.5))
+        locations.append((float(x), float(ground_y), float(z), h, r))
         
     return locations
 

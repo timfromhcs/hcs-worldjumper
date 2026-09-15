@@ -103,7 +103,7 @@ Photorealistic Multi-World First-Person Exploration Engine with Three.js WebGPU 
     # Push to Hugging Face
     print(f"Pushing to Hugging Face Space: https://huggingface.co/spaces/{user}/{space_name}...")
     res = subprocess.run(
-        ["git", "push", space_repo_url, "master:main", "--force"],
+        ["git", "push", space_repo_url, "HEAD:main", "--force"],
         cwd=hf_dir,
         capture_output=True,
         text=True

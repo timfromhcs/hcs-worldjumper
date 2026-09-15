@@ -206,14 +206,24 @@ export class WeatherSystem {
       posAttr.needsUpdate = true;
     }
 
-    // Update procedural vegetation wind swaying
+    // Update procedural vegetation wind swaying (subtle, restrained movement)
     if (worldModel) {
       const t = performance.now() * 0.001;
       worldModel.traverse((child) => {
         if (child.isMesh && (child.name.includes('tree') || child.name.includes('bush') || child.name.includes('leaf') || child.name.includes('grass'))) {
-          const sway = Math.sin(t * this.windSpeed + child.position.x * 0.4) * this.windIntensity;
+          // Bounding sphere check: compound forest meshes must never be rotated as a single object around (0,0,0)
+          if (!child.geometry.boundingSphere) {
+            child.geometry.computeBoundingSphere();
+          }
+          if (child.geometry.boundingSphere && child.geometry.boundingSphere.radius > 6.0) {
+            // Compound multi-tree mesh: keep fixed in place to prevent flying trees
+            return;
+          }
+          // Very subtle wind sway for individual localized elements (max ~0.8 degrees)
+          const subtleIntensity = Math.min(0.015, this.windIntensity * 0.12);
+          const sway = Math.sin(t * this.windSpeed + child.position.x * 0.4) * subtleIntensity;
           child.rotation.z = (child.userData.baseRotZ || 0) + sway;
-          child.rotation.x = (child.userData.baseRotX || 0) + Math.cos(t * this.windSpeed * 0.8 + child.position.z * 0.4) * (sway * 0.5);
+          child.rotation.x = (child.userData.baseRotX || 0) + Math.cos(t * this.windSpeed * 0.8 + child.position.z * 0.4) * (sway * 0.4);
         }
       });
     }

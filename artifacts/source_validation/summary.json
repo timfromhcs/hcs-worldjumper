@@ -1,0 +1,101 @@
+{
+  "maps": [
+    {
+      "map_id": "map",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\source\\original\\map.glb",
+      "file_size": 13511072,
+      "sha256": "bea4ec441ba2081165fcfd93a9a172453c4fa54992910ea73f55e19509ac0ce7",
+      "sha256_expected": "bea4ec441ba2081165fcfd93a9a172453c4fa54992910ea73f55e19509ac0ce7",
+      "hash_match": true,
+      "load_ok": true,
+      "scene_count": 1,
+      "geometry_count": 1,
+      "total_vertices": 274078,
+      "total_faces": 296808,
+      "bounds": [
+        [
+          -0.3908458352088928,
+          -0.04757440835237503,
+          -0.49904370307922363
+        ],
+        [
+          0.38432005047798157,
+          0.042758919298648834,
+          0.499559611082077
+        ]
+      ],
+      "extents": [
+        0.7751658856868744,
+        0.09033332765102386,
+        0.9986033141613007
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "map_id": "map2",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\source\\original\\map2.glb",
+      "file_size": 13184496,
+      "sha256": "a0a4f9f05258fde5d639384e992b7bc2cdba953a3611b22644ec969c1fbdf925",
+      "sha256_expected": "a0a4f9f05258fde5d639384e992b7bc2cdba953a3611b22644ec969c1fbdf925",
+      "hash_match": true,
+      "load_ok": true,
+      "scene_count": 1,
+      "geometry_count": 1,
+      "total_vertices": 270711,
+      "total_faces": 285291,
+      "bounds": [
+        [
+          -0.4998948276042938,
+          -0.12900176644325256,
+          -0.39739084243774414
+        ],
+        [
+          0.5000613927841187,
+          0.1297655999660492,
+          0.4061785340309143
+        ]
+      ],
+      "extents": [
+        0.9999562203884125,
+        0.25876736640930176,
+        0.8035693764686584
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "map_id": "schoolmap",
+      "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\source\\original\\schoolmap.glb",
+      "file_size": 11757352,
+      "sha256": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295",
+      "sha256_expected": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295",
+      "hash_match": true,
+      "load_ok": true,
+      "scene_count": 1,
+      "geometry_count": 1,
+      "total_vertices": 219706,
+      "total_faces": 292109,
+      "bounds": [
+        [
+          -0.49621912837028503,
+          -0.1159217432141304,
+          -0.3507307767868042
+        ],
+        [
+          0.5001422166824341,
+          0.11750247329473495,
+          0.34842514991760254
+        ]
+      ],
+      "extents": [
+        0.9963613450527191,
+        0.23342421650886536,
+        0.6991559267044067
+      ],
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "all_pass": true
+}

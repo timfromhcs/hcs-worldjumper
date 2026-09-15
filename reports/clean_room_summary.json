@@ -3,31 +3,31 @@
   "results": {
     "map": {
       "world_glb_sha256_match": true,
-      "geometry_nodes": 1482,
+      "geometry_nodes": 6,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,
-      "audit_views_count": 11,
+      "audit_views_count": 18,
       "proof_captures_count": 17,
       "reports_complete": true
     },
     "map2": {
       "world_glb_sha256_match": true,
-      "geometry_nodes": 8292,
+      "geometry_nodes": 6,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,
-      "audit_views_count": 11,
+      "audit_views_count": 18,
       "proof_captures_count": 17,
       "reports_complete": true
     },
     "schoolmap": {
       "world_glb_sha256_match": true,
-      "geometry_nodes": 2835,
+      "geometry_nodes": 6,
       "gltf_structure_valid": true,
       "streaming_regions_count": 4,
       "pbr_textures_valid": true,
-      "audit_views_count": 11,
+      "audit_views_count": 18,
       "proof_captures_count": 17,
       "reports_complete": true
     }

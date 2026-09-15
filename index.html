@@ -45,6 +45,16 @@
     <p>HCS WorldJumper requires WebGPU or WebGL2 graphics support. Please enable hardware acceleration in your browser settings or update your GPU drivers to explore these reconstructed game worlds.</p>
   </div>
 
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./node_modules/three/build/three.module.js",
+      "three/webgpu": "./node_modules/three/build/three.webgpu.js",
+      "three/examples/jsm/": "./node_modules/three/examples/jsm/",
+      "three/addons/": "./node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
   <script type="module">
     // Diagnostic error trap
     window.showBootError = function(stage, err) {
@@ -259,12 +269,23 @@
         }
         this.colliders = [];
 
+        const physicsPath = `./output/${mapId}/physics/physics.json`;
+        const mapConfig = this.ui.manifest ? this.ui.manifest.maps.find(m => m.id === mapId) : null;
+
+        const finishSpawn = (spawn) => {
+          this.controller.teleport(new THREE.Vector3(spawn[0], spawn[1], spawn[2]));
+          this.controller.homePosition.set(spawn[0], spawn[1], spawn[2]);
+          if (mapConfig && mapConfig.environment_defaults) {
+            this.weather.setWeather(mapConfig.environment_defaults.weather || 'clear');
+          }
+          if (onComplete) onComplete();
+        };
+
         const loader = new GLTFLoader();
         loader.load(worldPath, (gltf) => {
           this.currentWorldModel = gltf.scene;
           this.scene.add(this.currentWorldModel);
 
-          // Extract colliders and setup shadow casting
           this.currentWorldModel.traverse((child) => {
             if (child.isMesh) {
               child.castShadow = true;
@@ -275,19 +296,22 @@
 
           this.controller.setColliders(this.colliders);
 
-          // Get spawn coordinates from manifest
-          const mapConfig = this.ui.manifest ? this.ui.manifest.maps.find(m => m.id === mapId) : null;
-          const spawn = (mapConfig && mapConfig.spawn_point) ? mapConfig.spawn_point : [0, 2.5, 15];
-          this.controller.teleport(new THREE.Vector3(spawn[0], spawn[1], spawn[2]));
-
-          if (mapConfig && mapConfig.environment_defaults) {
-            this.weather.setWeather(mapConfig.environment_defaults.weather || 'clear');
-          }
-
-          if (onComplete) onComplete();
-          console.log(`World ${mapId} loaded (${this.colliders.length} colliders active)`);
+          fetch(physicsPath)
+            .then((r) => (r.ok ? r.json() : null))
+            .then((physics) => {
+              const fromPhysics = physics?.home_anchor?.spawn_point;
+              const fromManifest = mapConfig?.spawn_point;
+              const spawn = fromPhysics || fromManifest || [0, 2.5, 15];
+              finishSpawn(spawn);
+              console.log(`World ${mapId} loaded (${this.colliders.length} colliders), spawn from ${fromPhysics ? 'physics' : 'manifest'}`);
+            })
+            .catch(() => {
+              const spawn = mapConfig?.spawn_point || [0, 2.5, 15];
+              finishSpawn(spawn);
+            });
         }, undefined, (err) => {
           console.error(`Error loading world asset: ${worldPath}`, err);
+          window.showBootError('WORLD_LOAD', err);
           if (onComplete) onComplete();
         });
       }

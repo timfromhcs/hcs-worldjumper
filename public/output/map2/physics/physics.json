@@ -1,10 +1,10 @@
 {
   "map_id": "map2",
   "collision_stats": {
-    "total_collision_vertices": 299699,
-    "total_collision_faces": 341479,
-    "walkable_surfaces": 74289,
-    "blocking_walls": 267190
+    "total_collision_vertices": 289871,
+    "total_collision_faces": 322363,
+    "walkable_surfaces": 70947,
+    "blocking_walls": 251416
   },
   "player_spec": {
     "eye_height": 1.7,
@@ -19,7 +19,7 @@
   "home_anchor": {
     "status": "VALID_SAFE_SPAWN",
     "spawn_point": [
-      -22.7835667759067,
+      -11.908324282168003,
       6.770000000000001,
       -10.983496588468547
     ],
@@ -33,12 +33,12 @@
   },
   "world_bounds": {
     "min": [
-      -69.66541570405298,
-      -0.25264375455979193,
+      -50.101771174459984,
+      -0.17936662891294697,
       -57.55379042029381
     ],
     "max": [
-      64.28272409065067,
+      59.02236280351711,
       12.800000000000002,
       58.87194415926933
     ]

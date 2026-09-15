@@ -1,2 +1,2 @@
 d71ca84e5a46860b7564db3552737f03cf74fa5b28afb7505ea3f80ad61afc31  HCS-WorldJumper-v1.0.0-windows-x64.zip
-28a2e3aaddbb06caca533a126558678637c9ca1e607c09b42a5d1d9aa8c11327  HCS-WorldJumper-v1.0.0-linux-x86_64.tar.gz
+3da1796c363689980cf1b36e2819c494bbfdaba3234dafefb64b55c984de32bd  HCS-WorldJumper-v1.0.0-linux-x86_64.tar.gz

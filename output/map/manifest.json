@@ -2270,5 +2270,6 @@
     }
   },
   "final_output": "output\\map\\world.glb",
-  "final_sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+  "final_sha256": "4d62c7ce1d4366939ff1531e2c3e40339bde230dccc7b2e2122407e428de9ed2",
+  "final_size_bytes": 28281680
 }

@@ -400,7 +400,12 @@ export class UIManager {
 
     setTimeout(() => {
       this.setLoadingProgress(45, "Reconstructing multi-floor architectural interiors...");
+      const loadTimeout = setTimeout(() => {
+        this.setLoadingProgress(100, "Still loading large world asset…");
+      }, 12000);
+
       this.app.loadWorld(mapId, () => {
+        clearTimeout(loadTimeout);
         this.setLoadingProgress(80, "Initializing environment and spatial audio...");
         setTimeout(() => {
           this.setLoadingProgress(100, "Starting first-person runtime...");

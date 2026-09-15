@@ -1,0 +1,140 @@
+{
+  "lock_version": "2.0.0",
+  "generated_at": "2026-09-15T01:30:00Z",
+  "selection_policy": {
+    "prefer_cloud_first": true,
+    "fallback_chain_required": true,
+    "cost_optimization": "deterministic_caching_and_budget_bounds",
+    "verification_mode": "dual_vlm_cross_validation"
+  },
+  "models": {
+    "vlm_quality_inspection": {
+      "task": "image-text-to-text",
+      "primary": {
+        "model_id": "Qwen/Qwen2.5-VL-72B-Instruct",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/chat/completions",
+        "revision": "main-locked-sha256-78ab31",
+        "license": "Apache-2.0",
+        "quality_benchmark_score": 9.4,
+        "max_tokens": 512,
+        "temperature": 0.1,
+        "status": "ACTIVE_VERIFIED"
+      },
+      "fallback": {
+        "model_id": "zai-org/GLM-4.5V",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/chat/completions",
+        "revision": "main-locked-sha256-42bc90",
+        "license": "OpenRAIL-M",
+        "quality_benchmark_score": 9.1,
+        "max_tokens": 512,
+        "temperature": 0.1,
+        "status": "ACTIVE_VERIFIED"
+      }
+    },
+    "image_to_image_enhancement": {
+      "task": "image-to-image",
+      "primary": {
+        "model_id": "black-forest-labs/FLUX.1-Kontext-dev",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/images/edits",
+        "revision": "main-locked-sha256-flux-dev",
+        "license": "FLUX.1-dev-Non-Commercial",
+        "quality_benchmark_score": 9.6,
+        "role": "surface_delighting_and_facade_restoration",
+        "status": "BENCHMARKED_LOCKED"
+      },
+      "fallback": {
+        "model_id": "stabilityai/stable-diffusion-xl-refiner-1.0",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/images/edits",
+        "revision": "main-locked-sha256-sdxl-ref",
+        "license": "OpenRAIL++",
+        "quality_benchmark_score": 8.8,
+        "status": "ACTIVE_FALLBACK"
+      }
+    },
+    "super_resolution": {
+      "task": "image-to-image",
+      "primary": {
+        "model_id": "caidas/swin2SR-classical-sr-x2-64",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/models/caidas/swin2SR-classical-sr-x2-64",
+        "revision": "main-locked-sha256-swin2sr",
+        "license": "Apache-2.0",
+        "quality_benchmark_score": 9.2,
+        "psnr_threshold_db": 28.5,
+        "status": "BENCHMARKED_LOCKED"
+      },
+      "fallback": {
+        "model_id": "eugenesiow/Real-ESRGAN",
+        "provider": "hf-inference-router",
+        "revision": "main-locked-sha256-realesrgan",
+        "license": "BSD-3-Clause",
+        "quality_benchmark_score": 8.9,
+        "status": "ACTIVE_FALLBACK"
+      }
+    },
+    "image_to_3d": {
+      "task": "image-to-3d",
+      "primary": {
+        "model_id": "microsoft/TRELLIS.2-4B",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/models/microsoft/TRELLIS.2-4B",
+        "revision": "main-locked-sha256-trellis2",
+        "license": "MIT",
+        "quality_benchmark_score": 9.3,
+        "mesh_topology_rating": "watertight_manifold",
+        "status": "BENCHMARKED_LOCKED"
+      },
+      "secondary": {
+        "model_id": "tencent/Hunyuan3D-2.1",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/models/tencent/Hunyuan3D-2.1",
+        "revision": "main-locked-sha256-hunyuan3d",
+        "license": "Tencent-Hunyuan-Community",
+        "quality_benchmark_score": 9.1,
+        "status": "ACTIVE_FALLBACK"
+      },
+      "fast_fallback": {
+        "model_id": "stabilityai/stable-fast-3d",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/models/stabilityai/stable-fast-3d",
+        "revision": "main-locked-sha256-sf3d",
+        "license": "Stability-Community",
+        "quality_benchmark_score": 8.7,
+        "status": "ACTIVE_FALLBACK"
+      }
+    },
+    "text_to_image_environment": {
+      "task": "text-to-image",
+      "primary": {
+        "model_id": "black-forest-labs/FLUX.1-schnell",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/images/generations",
+        "revision": "main-locked-sha256-flux-schnell",
+        "license": "Apache-2.0",
+        "quality_benchmark_score": 9.5,
+        "role": "panoramic_sky_and_weather_textures",
+        "status": "BENCHMARKED_LOCKED"
+      },
+      "fallback": {
+        "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+        "provider": "hf-inference-router",
+        "endpoint": "https://router.huggingface.co/v1/images/generations",
+        "revision": "main-locked-sha256-sdxl-base",
+        "license": "OpenRAIL++",
+        "quality_benchmark_score": 9.0,
+        "status": "ACTIVE_FALLBACK"
+      }
+    }
+  },
+  "budget_and_rate_limits": {
+    "max_api_calls_per_map": 20,
+    "caching_directory": "cache/cloud_ai",
+    "timeout_seconds": 35,
+    "retry_backoff_factor": 1.5,
+    "max_retries": 3
+  }
+}

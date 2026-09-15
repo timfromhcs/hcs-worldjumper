@@ -1,0 +1,31 @@
+{
+  "map_id": "schoolmap",
+  "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\source\\original\\schoolmap.glb",
+  "file_size": 11757352,
+  "sha256": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295",
+  "sha256_expected": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295",
+  "hash_match": true,
+  "load_ok": true,
+  "scene_count": 1,
+  "geometry_count": 1,
+  "total_vertices": 219706,
+  "total_faces": 292109,
+  "bounds": [
+    [
+      -0.49621912837028503,
+      -0.1159217432141304,
+      -0.3507307767868042
+    ],
+    [
+      0.5001422166824341,
+      0.11750247329473495,
+      0.34842514991760254
+    ]
+  ],
+  "extents": [
+    0.9963613450527191,
+    0.23342421650886536,
+    0.6991559267044067
+  ],
+  "errors": []
+}

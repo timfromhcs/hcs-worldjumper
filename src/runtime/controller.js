@@ -101,19 +101,56 @@ export class PlayerController {
     this.colliders = meshList || [];
   }
 
-  teleport(pos, setAsHome = true) {
-    this.position.copy(pos);
-    this.velocity.set(0, 0, 0);
-    if (setAsHome) {
-      this.homePosition.copy(pos);
-    }
-    // Only snap downward if within reasonable local clearance (0.5m above)
-    if (this.colliders.length > 0) {
-      const ray = new THREE.Raycaster(new THREE.Vector3(pos.x, pos.y + 0.5, pos.z), new THREE.Vector3(0, -1, 0), 0, 2.0);
-      const hits = ray.intersectObjects(this.colliders, false);
-      if (hits.length > 0) {
-        this.position.y = hits[0].point.y + 0.05;
+  solveHomeGround(anchor) {
+    if (!this.colliders || this.colliders.length === 0) return anchor.clone();
+
+    // Spiral search offsets: origin first, then concentric rings
+    const searchOffsets = [[0, 0]];
+    for (const radius of [1.0, 2.0, 3.5, 5.0, 8.0]) {
+      for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 4) {
+        searchOffsets.push([radius * Math.cos(angle), radius * Math.sin(angle)]);
       }
+    }
+
+    const downRay = new THREE.Raycaster();
+    const upRay = new THREE.Raycaster();
+
+    for (const [dx, dz] of searchOffsets) {
+      const rayOrigin = new THREE.Vector3(anchor.x + dx, anchor.y + 6.0, anchor.z + dz);
+      downRay.set(rayOrigin, new THREE.Vector3(0, -1, 0));
+      downRay.far = 16.0;
+
+      const hits = downRay.intersectObjects(this.colliders, false);
+      for (const hit of hits) {
+        // 1. Surface normal check: must be walkable floor/terrain (normal.y >= 0.70)
+        const normal = hit.face ? hit.face.normal.clone().applyQuaternion(hit.object.quaternion) : new THREE.Vector3(0, 1, 0);
+        if (normal.y < 0.70) continue;
+
+        // 2. Reject roofs / extreme heights if hitting far above anchor height
+        if (hit.point.y > anchor.y + 3.0 && anchor.y > 0) continue;
+
+        // 3. Clearance check: at least 2.0m open space overhead
+        const clearanceOrigin = hit.point.clone().add(new THREE.Vector3(0, 0.15, 0));
+        upRay.set(clearanceOrigin, new THREE.Vector3(0, 1, 0));
+        upRay.far = 2.2;
+        const overheadHits = upRay.intersectObjects(this.colliders, false);
+        if (overheadHits.length > 0 && overheadHits[0].distance < 2.0) continue;
+
+        // Valid safe walkable ground point resolved!
+        return new THREE.Vector3(hit.point.x, hit.point.y + 0.12, hit.point.z);
+      }
+    }
+
+    return anchor.clone();
+  }
+
+  teleport(pos, setAsHome = true) {
+    const safePos = this.solveHomeGround(pos);
+    this.position.copy(safePos);
+    this.velocity.set(0, 0, 0);
+    this.isGrounded = true;
+    if (setAsHome) {
+      this.homePosition.copy(safePos);
     }
   }
 

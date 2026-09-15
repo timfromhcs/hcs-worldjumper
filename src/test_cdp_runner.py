@@ -82,8 +82,8 @@ async def main():
             await client.send("Network.enable")
 
             # 1. Navigate to main page
-            print("\nNavigating to http://localhost:4173/ ...")
-            nav_res = await client.send("Page.navigate", {"url": "http://localhost:4173/"})
+            print("\nNavigating to http://localhost:8080/ ...")
+            nav_res = await client.send("Page.navigate", {"url": "http://localhost:8080/"})
             print("Navigate response:", nav_res)
 
             # Wait for DOM and scripts to load
@@ -104,7 +104,7 @@ async def main():
 
             # 2. Navigate to World Selector
             print("\nNavigating to World Selector...")
-            await client.send("Page.navigate", {"url": "http://localhost:4173/?screen=world_selector"})
+            await client.send("Page.navigate", {"url": "http://localhost:8080/?screen=world_selector"})
             await asyncio.sleep(3)
 
             s_sel = await client.send("Page.captureScreenshot", {"format": "png"})
@@ -120,7 +120,7 @@ async def main():
 
             # 3. Load Map 1
             print("\nNavigating to Map 1 (District Alpha)...")
-            await client.send("Page.navigate", {"url": "http://localhost:4173/?model=map"})
+            await client.send("Page.navigate", {"url": "http://localhost:8080/?model=map"})
             await asyncio.sleep(5)
 
             s_map1 = await client.send("Page.captureScreenshot", {"format": "png"})

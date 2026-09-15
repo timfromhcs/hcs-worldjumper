@@ -1,0 +1,31 @@
+{
+  "map_id": "map2",
+  "path": "C:\\Users\\hcsme\\Desktop\\glb world builder\\source\\original\\map2.glb",
+  "file_size": 13184496,
+  "sha256": "a0a4f9f05258fde5d639384e992b7bc2cdba953a3611b22644ec969c1fbdf925",
+  "sha256_expected": "a0a4f9f05258fde5d639384e992b7bc2cdba953a3611b22644ec969c1fbdf925",
+  "hash_match": true,
+  "load_ok": true,
+  "scene_count": 1,
+  "geometry_count": 1,
+  "total_vertices": 270711,
+  "total_faces": 285291,
+  "bounds": [
+    [
+      -0.4998948276042938,
+      -0.12900176644325256,
+      -0.39739084243774414
+    ],
+    [
+      0.5000613927841187,
+      0.1297655999660492,
+      0.4061785340309143
+    ]
+  ],
+  "extents": [
+    0.9999562203884125,
+    0.25876736640930176,
+    0.8035693764686584
+  ],
+  "errors": []
+}

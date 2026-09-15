@@ -1,6 +1,6 @@
 {
   "pipeline_version": "2.0.0-cloud-enhanced",
-  "timestamp": "2026-09-15T01:22:00Z",
+  "timestamp": "2026-09-15T03:14:02Z",
   "source_preservation": "VERIFIED_BYTE_IDENTICAL",
   "results": [
     {
@@ -18,8 +18,8 @@
       "collision": "ACCURATE_PHYSICS_DERIVED_FROM_FINAL_WORLD",
       "home_spawn": "VALID_SAFE_SPAWN",
       "home_coordinates": [
-        -4.683507297156318,
-        3.569999999999998,
+        -3.7303765332021115,
+        3.57,
         -35.85910087504557
       ],
       "movement": "FIRST_PERSON_HUMAN_SCALE",
@@ -44,7 +44,7 @@
       "collision": "ACCURATE_PHYSICS_DERIVED_FROM_FINAL_WORLD",
       "home_spawn": "VALID_SAFE_SPAWN",
       "home_coordinates": [
-        -22.7835667759067,
+        -11.908324282168003,
         6.770000000000001,
         -10.983496588468547
       ],
@@ -68,11 +68,11 @@
       "weather_quality": "CLEAR_CLOUDY_RAIN_FOG_NIGHT",
       "audio_quality": "SPATIAL_FOOTSTEPS_AND_AMBIENCE",
       "collision": "ACCURATE_PHYSICS_DERIVED_FROM_FINAL_WORLD",
-      "home_spawn": "VALID_SAFE_SPAWN",
+      "home_spawn": "FALLBACK_CENTER",
       "home_coordinates": [
-        -5.9352454558520265,
-        6.770000000000001,
-        -27.202117903691523
+        4.726737297899188,
+        1.320633371087053,
+        -0.1729220151901245
       ],
       "movement": "FIRST_PERSON_HUMAN_SCALE",
       "jump": "VERIFIED_GROUND_COLLISION",

@@ -45,7 +45,7 @@
         "Spatial Streaming Grid (4 Sectors)"
       ],
       "statistics": {
-        "file_size_mb": 16.64,
+        "file_size_mb": 26.97,
         "vertices": 305686,
         "triangles": 353792,
         "buildings": 57,
@@ -59,7 +59,7 @@
         "weather": "clear",
         "recommended_preset": "HIGH"
       },
-      "checksum_sha256": "720d12b23c2e5110dbf3b330e2608f73eadf7c3e0c19dd8f4656aadc63b2cc01"
+      "checksum_sha256": "4d62c7ce1d4366939ff1531e2c3e40339bde230dccc7b2e2122407e428de9ed2"
     },
     {
       "id": "map2",
@@ -101,7 +101,7 @@
         "Spatial Streaming Grid (4 Sectors)"
       ],
       "statistics": {
-        "file_size_mb": 19.63,
+        "file_size_mb": 22.57,
         "vertices": 356799,
         "triangles": 423997,
         "buildings": 60,
@@ -115,7 +115,7 @@
         "weather": "golden_hour",
         "recommended_preset": "HIGH"
       },
-      "checksum_sha256": "ae870203765dd18afd699dabfab35f953defc1793b137f4ad368ecb67582d7f3"
+      "checksum_sha256": "af118ef386abd9724dd50e62a23f39f064e78b74a724ab1941fafeaf8e0f6d55"
     },
     {
       "id": "schoolmap",
@@ -144,7 +144,7 @@
       "spawn_point": [
         -5.94,
         6.77,
-        -27.20
+        -27.2
       ],
       "features": [
         "Real First-Person POV",
@@ -157,7 +157,7 @@
         "Spatial Streaming Grid (4 Sectors)"
       ],
       "statistics": {
-        "file_size_mb": 17.23,
+        "file_size_mb": 21.64,
         "vertices": 262138,
         "triangles": 365331,
         "buildings": 30,
@@ -171,7 +171,7 @@
         "weather": "overcast",
         "recommended_preset": "ULTRA"
       },
-      "checksum_sha256": "765b183e8067afb7b5b03785312c824b3017caba8c3b90a41c3433754991ddc9"
+      "checksum_sha256": "18b0304509526005a20bd94544bf568e393a90814e0977e3e3944fe69cab924c"
     }
   ]
 }
