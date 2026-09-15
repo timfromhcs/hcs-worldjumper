@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCS WorldJumper - Photorealistic Game World Exploration</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+  <style>*{box-sizing:border-box}html,body{background:#030712;width:100vw;height:100vh;margin:0;padding:0;font-family:Segoe UI,system-ui,sans-serif;overflow:hidden}#game-canvas{width:100%;height:100%;display:block;position:absolute;top:0;left:0}#compat-fallback{color:#f8fafc;z-index:9999;text-align:center;background:#090d16;flex-direction:column;justify-content:center;align-items:center;width:100vw;height:100vh;padding:40px;display:none;position:absolute;top:0;left:0}#compat-fallback h1{color:#ef4444;margin-bottom:12px;font-size:32px}#compat-fallback p{color:#94a3b8;max-width:540px;line-height:1.6}#boot-diagnostic{z-index:100000;color:#fff;pointer-events:auto;background:#b91c1cf2;border:1px solid #ef4444;border-radius:8px;max-width:480px;padding:16px 20px;font-family:monospace;font-size:12px;line-height:1.5;display:none;position:fixed;top:16px;right:16px;box-shadow:0 10px 30px #0009}#boot-diagnostic h4{text-transform:uppercase;margin:0 0 6px;font-size:14px}</style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./node_modules/three/build/three.module.js",
+      "three/webgpu": "./node_modules/three/build/three.webgpu.js",
+      "three/examples/jsm/": "./node_modules/three/examples/jsm/",
+      "three/addons/": "./node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" crossorigin src="./assets/index-UVdv7rX_.js"></script>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+
+  <div id="boot-diagnostic">
+    <h4 id="boot-diag-stage">Startup Diagnostic</h4>
+    <pre id="boot-diag-msg" style="margin: 0; white-space: pre-wrap; word-break: break-word;"></pre>
+  </div>
+
+  <div id="compat-fallback">
+    <h1>Hardware Acceleration Unavailable</h1>
+    <p>HCS WorldJumper requires WebGPU or WebGL2 graphics support. Please enable hardware acceleration in your browser settings or update your GPU drivers to explore these reconstructed game worlds.</p>
+  </div>
+
+
+</body>
+</html>

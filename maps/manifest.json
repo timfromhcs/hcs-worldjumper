@@ -1,0 +1,177 @@
+{
+  "product_name": "HCS WorldJumper",
+  "version": "1.0.0",
+  "schema_version": "2.0.0",
+  "generated_at": "2026-09-14T23:57:00Z",
+  "default_map": "map",
+  "maps": [
+    {
+      "id": "map",
+      "display_name": "District Alpha: Riverside Sector",
+      "description": "Dense urban and residential river district with 57 buildings, complete multi-floor interiors, walkable roads, and riverfront vegetation.",
+      "environment_type": "Urban / Residential District",
+      "world_asset": "output/map/world.glb",
+      "thumbnail": "artifacts/audit/map/overview.png",
+      "bounds": [
+        [
+          -44.6825018286488,
+          0.0,
+          -61.08331506953929
+        ],
+        [
+          48.46750575023629,
+          10.855160567163828,
+          58.91668493046072
+        ]
+      ],
+      "extents_meters": [
+        93.1500075788851,
+        10.855160567163828,
+        120.0
+      ],
+      "spawn_point": [
+        -4.68,
+        3.57,
+        -35.86
+      ],
+      "features": [
+        "Real First-Person POV",
+        "Full Architectural Interiors",
+        "Walkable Floor Slabs & Collision",
+        "2K Tangent PBR Materials",
+        "Dynamic Weather & Time Engine",
+        "Spatial Environmental Audio",
+        "Procedural Wind Vegetation",
+        "Spatial Streaming Grid (4 Sectors)"
+      ],
+      "statistics": {
+        "file_size_mb": 26.97,
+        "vertices": 305686,
+        "triangles": 353792,
+        "buildings": 57,
+        "interior_elements": 1416,
+        "colliders": 1482,
+        "trees": 25,
+        "ground_vegetation": 40
+      },
+      "environment_defaults": {
+        "time_of_day": "14:30",
+        "weather": "clear",
+        "recommended_preset": "HIGH"
+      },
+      "checksum_sha256": "4d62c7ce1d4366939ff1531e2c3e40339bde230dccc7b2e2122407e428de9ed2"
+    },
+    {
+      "id": "map2",
+      "display_name": "Highland Valley: Foothill Settlement",
+      "description": "Sprawling valley topography featuring 60 hillside structures, multi-level architectural complexes, dynamic terrain slopes, and forest groves.",
+      "environment_type": "Highland / Mountain Valley",
+      "world_asset": "output/map2/world.glb",
+      "thumbnail": "artifacts/audit/map2/overview.png",
+      "bounds": [
+        [
+          -64.92254454083962,
+          0.0,
+          -44.118817319533925
+        ],
+        [
+          55.07745545916037,
+          31.05344347681008,
+          52.3137296361552
+        ]
+      ],
+      "extents_meters": [
+        120.0,
+        31.05344347681008,
+        96.43254695568913
+      ],
+      "spawn_point": [
+        -22.78,
+        6.77,
+        -10.98
+      ],
+      "features": [
+        "Real First-Person POV",
+        "Full Architectural Interiors",
+        "Walkable Floor Slabs & Collision",
+        "2K Tangent PBR Materials",
+        "Dynamic Weather & Time Engine",
+        "Spatial Environmental Audio",
+        "Procedural Wind Vegetation",
+        "Spatial Streaming Grid (4 Sectors)"
+      ],
+      "statistics": {
+        "file_size_mb": 22.57,
+        "vertices": 356799,
+        "triangles": 423997,
+        "buildings": 60,
+        "interior_elements": 8226,
+        "colliders": 8292,
+        "trees": 25,
+        "ground_vegetation": 40
+      },
+      "environment_defaults": {
+        "time_of_day": "17:15",
+        "weather": "golden_hour",
+        "recommended_preset": "HIGH"
+      },
+      "checksum_sha256": "af118ef386abd9724dd50e62a23f39f064e78b74a724ab1941fafeaf8e0f6d55"
+    },
+    {
+      "id": "schoolmap",
+      "display_name": "Oakridge Academy: Educational Grounds",
+      "description": "Expansive campus layout comprising classrooms, administrative wings, academic courtyards, perimeter tree groves, and connecting walkways.",
+      "environment_type": "Institutional / Campus Grounds",
+      "world_asset": "output/schoolmap/world.glb",
+      "thumbnail": "artifacts/audit/schoolmap/overview.png",
+      "bounds": [
+        [
+          -70.75866941178589,
+          0.0,
+          -44.27566777727908
+        ],
+        [
+          49.24133058821411,
+          28.113200216114105,
+          39.92943674741481
+        ]
+      ],
+      "extents_meters": [
+        120.0,
+        28.113200216114105,
+        84.2051045246939
+      ],
+      "spawn_point": [
+        -5.94,
+        6.77,
+        -27.2
+      ],
+      "features": [
+        "Real First-Person POV",
+        "Full Architectural Interiors",
+        "Walkable Floor Slabs & Collision",
+        "2K Tangent PBR Materials",
+        "Dynamic Weather & Time Engine",
+        "Spatial Environmental Audio",
+        "Procedural Wind Vegetation",
+        "Spatial Streaming Grid (4 Sectors)"
+      ],
+      "statistics": {
+        "file_size_mb": 21.64,
+        "vertices": 262138,
+        "triangles": 365331,
+        "buildings": 30,
+        "interior_elements": 2769,
+        "colliders": 2835,
+        "trees": 25,
+        "ground_vegetation": 40
+      },
+      "environment_defaults": {
+        "time_of_day": "11:00",
+        "weather": "overcast",
+        "recommended_preset": "ULTRA"
+      },
+      "checksum_sha256": "18b0304509526005a20bd94544bf568e393a90814e0977e3e3944fe69cab924c"
+    }
+  ]
+}

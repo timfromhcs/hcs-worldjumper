@@ -1,0 +1,46 @@
+{
+  "map_id": "map2",
+  "collision_stats": {
+    "total_collision_vertices": 289871,
+    "total_collision_faces": 322363,
+    "walkable_surfaces": 70947,
+    "blocking_walls": 251416
+  },
+  "player_spec": {
+    "eye_height": 1.7,
+    "capsule_radius": 0.35,
+    "capsule_height": 1.8,
+    "walk_speed": 4.5,
+    "sprint_speed": 8.0,
+    "jump_impulse": 4.5,
+    "gravity": 9.81,
+    "max_walkable_slope_deg": 45.0
+  },
+  "home_anchor": {
+    "status": "VALID_SAFE_SPAWN",
+    "spawn_point": [
+      -11.908324282168003,
+      6.770000000000001,
+      -10.983496588468547
+    ],
+    "ground_elevation": 6.620000000000001,
+    "surface_normal": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "clearance_meters": 2.9800000000000004
+  },
+  "world_bounds": {
+    "min": [
+      -50.101771174459984,
+      -0.17936662891294697,
+      -57.55379042029381
+    ],
+    "max": [
+      59.02236280351711,
+      12.800000000000002,
+      58.87194415926933
+    ]
+  }
+}
