@@ -1,0 +1,61 @@
+{
+  "element_id": "HOUSE_001",
+  "map_id": "map2",
+  "class": "building",
+  "dimensions": [
+    12.0,
+    30.57662835917054,
+    12.0
+  ],
+  "world_position": [
+    -59.912051279782474,
+    14.923384285477164,
+    -39.116493828759054
+  ],
+  "bounding_box": {
+    "min": [
+      -65.91205127978247,
+      0.0004154625628742063,
+      -45.116493828759054
+    ],
+    "max": [
+      -53.912051279782474,
+      30.577043821733415,
+      -33.116493828759054
+    ]
+  },
+  "ground_contact": {
+    "base_y": 0.0004154625628742063,
+    "is_grounded": true,
+    "clearance": 0.0
+  },
+  "modes_captured": {
+    "albedo": {
+      "file": "albedo.png",
+      "size_kb": 103.3
+    },
+    "lit": {
+      "file": "lit.png",
+      "size_kb": 97.3
+    },
+    "normals": {
+      "file": "normals.png",
+      "size_kb": 81.7
+    },
+    "depth": {
+      "file": "depth.png",
+      "size_kb": 22.4
+    },
+    "silhouette": {
+      "file": "silhouette.png",
+      "size_kb": 21.7
+    },
+    "semantic": {
+      "file": "mask.png",
+      "size_kb": 68.1
+    },
+    "uv_layout": {
+      "file": "uv_visualization.png"
+    }
+  }
+}

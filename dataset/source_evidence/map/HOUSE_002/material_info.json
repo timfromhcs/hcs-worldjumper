@@ -1,0 +1,9 @@
+{
+  "element_id": "HOUSE_002",
+  "shading": "PBR_MetallicRoughness",
+  "has_vertex_colors": false,
+  "has_uv": true,
+  "has_normals": true,
+  "face_count": 2599,
+  "vertex_count": 2417
+}

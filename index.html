@@ -288,6 +288,12 @@
 
           this.currentWorldModel.traverse((child) => {
             if (child.isMesh) {
+              if (child.geometry && !child.geometry.attributes.normal) {
+                child.geometry.computeVertexNormals();
+              }
+              if (child.material) {
+                child.material.needsUpdate = true;
+              }
               child.castShadow = true;
               child.receiveShadow = true;
               this.colliders.push(child);

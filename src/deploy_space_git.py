@@ -22,8 +22,13 @@ def deploy():
     space_url = f"https://{user}:{token}@huggingface.co/spaces/{user}/{space_name}"
     clone_dir = os.path.abspath("work/hf_space_repo")
     
+    def _remove_readonly(func, path, excinfo):
+        import stat
+        os.chmod(path, stat.S_IWRITE)
+        func(path)
+
     if os.path.exists(clone_dir):
-        shutil.rmtree(clone_dir, ignore_errors=True)
+        shutil.rmtree(clone_dir, onerror=_remove_readonly)
         
     print(f"Cloning Hugging Face Space repository...")
     res = subprocess.run(["git", "clone", space_url, clone_dir], capture_output=True, text=True)
@@ -151,12 +156,12 @@ Photorealistic Multi-World Exploration Engine with WebGPU, Cloud-First Reconstru
     
     if res_push.returncode == 0:
         print(f"SUCCESS: Deployed to Hugging Face Space https://huggingface.co/spaces/{user}/{space_name}")
-        shutil.rmtree(clone_dir, ignore_errors=True)
+        shutil.rmtree(clone_dir, onerror=_remove_readonly)
         return True
     else:
         err = res_push.stderr.replace(token, "[REDACTED_TOKEN]")
         print("HF Space deploy notice:", err)
-        shutil.rmtree(clone_dir, ignore_errors=True)
+        shutil.rmtree(clone_dir, onerror=_remove_readonly)
         return False
 
 if __name__ == "__main__":

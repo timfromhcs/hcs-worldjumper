@@ -1,0 +1,61 @@
+{
+  "element_id": "HOUSE_001",
+  "map_id": "schoolmap",
+  "class": "building",
+  "dimensions": [
+    12.0,
+    3.157871335296044,
+    12.0
+  ],
+  "world_position": [
+    -65.73506472172816,
+    4.4448553043645385,
+    20.738324662795186
+  ],
+  "bounding_box": {
+    "min": [
+      -71.73506472172816,
+      3.554415382064654,
+      14.738324662795186
+    ],
+    "max": [
+      -59.735064721728165,
+      6.712286717360698,
+      26.738324662795186
+    ]
+  },
+  "ground_contact": {
+    "base_y": 3.554415382064654,
+    "is_grounded": true,
+    "clearance": 0.0
+  },
+  "modes_captured": {
+    "albedo": {
+      "file": "albedo.png",
+      "size_kb": 77.3
+    },
+    "lit": {
+      "file": "lit.png",
+      "size_kb": 75.9
+    },
+    "normals": {
+      "file": "normals.png",
+      "size_kb": 56.9
+    },
+    "depth": {
+      "file": "depth.png",
+      "size_kb": 20.4
+    },
+    "silhouette": {
+      "file": "silhouette.png",
+      "size_kb": 19.7
+    },
+    "semantic": {
+      "file": "mask.png",
+      "size_kb": 49.9
+    },
+    "uv_layout": {
+      "file": "uv_visualization.png"
+    }
+  }
+}
