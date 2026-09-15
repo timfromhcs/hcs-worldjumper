@@ -1,0 +1,36 @@
+{
+  "world_id": "map2",
+  "version": "2.1.0-cloud-digital-twin",
+  "paths": {
+    "world": "world.glb",
+    "collision": "collision.glb",
+    "materials": "materials/materials.json",
+    "textures": "textures/",
+    "interiors": "interiors/building_manifest.json",
+    "vegetation": "vegetation/trees_manifest.json",
+    "props": "assets/props_manifest.json",
+    "environment": "environment/sky_weather.json",
+    "audio": "audio/sound_manifest.json",
+    "physics": "metadata/physics.json",
+    "provenance": "provenance.json",
+    "quality": "quality.json"
+  },
+  "bounds": {
+    "min": [
+      -74.98422414064407,
+      -0.17936663329601288,
+      -59.60862636566162
+    ],
+    "max": [
+      75.0092089176178,
+      38.815104961395264,
+      60.926780104637146
+    ]
+  },
+  "home_spawn": [
+    -21.54182722409321,
+    9.969999694824219,
+    -10.983496856689449
+  ],
+  "status": "VALIDATED_PRODUCTION"
+}

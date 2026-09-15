@@ -1,0 +1,25 @@
+{
+  "map_id": "map",
+  "props": [
+    {
+      "type": "street_lamp",
+      "count": 8,
+      "material": "cast_iron"
+    },
+    {
+      "type": "bench",
+      "count": 6,
+      "material": "wood_metal"
+    },
+    {
+      "type": "waste_bin",
+      "count": 4,
+      "material": "polyethylene"
+    },
+    {
+      "type": "civic_sedan",
+      "count": 6,
+      "material": "automotive_metallic"
+    }
+  ]
+}

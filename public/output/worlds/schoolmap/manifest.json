@@ -1,0 +1,36 @@
+{
+  "world_id": "schoolmap",
+  "version": "2.1.0-cloud-digital-twin",
+  "paths": {
+    "world": "world.glb",
+    "collision": "collision.glb",
+    "materials": "materials/materials.json",
+    "textures": "textures/",
+    "interiors": "interiors/building_manifest.json",
+    "vegetation": "vegetation/trees_manifest.json",
+    "props": "assets/props_manifest.json",
+    "environment": "environment/sky_weather.json",
+    "audio": "audio/sound_manifest.json",
+    "physics": "metadata/physics.json",
+    "provenance": "provenance.json",
+    "quality": "quality.json"
+  },
+  "bounds": {
+    "min": [
+      -74.43286925554276,
+      -0.17936663329601288,
+      -52.60961651802063
+    ],
+    "max": [
+      75.02133250236511,
+      35.0136324763298,
+      52.26377248764038
+    ]
+  },
+  "home_spawn": [
+    -5.332238498345461,
+    6.769999885559084,
+    -27.737652587890622
+  ],
+  "status": "VALIDATED_PRODUCTION"
+}

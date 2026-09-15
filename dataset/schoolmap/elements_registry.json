@@ -1,0 +1,6082 @@
+{
+  "map_id": "schoolmap",
+  "element_count": 62,
+  "categories": {
+    "buildings": 30,
+    "trees": 18,
+    "vehicles": 6,
+    "street_props": 8
+  },
+  "world_bounds": [
+    [
+      -70.75866941178589,
+      0.0,
+      -44.27566777727908
+    ],
+    [
+      49.24133058821411,
+      28.113200216114105,
+      39.92943674741481
+    ]
+  ],
+  "elements": [
+    {
+      "element_id": "HOUSE_001",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_0",
+      "source_mesh": "building_mesh_0",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -65.73506472172816,
+        4.4448553043645385,
+        20.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        3.157871335296044,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -71.73506472172816,
+          3.554415382064654,
+          14.738324662795186
+        ],
+        "max": [
+          -59.735064721728165,
+          6.712286717360698,
+          26.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.554415382064654,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 1,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_001",
+        "components": [
+          {
+            "name": "HOUSE_001_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.554415382064654,
+              3.804415382064654
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_001_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.804415382064654,
+              6.712286717360698
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_001_floors",
+            "type": "horizontal_slabs",
+            "story_count": 1,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_001_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.804415382064654,
+              6.362286717360698
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_001_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_001_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.554415382064654,
+              5.854415382064653
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_001_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              6.362286717360698,
+              6.712286717360698
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_001_interior",
+            "type": "room_layout",
+            "stories": 1,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "medium",
+      "importance": 0.242
+    },
+    {
+      "element_id": "HOUSE_002",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_1",
+      "source_mesh": "building_mesh_1",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -55.735064721728165,
+        5.676505418026253,
+        0.7383246627951863
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        4.081678820019143,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -61.735064721728165,
+          4.529552957691654,
+          -5.261675337204814
+        ],
+        "max": [
+          -49.735064721728165,
+          8.611231777710797,
+          6.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.529552957691654,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 1,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_002",
+        "components": [
+          {
+            "name": "HOUSE_002_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.529552957691654,
+              4.779552957691654
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_002_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.779552957691654,
+              8.611231777710797
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_002_floors",
+            "type": "horizontal_slabs",
+            "story_count": 1,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_002_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.779552957691654,
+              8.261231777710798
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_002_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_002_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.529552957691654,
+              6.829552957691654
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_002_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              8.261231777710798,
+              8.611231777710797
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_002_interior",
+            "type": "room_layout",
+            "stories": 1,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "medium",
+      "importance": 0.288
+    },
+    {
+      "element_id": "HOUSE_003",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_2",
+      "source_mesh": "building_mesh_2",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -55.735064721728165,
+        3.9228901863754397,
+        30.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        4.686106766266039,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -61.735064721728165,
+          1.127628252393589,
+          24.738324662795186
+        ],
+        "max": [
+          -49.735064721728165,
+          5.813735018659628,
+          36.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 1.127628252393589,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 2,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_003",
+        "components": [
+          {
+            "name": "HOUSE_003_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              1.127628252393589,
+              1.377628252393589
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_003_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              1.377628252393589,
+              5.813735018659628
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_003_floors",
+            "type": "horizontal_slabs",
+            "story_count": 2,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_003_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              1.377628252393589,
+              5.463735018659628
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_003_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_003_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              1.127628252393589,
+              3.427628252393589
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_003_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              5.463735018659628,
+              5.813735018659628
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_003_interior",
+            "type": "room_layout",
+            "stories": 2,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 0.755
+    },
+    {
+      "element_id": "HOUSE_004",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_3",
+      "source_mesh": "building_mesh_3",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -45.735064721728165,
+        11.910948522085745,
+        -9.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        20.08078286116924,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -51.735064721728165,
+          3.0010616367583505,
+          -15.261675337204814
+        ],
+        "max": [
+          -39.735064721728165,
+          23.08184449792759,
+          -3.2616753372048137
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.0010616367583505,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_004",
+        "components": [
+          {
+            "name": "HOUSE_004_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.0010616367583505,
+              3.2510616367583505
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_004_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.2510616367583505,
+              23.08184449792759
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_004_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_004_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.2510616367583505,
+              22.73184449792759
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_004_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_004_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.0010616367583505,
+              5.30106163675835
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_004_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              22.73184449792759,
+              23.08184449792759
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_004_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_005",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_4",
+      "source_mesh": "building_mesh_4",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -45.735064721728165,
+        11.79464593934059,
+        10.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.889555110098637,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -51.735064721728165,
+          3.640780562795801,
+          4.738324662795186
+        ],
+        "max": [
+          -39.735064721728165,
+          22.530335672894438,
+          16.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.640780562795801,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_005",
+        "components": [
+          {
+            "name": "HOUSE_005_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.640780562795801,
+              3.890780562795801
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_005_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.890780562795801,
+              22.530335672894438
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_005_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_005_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.890780562795801,
+              22.180335672894437
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_005_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_005_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.640780562795801,
+              5.940780562795801
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_005_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              22.180335672894437,
+              22.530335672894438
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_005_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_006",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_5",
+      "source_mesh": "building_mesh_5",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -35.735064721728165,
+        4.493234500880044,
+        20.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        16.93359235200385,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -41.735064721728165,
+          3.130058593866256,
+          14.738324662795186
+        ],
+        "max": [
+          -29.735064721728165,
+          20.063650945870105,
+          26.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.130058593866256,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_006",
+        "components": [
+          {
+            "name": "HOUSE_006_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.130058593866256,
+              3.380058593866256
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_006_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.380058593866256,
+              20.063650945870105
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_006_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_006_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.380058593866256,
+              19.713650945870103
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_006_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_006_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.130058593866256,
+              5.4300585938662564
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_006_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              19.713650945870103,
+              20.063650945870105
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_006_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_007",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_6",
+      "source_mesh": "building_mesh_6",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -25.735064721728165,
+        15.901137998789629,
+        -9.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        25.03446109469038,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -31.735064721728165,
+          3.0676094783556724,
+          -15.261675337204814
+        ],
+        "max": [
+          -19.735064721728165,
+          28.102070573046053,
+          -3.2616753372048137
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.0676094783556724,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_007",
+        "components": [
+          {
+            "name": "HOUSE_007_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.0676094783556724,
+              3.3176094783556724
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_007_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3176094783556724,
+              28.102070573046053
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_007_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_007_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3176094783556724,
+              27.75207057304605
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_007_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_007_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.0676094783556724,
+              5.367609478355672
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_007_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              27.75207057304605,
+              28.102070573046053
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_007_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_008",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_7",
+      "source_mesh": "building_mesh_7",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -25.735064721728165,
+        15.041067181984694,
+        10.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.23236746911426,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -31.735064721728165,
+          4.2060700568991,
+          4.738324662795186
+        ],
+        "max": [
+          -19.735064721728165,
+          22.43843752601336,
+          16.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.2060700568991,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_008",
+        "components": [
+          {
+            "name": "HOUSE_008_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.2060700568991,
+              4.4560700568991
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_008_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.4560700568991,
+              22.43843752601336
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_008_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_008_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.4560700568991,
+              22.088437526013358
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_008_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_008_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.2060700568991,
+              6.5060700568991
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_008_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              22.088437526013358,
+              22.43843752601336
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_008_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_009",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_8",
+      "source_mesh": "building_mesh_8",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -25.735064721728165,
+        3.523953018739954,
+        30.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        4.7162255084814735,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -31.735064721728165,
+          0.7422633516607977,
+          24.738324662795186
+        ],
+        "max": [
+          -19.735064721728165,
+          5.458488860142271,
+          36.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.7422633516607977,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 2,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_009",
+        "components": [
+          {
+            "name": "HOUSE_009_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              0.7422633516607977,
+              0.9922633516607977
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_009_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              0.9922633516607977,
+              5.458488860142271
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_009_floors",
+            "type": "horizontal_slabs",
+            "story_count": 2,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_009_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              0.9922633516607977,
+              5.1084888601422715
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_009_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_009_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              0.7422633516607977,
+              3.0422633516607975
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_009_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              5.1084888601422715,
+              5.458488860142271
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_009_interior",
+            "type": "room_layout",
+            "stories": 2,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 0.877
+    },
+    {
+      "element_id": "HOUSE_010",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_9",
+      "source_mesh": "building_mesh_9",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -15.735064721728165,
+        11.882698203357467,
+        -19.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        25.42372401763454,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -21.735064721728165,
+          2.6783465554115136,
+          -25.261675337204814
+        ],
+        "max": [
+          -9.735064721728165,
+          28.102070573046053,
+          -13.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 2.6783465554115136,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_010",
+        "components": [
+          {
+            "name": "HOUSE_010_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              2.6783465554115136,
+              2.9283465554115136
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_010_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              2.9283465554115136,
+              28.102070573046053
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_010_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_010_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              2.9283465554115136,
+              27.75207057304605
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_010_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_010_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              2.6783465554115136,
+              4.978346555411513
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_010_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              27.75207057304605,
+              28.102070573046053
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_010_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_011",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_10",
+      "source_mesh": "building_mesh_10",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -15.735064721728165,
+        22.70501430318566,
+        0.7383246627951863
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        5.789802651857531,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -21.735064721728165,
+          21.077716249527143,
+          -5.261675337204814
+        ],
+        "max": [
+          -9.735064721728165,
+          26.867518901384674,
+          6.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 21.077716249527143,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 2,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_011",
+        "components": [
+          {
+            "name": "HOUSE_011_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              21.077716249527143,
+              21.327716249527143
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_011_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              21.327716249527143,
+              26.867518901384674
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_011_floors",
+            "type": "horizontal_slabs",
+            "story_count": 2,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_011_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              21.327716249527143,
+              26.517518901384673
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_011_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_011_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              21.077716249527143,
+              23.377716249527143
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_011_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              26.517518901384673,
+              26.867518901384674
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_011_interior",
+            "type": "room_layout",
+            "stories": 2,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 0.664
+    },
+    {
+      "element_id": "HOUSE_012",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_11",
+      "source_mesh": "building_mesh_11",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -15.735064721728165,
+        9.573901365754905,
+        20.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.29463651944903,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -21.735064721728165,
+          3.1144365938620093,
+          14.738324662795186
+        ],
+        "max": [
+          -9.735064721728165,
+          21.409073113311038,
+          26.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1144365938620093,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_012",
+        "components": [
+          {
+            "name": "HOUSE_012_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1144365938620093,
+              3.3644365938620093
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_012_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3644365938620093,
+              21.409073113311038
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_012_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_012_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3644365938620093,
+              21.059073113311037
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_012_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_012_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1144365938620093,
+              5.414436593862009
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_012_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              21.059073113311037,
+              21.409073113311038
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_012_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_013",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_12",
+      "source_mesh": "building_mesh_12",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -5.735064721728165,
+        21.235217051860047,
+        -9.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        23.829683289583784,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -11.735064721728165,
+          4.276493786450299,
+          -15.261675337204814
+        ],
+        "max": [
+          0.2649352782718353,
+          28.106177076034083,
+          -3.2616753372048137
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.276493786450299,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_013",
+        "components": [
+          {
+            "name": "HOUSE_013_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.276493786450299,
+              4.526493786450299
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_013_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.526493786450299,
+              28.106177076034083
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_013_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_013_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.526493786450299,
+              27.75617707603408
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_013_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_013_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.276493786450299,
+              6.576493786450299
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_013_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              27.75617707603408,
+              28.106177076034083
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_013_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_014",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_13",
+      "source_mesh": "building_mesh_13",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -5.735064721728165,
+        12.872894933900884,
+        10.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.203387743824926,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -11.735064721728165,
+          3.9723729769550378,
+          4.738324662795186
+        ],
+        "max": [
+          0.2649352782718353,
+          22.175760720779962,
+          16.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.9723729769550378,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_014",
+        "components": [
+          {
+            "name": "HOUSE_014_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.9723729769550378,
+              4.222372976955038
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_014_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.222372976955038,
+              22.175760720779962
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_014_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_014_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.222372976955038,
+              21.82576072077996
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_014_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_014_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.9723729769550378,
+              6.272372976955038
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_014_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              21.82576072077996,
+              22.175760720779962
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_014_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_015",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_14",
+      "source_mesh": "building_mesh_14",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        -5.735064721728165,
+        3.3072380369870684,
+        30.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        4.4882899159403715,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -11.735064721728165,
+          0.634722266964331,
+          24.738324662795186
+        ],
+        "max": [
+          0.2649352782718353,
+          5.123012182904702,
+          36.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.634722266964331,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 1,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_015",
+        "components": [
+          {
+            "name": "HOUSE_015_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              0.634722266964331,
+              0.884722266964331
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_015_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              0.884722266964331,
+              5.123012182904702
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_015_floors",
+            "type": "horizontal_slabs",
+            "story_count": 1,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_015_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              0.884722266964331,
+              4.7730121829047025
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_015_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_015_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              0.634722266964331,
+              2.934722266964331
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_015_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              4.7730121829047025,
+              5.123012182904702
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_015_interior",
+            "type": "room_layout",
+            "stories": 1,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 0.847
+    },
+    {
+      "element_id": "HOUSE_016",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_15",
+      "source_mesh": "building_mesh_15",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        4.264935278271835,
+        11.514262264472022,
+        -19.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        25.410640278563825,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          -1.7350647217281647,
+          2.695536797470258,
+          -25.261675337204814
+        ],
+        "max": [
+          10.264935278271835,
+          28.106177076034083,
+          -13.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 2.695536797470258,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_016",
+        "components": [
+          {
+            "name": "HOUSE_016_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              2.695536797470258,
+              2.945536797470258
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_016_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              2.945536797470258,
+              28.106177076034083
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_016_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_016_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              2.945536797470258,
+              27.75617707603408
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_016_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_016_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              2.695536797470258,
+              4.995536797470258
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_016_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              27.75617707603408,
+              28.106177076034083
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_016_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_017",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_16",
+      "source_mesh": "building_mesh_16",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        14.264935278271835,
+        18.664155335414588,
+        -9.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        23.65769801508653,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          8.264935278271835,
+          4.343346422755524,
+          -15.261675337204814
+        ],
+        "max": [
+          20.264935278271835,
+          28.001044437842054,
+          -3.2616753372048137
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.343346422755524,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_017",
+        "components": [
+          {
+            "name": "HOUSE_017_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.343346422755524,
+              4.593346422755524
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_017_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.593346422755524,
+              28.001044437842054
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_017_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_017_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.593346422755524,
+              27.651044437842053
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_017_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_017_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.343346422755524,
+              6.643346422755524
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_017_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              27.651044437842053,
+              28.001044437842054
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_017_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_018",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_17",
+      "source_mesh": "building_mesh_17",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        14.264935278271835,
+        14.127409419279473,
+        10.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        21.445102001388538,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          8.264935278271835,
+          4.018599775504789,
+          4.738324662795186
+        ],
+        "max": [
+          20.264935278271835,
+          25.463701776893327,
+          16.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.018599775504789,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_018",
+        "components": [
+          {
+            "name": "HOUSE_018_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.018599775504789,
+              4.268599775504789
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_018_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.268599775504789,
+              25.463701776893327
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_018_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_018_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.268599775504789,
+              25.113701776893326
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_018_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_018_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.018599775504789,
+              6.318599775504789
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_018_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              25.113701776893326,
+              25.463701776893327
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_018_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_019",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_18",
+      "source_mesh": "building_mesh_18",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        14.264935278271835,
+        2.9306025904430593,
+        30.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        4.466055156954469,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          8.264935278271835,
+          0.277360492186921,
+          24.738324662795186
+        ],
+        "max": [
+          20.264935278271835,
+          4.74341564914139,
+          36.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.277360492186921,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 1,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_019",
+        "components": [
+          {
+            "name": "HOUSE_019_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              0.277360492186921,
+              0.527360492186921
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_019_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              0.527360492186921,
+              4.74341564914139
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_019_floors",
+            "type": "horizontal_slabs",
+            "story_count": 1,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_019_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              0.527360492186921,
+              4.3934156491413905
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_019_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_019_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              0.277360492186921,
+              2.5773604921869206
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_019_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              4.3934156491413905,
+              4.74341564914139
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_019_interior",
+            "type": "room_layout",
+            "stories": 1,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 0.803
+    },
+    {
+      "element_id": "HOUSE_020",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_19",
+      "source_mesh": "building_mesh_19",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        24.264935278271835,
+        13.483859241426682,
+        -39.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        21.297006769403716,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          18.264935278271835,
+          3.1146014043468515,
+          -45.261675337204814
+        ],
+        "max": [
+          30.264935278271835,
+          24.41160817375057,
+          -33.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1146014043468515,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_020",
+        "components": [
+          {
+            "name": "HOUSE_020_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1146014043468515,
+              3.3646014043468515
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_020_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3646014043468515,
+              24.41160817375057
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_020_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_020_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3646014043468515,
+              24.061608173750567
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_020_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_020_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1146014043468515,
+              5.414601404346851
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_020_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              24.061608173750567,
+              24.41160817375057
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_020_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_021",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_20",
+      "source_mesh": "building_mesh_20",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        24.264935278271835,
+        6.501728518442677,
+        -19.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.614752321098443,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          18.264935278271835,
+          3.1276941167652077,
+          -25.261675337204814
+        ],
+        "max": [
+          30.264935278271835,
+          21.742446437863652,
+          -13.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1276941167652077,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_021",
+        "components": [
+          {
+            "name": "HOUSE_021_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1276941167652077,
+              3.3776941167652077
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_021_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3776941167652077,
+              21.742446437863652
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_021_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_021_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3776941167652077,
+              21.39244643786365
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_021_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_021_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1276941167652077,
+              5.427694116765208
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_021_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              21.39244643786365,
+              21.742446437863652
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_021_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 0.968
+    },
+    {
+      "element_id": "HOUSE_022",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_21",
+      "source_mesh": "building_mesh_21",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        24.264935278271835,
+        15.10374439509193,
+        0.7383246627951863
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        19.47437030953772,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          18.264935278271835,
+          4.308017156681739,
+          -5.261675337204814
+        ],
+        "max": [
+          30.264935278271835,
+          23.782387466219458,
+          6.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.308017156681739,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_022",
+        "components": [
+          {
+            "name": "HOUSE_022_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.308017156681739,
+              4.558017156681739
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_022_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.558017156681739,
+              23.782387466219458
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_022_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_022_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.558017156681739,
+              23.432387466219456
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_022_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_022_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.308017156681739,
+              6.608017156681739
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_022_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              23.432387466219456,
+              23.782387466219458
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_022_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_023",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_22",
+      "source_mesh": "building_mesh_22",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        24.264935278271835,
+        6.182939066678317,
+        20.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        18.817208691261477,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          18.264935278271835,
+          3.249701135179325,
+          14.738324662795186
+        ],
+        "max": [
+          30.264935278271835,
+          22.066909826440803,
+          26.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.249701135179325,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 6,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_023",
+        "components": [
+          {
+            "name": "HOUSE_023_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.249701135179325,
+              3.499701135179325
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_023_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.499701135179325,
+              22.066909826440803
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_023_floors",
+            "type": "horizontal_slabs",
+            "story_count": 6,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_023_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.499701135179325,
+              21.7169098264408
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_023_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_023_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.249701135179325,
+              5.549701135179324
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_023_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              21.7169098264408,
+              22.066909826440803
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_023_interior",
+            "type": "room_layout",
+            "stories": 6,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_024",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_23",
+      "source_mesh": "building_mesh_23",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        34.264935278271835,
+        14.640882345445425,
+        -29.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        23.412479755006075,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          28.264935278271835,
+          3.1114924385039298,
+          -35.261675337204814
+        ],
+        "max": [
+          40.264935278271835,
+          26.523972193510005,
+          -23.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1114924385039298,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 8,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_024",
+        "components": [
+          {
+            "name": "HOUSE_024_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1114924385039298,
+              3.3614924385039298
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_024_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3614924385039298,
+              26.523972193510005
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_024_floors",
+            "type": "horizontal_slabs",
+            "story_count": 8,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_024_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3614924385039298,
+              26.173972193510004
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_024_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_024_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1114924385039298,
+              5.411492438503929
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_024_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              26.173972193510004,
+              26.523972193510005
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_024_interior",
+            "type": "room_layout",
+            "stories": 8,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_025",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_24",
+      "source_mesh": "building_mesh_24",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        34.264935278271835,
+        19.567242348227186,
+        -9.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        19.51938211681809,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          28.264935278271835,
+          4.470779923594338,
+          -15.261675337204814
+        ],
+        "max": [
+          40.264935278271835,
+          23.99016204041243,
+          -3.2616753372048137
+        ]
+      },
+      "ground_contact": {
+        "base_y": 4.470779923594338,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_025",
+        "components": [
+          {
+            "name": "HOUSE_025_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              4.470779923594338,
+              4.720779923594338
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_025_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              4.720779923594338,
+              23.99016204041243
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_025_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_025_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              4.720779923594338,
+              23.640162040412427
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_025_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_025_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              4.470779923594338,
+              6.770779923594338
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_025_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              23.640162040412427,
+              23.99016204041243
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_025_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_026",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_25",
+      "source_mesh": "building_mesh_25",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        34.264935278271835,
+        3.358078167184938,
+        30.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        6.103916480387448,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          28.264935278271835,
+          0.6008308302927894,
+          24.738324662795186
+        ],
+        "max": [
+          40.264935278271835,
+          6.704747310680237,
+          36.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6008308302927894,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 2,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_026",
+        "components": [
+          {
+            "name": "HOUSE_026_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              0.6008308302927894,
+              0.8508308302927894
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_026_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              0.8508308302927894,
+              6.704747310680237
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_026_floors",
+            "type": "horizontal_slabs",
+            "story_count": 2,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_026_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              0.8508308302927894,
+              6.354747310680238
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_026_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_026_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              0.6008308302927894,
+              2.900830830292789
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_026_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              6.354747310680238,
+              6.704747310680237
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_026_interior",
+            "type": "room_layout",
+            "stories": 2,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 0.754
+    },
+    {
+      "element_id": "HOUSE_027",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_26",
+      "source_mesh": "building_mesh_26",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        44.264935278271835,
+        13.439709830356865,
+        -39.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        21.901324044363154,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          38.264935278271835,
+          3.1213601297833216,
+          -45.261675337204814
+        ],
+        "max": [
+          50.264935278271835,
+          25.022684174146477,
+          -33.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1213601297833216,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_027",
+        "components": [
+          {
+            "name": "HOUSE_027_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1213601297833216,
+              3.3713601297833216
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_027_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3713601297833216,
+              25.022684174146477
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_027_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_027_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3713601297833216,
+              24.672684174146475
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_027_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_027_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1213601297833216,
+              5.421360129783322
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_027_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              24.672684174146475,
+              25.022684174146477
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_027_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_028",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_27",
+      "source_mesh": "building_mesh_27",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        44.264935278271835,
+        8.990831499288419,
+        -19.261675337204814
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        20.22081284830236,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          38.264935278271835,
+          3.1485739002586697,
+          -25.261675337204814
+        ],
+        "max": [
+          50.264935278271835,
+          23.369386748561027,
+          -13.261675337204814
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.1485739002586697,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_028",
+        "components": [
+          {
+            "name": "HOUSE_028_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.1485739002586697,
+              3.3985739002586697
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_028_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.3985739002586697,
+              23.369386748561027
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_028_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_028_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.3985739002586697,
+              23.019386748561026
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_028_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_028_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.1485739002586697,
+              5.448573900258669
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_028_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              23.019386748561026,
+              23.369386748561027
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_028_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_029",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_28",
+      "source_mesh": "building_mesh_28",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        44.264935278271835,
+        12.502041564814032,
+        0.7383246627951863
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        20.018119880873428,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          38.264935278271835,
+          3.5131299069442914,
+          -5.261675337204814
+        ],
+        "max": [
+          50.264935278271835,
+          23.531249787817718,
+          6.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 3.5131299069442914,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 7,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_029",
+        "components": [
+          {
+            "name": "HOUSE_029_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              3.5131299069442914,
+              3.7631299069442914
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_029_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              3.7631299069442914,
+              23.531249787817718
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_029_floors",
+            "type": "horizontal_slabs",
+            "story_count": 7,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_029_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              3.7631299069442914,
+              23.181249787817716
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_029_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_029_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              3.5131299069442914,
+              5.813129906944291
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_029_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              23.181249787817716,
+              23.531249787817718
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_029_interior",
+            "type": "room_layout",
+            "stories": 7,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 1.0
+    },
+    {
+      "element_id": "HOUSE_030",
+      "map_id": "schoolmap",
+      "class": "building",
+      "source_node": "building_node_29",
+      "source_mesh": "building_mesh_29",
+      "source_material": "photogrammetry_diffuse",
+      "source_texture": "atlas_0",
+      "world_position": [
+        44.264935278271835,
+        4.333357139676242,
+        20.738324662795186
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        12.0,
+        5.129113311515535,
+        12.0
+      ],
+      "bounding_box": {
+        "min": [
+          38.264935278271835,
+          1.6354186286517383,
+          14.738324662795186
+        ],
+        "max": [
+          50.264935278271835,
+          6.764531940167274,
+          26.738324662795186
+        ]
+      },
+      "ground_contact": {
+        "base_y": 1.6354186286517383,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "district": "urban_modular",
+        "estimated_stories": 2,
+        "building_typology": "commercial_residential",
+        "neighbor_count": 30
+      },
+      "hierarchy": {
+        "root": "HOUSE_030",
+        "components": [
+          {
+            "name": "HOUSE_030_plinth",
+            "type": "foundation",
+            "elevation_range": [
+              1.6354186286517383,
+              1.8854186286517383
+            ],
+            "material_type": "concrete_plinth"
+          },
+          {
+            "name": "HOUSE_030_facade_walls",
+            "type": "structural_shell",
+            "elevation_range": [
+              1.8854186286517383,
+              6.764531940167274
+            ],
+            "material_type": "architectural_concrete"
+          },
+          {
+            "name": "HOUSE_030_floors",
+            "type": "horizontal_slabs",
+            "story_count": 2,
+            "material_type": "reinforced_concrete"
+          },
+          {
+            "name": "HOUSE_030_curtain_glazing",
+            "type": "windows",
+            "elevation_range": [
+              1.8854186286517383,
+              6.414531940167274
+            ],
+            "material_type": "architectural_glass"
+          },
+          {
+            "name": "HOUSE_030_mullions",
+            "type": "window_frames",
+            "material_type": "graphite_aluminum"
+          },
+          {
+            "name": "HOUSE_030_entrance",
+            "type": "door_portico",
+            "elevation_range": [
+              1.6354186286517383,
+              3.935418628651738
+            ],
+            "material_type": "portal_canopy"
+          },
+          {
+            "name": "HOUSE_030_roof",
+            "type": "parapet_deck",
+            "elevation_range": [
+              6.414531940167274,
+              6.764531940167274
+            ],
+            "material_type": "bitumen_membrane"
+          },
+          {
+            "name": "HOUSE_030_interior",
+            "type": "room_layout",
+            "stories": 2,
+            "material_type": "interior_plaster"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "high",
+      "importance": 0.718
+    },
+    {
+      "element_id": "TREE_001",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_0",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -44.5069752741219,
+        4.099394331472473,
+        0.9744172501113297
+      ],
+      "world_rotation": [
+        0.0,
+        45.31494053483827,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3.053609726645387,
+        7.175465505985375,
+        3.053609726645387
+      ],
+      "bounding_box": {
+        "min": [
+          -46.033780137444595,
+          0.5116615784797851,
+          -0.5523876132113639
+        ],
+        "max": [
+          -42.980170410799204,
+          7.6871270844651605,
+          2.5012221134340233
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5116615784797851,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_001",
+        "components": [
+          {
+            "name": "TREE_001_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_001_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_001_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_002",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_1",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        9.69483802437199,
+        2.930850699057469,
+        0.08574956392082811
+      ],
+      "world_rotation": [
+        0.0,
+        193.84771814614075,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.396465188054245,
+        4.831330200529358,
+        4.396465188054245
+      ],
+      "bounding_box": {
+        "min": [
+          7.496605430344867,
+          0.51518559879279,
+          -2.1124830301062945
+        ],
+        "max": [
+          11.893070618399111,
+          5.346515799322148,
+          2.2839821579479507
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.51518559879279,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_002",
+        "components": [
+          {
+            "name": "TREE_002_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_002_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_002_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_003",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_2",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        4.614536142352009,
+        4.748084098896492,
+        16.663143442172014
+      ],
+      "world_rotation": [
+        0.0,
+        296.02257703675656,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.553918953188588,
+        8.226279322500883,
+        4.553918953188588
+      ],
+      "bounding_box": {
+        "min": [
+          2.3375766657577146,
+          0.6349444376460511,
+          14.38618396557772
+        ],
+        "max": [
+          6.891495618946303,
+          8.861223760146935,
+          18.940102918766307
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6349444376460511,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_003",
+        "components": [
+          {
+            "name": "TREE_003_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_003_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_003_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_004",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_3",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        4.103114528876233,
+        4.962494318837919,
+        -28.829983952415702
+      ],
+      "world_rotation": [
+        0.0,
+        182.17045806888962,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.060400227037242,
+        8.116006245209311,
+        4.060400227037242
+      ],
+      "bounding_box": {
+        "min": [
+          2.0729144153576122,
+          0.9044911962332635,
+          -30.860184065934323
+        ],
+        "max": [
+          6.133314642394854,
+          9.020497441442574,
+          -26.79978383889708
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.9044911962332635,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_004",
+        "components": [
+          {
+            "name": "TREE_004_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_004_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_004_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_005",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_4",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -40.124882491891746,
+        4.156671108452661,
+        -27.56226739770471
+      ],
+      "world_rotation": [
+        0.0,
+        148.64166223617397,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3.655199134490814,
+        7.0920209540941865,
+        3.655199134490814
+      ],
+      "bounding_box": {
+        "min": [
+          -41.952482059137154,
+          0.6106606314055678,
+          -29.389866964950116
+        ],
+        "max": [
+          -38.29728292464634,
+          7.702681585499755,
+          -25.7346678304593
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6106606314055678,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_005",
+        "components": [
+          {
+            "name": "TREE_005_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_005_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_005_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_006",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_5",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -28.478013127100475,
+        4.7176133580774575,
+        -23.35173839774724
+      ],
+      "world_rotation": [
+        0.0,
+        175.64085508742457,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.698435240023782,
+        7.578178159192724,
+        4.698435240023782
+      ],
+      "bounding_box": {
+        "min": [
+          -30.827230747112367,
+          0.9285242784810952,
+          -25.700956017759133
+        ],
+        "max": [
+          -26.128795507088583,
+          8.50670243767382,
+          -21.00252077773535
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.9285242784810952,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_006",
+        "components": [
+          {
+            "name": "TREE_006_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_006_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_006_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_007",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_6",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -27.175284311095787,
+        3.153371587739372,
+        -28.03179402754269
+      ],
+      "world_rotation": [
+        0.0,
+        273.9561140761242,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.9076399563046684,
+        5.00909617729854,
+        2.9076399563046684
+      ],
+      "bounding_box": {
+        "min": [
+          -28.629104289248122,
+          0.6488234990901024,
+          -29.485614005695027
+        ],
+        "max": [
+          -25.72146433294345,
+          5.657919676388643,
+          -26.577974049390356
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6488234990901024,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_007",
+        "components": [
+          {
+            "name": "TREE_007_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_007_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_007_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_008",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_7",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -41.62997117445273,
+        4.024570453416047,
+        -26.351402618814976
+      ],
+      "world_rotation": [
+        0.0,
+        179.85934870610507,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.2353680473990245,
+        6.488925059552043,
+        4.2353680473990245
+      ],
+      "bounding_box": {
+        "min": [
+          -43.74765519815224,
+          0.780107923640025,
+          -28.46908664251449
+        ],
+        "max": [
+          -39.51228715075322,
+          7.269032983192068,
+          -24.233718595115462
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.780107923640025,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_008",
+        "components": [
+          {
+            "name": "TREE_008_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_008_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_008_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_009",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_8",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        5.0747548566027945,
+        3.2173758267748864,
+        14.124208634710143
+      ],
+      "world_rotation": [
+        0.0,
+        78.06687324009003,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.9500342279781093,
+        4.767969420732612,
+        2.9500342279781093
+      ],
+      "bounding_box": {
+        "min": [
+          3.5997377426137396,
+          0.8333911164085801,
+          12.64919152072109
+        ],
+        "max": [
+          6.549771970591849,
+          5.6013605371411925,
+          15.599225748699197
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.8333911164085801,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_009",
+        "components": [
+          {
+            "name": "TREE_009_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_009_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_009_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_010",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_9",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -26.45820246569138,
+        4.2445874314444865,
+        -28.862388016733984
+      ],
+      "world_rotation": [
+        0.0,
+        94.65532642342369,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.001576234023214,
+        7.424339145881932,
+        4.001576234023214
+      ],
+      "bounding_box": {
+        "min": [
+          -28.458990582702985,
+          0.5324178585035206,
+          -30.86317613374559
+        ],
+        "max": [
+          -24.457414348679773,
+          7.9567570043854525,
+          -26.86159989972238
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5324178585035206,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_010",
+        "components": [
+          {
+            "name": "TREE_010_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_010_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_010_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_011",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_10",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -11.80703370593126,
+        4.180872739763883,
+        -31.236095076527633
+      ],
+      "world_rotation": [
+        0.0,
+        48.39733408250849,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3.5008109608458904,
+        6.79661322046293,
+        3.5008109608458904
+      ],
+      "bounding_box": {
+        "min": [
+          -13.557439186354205,
+          0.7825661295324178,
+          -32.98650055695058
+        ],
+        "max": [
+          -10.056628225508316,
+          7.579179349995348,
+          -29.485689596104688
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.7825661295324178,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_011",
+        "components": [
+          {
+            "name": "TREE_011_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_011_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_011_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_012",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_11",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -35.74486370555441,
+        3.350065150920152,
+        -6.625889862902419
+      ],
+      "world_rotation": [
+        0.0,
+        198.34651793005963,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.127149178651136,
+        5.689123301227024,
+        4.127149178651136
+      ],
+      "bounding_box": {
+        "min": [
+          -37.80843829487998,
+          0.5055035003066396,
+          -8.689464452227988
+        ],
+        "max": [
+          -33.68128911622884,
+          6.194626801533664,
+          -4.562315273576851
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5055035003066396,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_012",
+        "components": [
+          {
+            "name": "TREE_012_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_012_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_012_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_013",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_12",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        4.6823101808275425,
+        3.397269735526835,
+        24.320967692081766
+      ],
+      "world_rotation": [
+        0.0,
+        36.63850035419053,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.145328871811839,
+        5.651950323992998,
+        4.145328871811839
+      ],
+      "bounding_box": {
+        "min": [
+          2.609645744921623,
+          0.5712945735303362,
+          22.248303256175845
+        ],
+        "max": [
+          6.7549746167334614,
+          6.223244897523334,
+          26.393632127987686
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5712945735303362,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_013",
+        "components": [
+          {
+            "name": "TREE_013_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_013_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_013_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_014",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_13",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -35.477122816438,
+        4.258229694344885,
+        -10.854570843671958
+      ],
+      "world_rotation": [
+        0.0,
+        343.70979705295395,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        4.500285741358812,
+        7.010401086531129,
+        4.500285741358812
+      ],
+      "bounding_box": {
+        "min": [
+          -37.7272656871174,
+          0.7530291510793204,
+          -13.104713714351364
+        ],
+        "max": [
+          -33.22697994575859,
+          7.763430237610449,
+          -8.604427972992552
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.7530291510793204,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_014",
+        "components": [
+          {
+            "name": "TREE_014_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_014_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_014_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_015",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_14",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -34.96395560549636,
+        4.762396977979968,
+        2.4950781294683395
+      ],
+      "world_rotation": [
+        0.0,
+        328.4004225012376,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.5852292185731875,
+        8.409496901609609,
+        2.5852292185731875
+      ],
+      "bounding_box": {
+        "min": [
+          -36.256570214782954,
+          0.5576485271751631,
+          1.2024635201817457
+        ],
+        "max": [
+          -33.671340996209764,
+          8.967145428784772,
+          3.7876927387549335
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5576485271751631,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_015",
+        "components": [
+          {
+            "name": "TREE_015_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_015_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_015_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_NW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_016",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_15",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -35.56218241104973,
+        3.8230116336797297,
+        -1.4705394312274223
+      ],
+      "world_rotation": [
+        0.0,
+        77.43719536321555,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3.309862755827991,
+        6.5021433688844095,
+        3.309862755827991
+      ],
+      "bounding_box": {
+        "min": [
+          -37.21711378896373,
+          0.5719399492375251,
+          -3.125470809141418
+        ],
+        "max": [
+          -33.907251033135736,
+          7.074083318121935,
+          0.18439194668657333
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5719399492375251,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_016",
+        "components": [
+          {
+            "name": "TREE_016_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_016_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_016_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_017",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_16",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        3.2386215911620013,
+        3.8670228254116203,
+        -31.529153334768324
+      ],
+      "world_rotation": [
+        0.0,
+        107.91620693522114,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.7169773322725455,
+        6.530962291009204,
+        2.7169773322725455
+      ],
+      "bounding_box": {
+        "min": [
+          1.8801329250257286,
+          0.6015416799070183,
+          -32.8876420009046
+        ],
+        "max": [
+          4.597110257298274,
+          7.132503970916222,
+          -30.17066466863205
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6015416799070183,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_017",
+        "components": [
+          {
+            "name": "TREE_017_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_017_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_017_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "TREE_018",
+      "map_id": "schoolmap",
+      "class": "tree",
+      "source_node": "tree_node_17",
+      "source_mesh": "procedural_foliage",
+      "source_material": "organic_pbr",
+      "source_texture": "bark_and_leaf",
+      "world_position": [
+        -6.096807400969794,
+        4.421635745338333,
+        -31.325563640554705
+      ],
+      "world_rotation": [
+        0.0,
+        130.01800572637015,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3.7331394979568655,
+        7.6428183627421085,
+        3.7331394979568655
+      ],
+      "bounding_box": {
+        "min": [
+          -7.9633771499482275,
+          0.6002265639672785,
+          -33.19213338953314
+        ],
+        "max": [
+          -4.230237651991361,
+          8.243044926709388,
+          -29.458993891576274
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.6002265639672785,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vegetation_type": "deciduous_temperate",
+        "foliage_density": "high",
+        "wind_responsive": true
+      },
+      "hierarchy": {
+        "root": "TREE_018",
+        "components": [
+          {
+            "name": "TREE_018_trunk",
+            "type": "wood_trunk",
+            "material": "bark_pbr"
+          },
+          {
+            "name": "TREE_018_branches",
+            "type": "branch_structure",
+            "material": "branch_wood"
+          },
+          {
+            "name": "TREE_018_canopy",
+            "type": "foliage_crown",
+            "material": "leaf_subsurface"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.35
+    },
+    {
+      "element_id": "CAR_001",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_0",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        -40.75866941178589,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          -41.808669411785885,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          -39.70866941178589,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_001",
+        "components": [
+          {
+            "name": "CAR_001_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_001_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_001_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_001_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "CAR_002",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_1",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        -28.75866941178589,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          -29.80866941178589,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          -27.708669411785888,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_002",
+        "components": [
+          {
+            "name": "CAR_002_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_002_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_002_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_002_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "CAR_003",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_2",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        -16.75866941178589,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          -17.80866941178589,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          -15.708669411785888,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_003",
+        "components": [
+          {
+            "name": "CAR_003_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_003_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_003_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_003_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "CAR_004",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_3",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        -4.758669411785888,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          -5.808669411785888,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          -3.7086694117858885,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_004",
+        "components": [
+          {
+            "name": "CAR_004_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_004_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_004_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_004_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "CAR_005",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_4",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        7.241330588214112,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          6.191330588214112,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          8.291330588214112,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_005",
+        "components": [
+          {
+            "name": "CAR_005_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_005_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_005_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_005_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "CAR_006",
+      "map_id": "schoolmap",
+      "class": "vehicle",
+      "source_node": "car_node_5",
+      "source_mesh": "sedan_vehicle",
+      "source_material": "automotive_metallic",
+      "source_texture": "car_paint",
+      "world_position": [
+        19.24133058821411,
+        1.32,
+        -25.750544781846425
+      ],
+      "world_rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        2.1,
+        1.6,
+        4.6
+      ],
+      "bounding_box": {
+        "min": [
+          18.19133058821411,
+          0.52,
+          -28.050544781846426
+        ],
+        "max": [
+          20.291330588214112,
+          2.12,
+          -23.450544781846425
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.52,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "vehicle_type": "civilian_sedan",
+        "context": "street_parking"
+      },
+      "hierarchy": {
+        "root": "CAR_006",
+        "components": [
+          {
+            "name": "CAR_006_chassis",
+            "type": "bodywork",
+            "material": "car_paint_clearcoat"
+          },
+          {
+            "name": "CAR_006_windows",
+            "type": "automotive_glass",
+            "material": "tinted_glass"
+          },
+          {
+            "name": "CAR_006_wheels",
+            "type": "rubber_rims",
+            "wheel_count": 4,
+            "material": "vulcanized_rubber"
+          },
+          {
+            "name": "CAR_006_lights",
+            "type": "headlights_taillights",
+            "material": "emissive_polycarbonate"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.3
+    },
+    {
+      "element_id": "LAMP_001",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_0",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        -46.75866941178589,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          -47.058669411785885,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          -46.45866941178589,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_001",
+        "components": [
+          {
+            "name": "LAMP_001_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_001_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_001_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_002",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_1",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        -37.15866941178589,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          -37.458669411785884,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          -36.85866941178589,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_002",
+        "components": [
+          {
+            "name": "LAMP_002_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_002_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_002_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_003",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_2",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        -27.558669411785893,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          -27.858669411785893,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          -27.258669411785892,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_003",
+        "components": [
+          {
+            "name": "LAMP_003_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_003_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_003_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_004",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_3",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        -17.95866941178589,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          -18.258669411785892,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          -17.65866941178589,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_004",
+        "components": [
+          {
+            "name": "LAMP_004_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_004_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_004_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_005",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_4",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        -8.358669411785883,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          -8.658669411785883,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          -8.058669411785882,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_005",
+        "components": [
+          {
+            "name": "LAMP_005_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_005_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_005_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SW",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_006",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_5",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        1.241330588214126,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          0.9413305882141259,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          1.541330588214126,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_006",
+        "components": [
+          {
+            "name": "LAMP_006_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_006_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_006_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_007",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_6",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        10.841330588214106,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          10.541330588214105,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          11.141330588214107,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_007",
+        "components": [
+          {
+            "name": "LAMP_007_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_007_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_007_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.25
+    },
+    {
+      "element_id": "LAMP_008",
+      "map_id": "schoolmap",
+      "class": "street_prop",
+      "source_node": "lamp_node_7",
+      "source_mesh": "civic_lamp_post",
+      "source_material": "cast_iron",
+      "source_texture": "dark_metal",
+      "world_position": [
+        20.441330588214115,
+        2.9,
+        -29.118748962834182
+      ],
+      "world_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.6,
+        4.8,
+        0.6
+      ],
+      "bounding_box": {
+        "min": [
+          20.141330588214114,
+          0.5,
+          -29.418748962834183
+        ],
+        "max": [
+          20.741330588214115,
+          5.3,
+          -28.81874896283418
+        ]
+      },
+      "ground_contact": {
+        "base_y": 0.5,
+        "is_grounded": true,
+        "clearance": 0.0
+      },
+      "semantic_context": {
+        "prop_type": "street_lighting",
+        "light_color_temp": 3000,
+        "luminous_flux": 8000
+      },
+      "hierarchy": {
+        "root": "LAMP_008",
+        "components": [
+          {
+            "name": "LAMP_008_base",
+            "type": "ground_anchor",
+            "material": "cast_iron"
+          },
+          {
+            "name": "LAMP_008_pole",
+            "type": "vertical_mast",
+            "material": "powdercoated_steel"
+          },
+          {
+            "name": "LAMP_008_luminaire",
+            "type": "light_fixture",
+            "material": "warm_led"
+          }
+        ]
+      },
+      "region": "region_SE",
+      "visibility": "medium",
+      "importance": 0.25
+    }
+  ]
+}

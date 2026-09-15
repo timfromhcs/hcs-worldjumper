@@ -1,7 +1,7 @@
 {
   "product": "HCS WorldJumper",
   "version": "1.0.0",
-  "evaluated_at": "2026-09-15T03:46:58.026515",
+  "evaluated_at": "2026-09-15T04:05:09.966925",
   "total_gates": 21,
   "passed_gates": 21,
   "all_passed": true,
@@ -12,7 +12,7 @@
       "test": "WebGPURenderer detection with WebGL2 fallback verified",
       "evidence": "artifacts/final_proof/11_webgpu_runtime.png",
       "artifact": "index.html",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "8ba08546999a8b89c109df3a5bf8d9a74008d828984fefca4f0751194de85715"
     },
     {
@@ -21,7 +21,7 @@
       "test": "Dynamic card population from maps/manifest.json verified",
       "evidence": "artifacts/final_proof/02_world_selector.png",
       "artifact": "maps/manifest.json",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "5c44f92cfb4adf4f33fb694bf156647e20e637e73798e34bd55f18c71a7e10ba"
     },
     {
@@ -30,7 +30,7 @@
       "test": "District Alpha world loads and renders successfully",
       "evidence": "artifacts/final_proof/03_map1_pov.png",
       "artifact": "output/map/world.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "aa2a7e02b2abd12da5f8aec5c8c8286dd6c0f4a4e623cb1114be2a14a4ac7541"
     },
     {
@@ -39,7 +39,7 @@
       "test": "Highland Valley world loads and renders successfully",
       "evidence": "artifacts/final_proof/04_map2_pov.png",
       "artifact": "output/map2/world.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "721af8d41b6061afce0a77c2825d4b3b3b9973d2d9f0ecfd4800110a90b0741a"
     },
     {
@@ -48,7 +48,7 @@
       "test": "Oakridge Academy world loads and renders successfully",
       "evidence": "artifacts/final_proof/05_schoolmap_pov.png",
       "artifact": "output/schoolmap/world.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "993b2f93d4caee3a7d4c1229c09547e361b84375867f089cf53cd6ce23b9bc29"
     },
     {
@@ -57,7 +57,7 @@
       "test": "First-Person pointer-lock mouse look and camera verified",
       "evidence": "artifacts/final_proof/03_map1_pov.png",
       "artifact": "src/runtime/controller.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "ede52d31875af8eb543277232b5924e7c0abd879fbd2e74dac8601afb3827ce2"
     },
     {
@@ -66,7 +66,7 @@
       "test": "WASD, sprint, crouch, jump and acceleration verified",
       "evidence": "artifacts/final_proof/03_map1_pov.png",
       "artifact": "src/runtime/controller.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "ede52d31875af8eb543277232b5924e7c0abd879fbd2e74dac8601afb3827ce2"
     },
     {
@@ -75,7 +75,7 @@
       "test": "Kinematic character ground raycasting & wall blocking verified",
       "evidence": "artifacts/proof/map/collision/collision_walkable_floors.png",
       "artifact": "output/map/physics/physics.json",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "524fe6b2e7014010b0624677c386b83181ee94ebc1215aea1ad5a2f3e202b317"
     },
     {
@@ -84,7 +84,7 @@
       "test": "Walkable slabs, partition walls, doors, stairs, furniture verified",
       "evidence": "artifacts/final_proof/06_interior.png",
       "artifact": "output/map/world.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "aa2a7e02b2abd12da5f8aec5c8c8286dd6c0f4a4e623cb1114be2a14a4ac7541"
     },
     {
@@ -93,7 +93,7 @@
       "test": "Multi-tier procedural trees with bark trunks and foliage verified",
       "evidence": "artifacts/final_proof/07_vegetation.png",
       "artifact": "output/map/world.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "aa2a7e02b2abd12da5f8aec5c8c8286dd6c0f4a4e623cb1114be2a14a4ac7541"
     },
     {
@@ -102,7 +102,7 @@
       "test": "Harmonic procedural swaying on trees & bushes verified",
       "evidence": "artifacts/final_proof/07_vegetation.png",
       "artifact": "src/runtime/weather.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "e81c39f9b5b9d306282490ee6a1a2f377670010ab2499744cbd594a126729377"
     },
     {
@@ -111,7 +111,7 @@
       "test": "Clear, golden hour, overcast, rain particles, storm lightning verified",
       "evidence": "artifacts/final_proof/08_rain.png",
       "artifact": "src/runtime/weather.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "e81c39f9b5b9d306282490ee6a1a2f377670010ab2499744cbd594a126729377"
     },
     {
@@ -120,7 +120,7 @@
       "test": "Spatial audio mixer, 10 WAV sound assets, footstep triggers verified",
       "evidence": "artifacts/final_proof/10_audio_runtime.png",
       "artifact": "src/runtime/audio.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "37455a0f78dcc1c0b75fa1f6ff1e03877f458e6db10f019e283d3394199126a6"
     },
     {
@@ -129,7 +129,7 @@
       "test": "Daylight, Golden Hour, Overcast, Night atmospheric presets verified",
       "evidence": "artifacts/final_proof/09_night.png",
       "artifact": "src/runtime/weather.js",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "e81c39f9b5b9d306282490ee6a1a2f377670010ab2499744cbd594a126729377"
     },
     {
@@ -138,7 +138,7 @@
       "test": "4 spatial streaming sectors per map (12 sectors total) verified",
       "evidence": "artifacts/proof/map/lod/lod0_master_view.png",
       "artifact": "output/map/regions/region_NW.glb",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "4358eeeee08072dc4b549d978b452e9c6ccf39eba83ee3381ffb49587b3f5a84"
     },
     {
@@ -147,7 +147,7 @@
       "test": "Runtime benchmarking completed (>60 FPS capability across maps)",
       "evidence": "work/benchmarks/map_benchmark.json",
       "artifact": "reports/map/performance_report.md",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "8107ebe0c31bd1443391b8e6877a32ae939f64eb3180f0521c8603242bbad59f"
     },
     {
@@ -156,7 +156,7 @@
       "test": "Standalone Windows binary & portable release zip verified",
       "evidence": "artifacts/final_proof/13_desktop_windows.png",
       "artifact": "installer/HCS-WorldJumper-v1.0.0-windows-x64.zip",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "d71ca84e5a46860b7564db3552737f03cf74fa5b28afb7505ea3f80ad61afc31"
     },
     {
@@ -165,7 +165,7 @@
       "test": "Linux desktop shell runner & tarball bundle verified",
       "evidence": "artifacts/final_proof/14_desktop_linux.png",
       "artifact": "installer/HCS-WorldJumper-v1.0.0-linux-x86_64.tar.gz",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "3da1796c363689980cf1b36e2819c494bbfdaba3234dafefb64b55c984de32bd"
     },
     {
@@ -174,7 +174,7 @@
       "test": "Hugging Face Space repository created & configured",
       "evidence": "artifacts/final_proof/15_huggingface_space.png",
       "artifact": "src/deploy_hf.py",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "27a2af79714c656e7a6b9c51cbafff0c271fc149b563a7e8a03e386101e05a6e"
     },
     {
@@ -183,7 +183,7 @@
       "test": "GitHub repository timfromhcs/hcs-worldjumper created with CI/CD",
       "evidence": ".github/workflows/ci.yml",
       "artifact": ".github/workflows/ci.yml",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "63af5f0ca7cf18ba2923743f12529f43d47d68c58fa9cf413cfb6484cf40eca2"
     },
     {
@@ -192,7 +192,7 @@
       "test": "Clean-room test executed and 100% verified independent loadability",
       "evidence": "reports/clean_room_summary.json",
       "artifact": "reports/clean_room_summary.json",
-      "timestamp": "2026-09-15T03:46:58.026515",
+      "timestamp": "2026-09-15T04:05:09.966925",
       "hash": "e17ac14287ddf2ede49c53e1e6f60401f89c420b4440ae0ddbe93aceb0338caf"
     }
   ]

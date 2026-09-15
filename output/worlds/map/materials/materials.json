@@ -1,0 +1,18 @@
+{
+  "material_id": "map_master_pbr",
+  "shading_model": "glTF_pbrMetallicRoughness",
+  "textures": {
+    "albedo": "textures/albedo.png",
+    "normal": "textures/normal.png",
+    "metallic_roughness": "textures/metallicRoughness.png",
+    "ao": "textures/ao.png",
+    "concrete": "textures/concrete_basecolor.png",
+    "metal": "textures/graphite_metal_basecolor.png",
+    "roof": "textures/roof_membrane_basecolor.png"
+  },
+  "properties": {
+    "roughness_factor": 1.0,
+    "metallic_factor": 1.0,
+    "normal_scale": 1.25
+  }
+}

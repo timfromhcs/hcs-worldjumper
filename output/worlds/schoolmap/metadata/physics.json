@@ -1,0 +1,46 @@
+{
+  "map_id": "schoolmap",
+  "collision_stats": {
+    "total_collision_vertices": 239452,
+    "total_collision_faces": 329159,
+    "walkable_surfaces": 68196,
+    "blocking_walls": 260963
+  },
+  "player_spec": {
+    "eye_height": 1.7,
+    "capsule_radius": 0.35,
+    "capsule_height": 1.8,
+    "walk_speed": 4.5,
+    "sprint_speed": 8.0,
+    "jump_impulse": 4.5,
+    "gravity": 9.81,
+    "max_walkable_slope_deg": 45.0
+  },
+  "home_anchor": {
+    "status": "VALID_SAFE_SPAWN",
+    "spawn_point": [
+      -5.332238498345461,
+      6.769999885559084,
+      -27.737652587890622
+    ],
+    "ground_elevation": 6.619999885559084,
+    "surface_normal": [
+      -0.0,
+      0.9999999999999999,
+      0.0
+    ],
+    "clearance_meters": 2.9800004959106428
+  },
+  "world_bounds": {
+    "min": [
+      -69.77324164512844,
+      -0.17936663329601288,
+      -51.114139556884766
+    ],
+    "max": [
+      59.1087646484375,
+      12.800000190734863,
+      50.76829528808594
+    ]
+  }
+}

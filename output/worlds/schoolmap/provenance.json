@@ -1,0 +1,15 @@
+{
+  "world_id": "schoolmap",
+  "source_asset": "source/original/schoolmap.glb",
+  "source_sha256": "dc8d1ffa53357ea91d191f6837711a5fe1ecce36252297521957ddb989e9a295",
+  "source_size_bytes": 11757352,
+  "world_sha256": "993b2f93d4caee3a7d4c1229c09547e361b84375867f089cf53cd6ce23b9bc29",
+  "world_size_bytes": 22801200,
+  "collision_sha256": "3b498543290ddd37ecf1a0ff38d911d7f0b9838219db45d8a10faa940a9000df",
+  "cloud_reconstruction": {
+    "vlm_supervisor": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "pbr_materials_generated": true,
+    "watertight_reconstruction": true,
+    "scan_artifacts_carved": true
+  }
+}

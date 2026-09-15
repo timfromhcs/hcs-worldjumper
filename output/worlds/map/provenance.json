@@ -1,0 +1,15 @@
+{
+  "world_id": "map",
+  "source_asset": "source/original/map.glb",
+  "source_sha256": "bea4ec441ba2081165fcfd93a9a172453c4fa54992910ea73f55e19509ac0ce7",
+  "source_size_bytes": 13511072,
+  "world_sha256": "aa2a7e02b2abd12da5f8aec5c8c8286dd6c0f4a4e623cb1114be2a14a4ac7541",
+  "world_size_bytes": 27604460,
+  "collision_sha256": "f6d93e1d5ab80a81ba88cb6e30f00c18cd38a775e622fd54d6a43da9b6aa683d",
+  "cloud_reconstruction": {
+    "vlm_supervisor": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "pbr_materials_generated": true,
+    "watertight_reconstruction": true,
+    "scan_artifacts_carved": true
+  }
+}

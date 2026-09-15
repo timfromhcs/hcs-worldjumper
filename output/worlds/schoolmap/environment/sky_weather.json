@@ -1,0 +1,55 @@
+{
+  "map_id": "schoolmap",
+  "sky_system": "atmospheric_preetham_shading",
+  "sun_direction": [
+    0.45,
+    0.78,
+    0.42
+  ],
+  "ambient_light_intensity": 0.85,
+  "weather_states": [
+    {
+      "name": "CLEAR",
+      "cloud_cover": 0.1,
+      "rain_intensity": 0.0,
+      "fog_density": 0.001
+    },
+    {
+      "name": "CLOUDY",
+      "cloud_cover": 0.6,
+      "rain_intensity": 0.0,
+      "fog_density": 0.003
+    },
+    {
+      "name": "OVERCAST",
+      "cloud_cover": 0.95,
+      "rain_intensity": 0.0,
+      "fog_density": 0.006
+    },
+    {
+      "name": "LIGHT_RAIN",
+      "cloud_cover": 0.85,
+      "rain_intensity": 0.3,
+      "fog_density": 0.008
+    },
+    {
+      "name": "RAIN",
+      "cloud_cover": 0.95,
+      "rain_intensity": 0.8,
+      "fog_density": 0.015
+    },
+    {
+      "name": "FOG",
+      "cloud_cover": 0.75,
+      "rain_intensity": 0.0,
+      "fog_density": 0.035
+    },
+    {
+      "name": "NIGHT",
+      "cloud_cover": 0.3,
+      "rain_intensity": 0.0,
+      "fog_density": 0.002,
+      "moon_illumination": 0.25
+    }
+  ]
+}

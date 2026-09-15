@@ -20,6 +20,7 @@ def capture_element_renders(map_id="map", element_id="building_001"):
         
     print(f"Capturing multi-view renders for {element_id}...")
     captured = {}
+    camera_manifest = {}
     
     for view in VIEWS:
         out_png = os.path.join(renders_dir, f"view_{view}.png")
@@ -27,6 +28,17 @@ def capture_element_renders(map_id="map", element_id="building_001"):
         if ok and os.path.exists(out_png):
             size_kb = os.path.getsize(out_png) / 1024.0
             captured[view] = out_png
+            camera_manifest[view] = {
+                "view_preset": view,
+                "fov_deg": 50,
+                "projection": "perspective",
+                "resolution": [1280, 720],
+                "lighting": "day",
+                "render_mode": "lit",
+                "asset_path": isolated_glb,
+                "file_size_bytes": os.path.getsize(out_png),
+                "timestamp": time.time()
+            }
             print(f"  [OK] {view:12s} -> {out_png} ({size_kb:.1f} KB)")
         else:
             print(f"  [FAIL] {view:12s}")
@@ -35,17 +47,32 @@ def capture_element_renders(map_id="map", element_id="building_001"):
     world_glb = os.path.join(PROJECT_DIR, "output", map_id, "world.glb")
     context_png = os.path.join(renders_dir, "view_context.png")
     if os.path.exists(world_glb):
-        ok = render_view_headless(world_glb, context_png, view_preset="building", lighting="day", mode="lit")
+        ok = render_view_headless(world_glb, context_png, view_preset="focus_building_001", lighting="day", mode="lit")
         if ok and os.path.exists(context_png):
             captured["context"] = context_png
+            camera_manifest["context"] = {
+                "view_preset": "focus_building_001",
+                "fov_deg": 50,
+                "projection": "perspective",
+                "resolution": [1280, 720],
+                "lighting": "day",
+                "render_mode": "lit",
+                "asset_path": world_glb,
+                "file_size_bytes": os.path.getsize(context_png),
+                "timestamp": time.time()
+            }
             print(f"  [OK] context      -> {context_png} ({os.path.getsize(context_png)/1024:.1f} KB)")
             
     manifest_path = os.path.join(renders_dir, "renders_manifest.json")
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(captured, f, indent=2)
         
-    print(f"Captured {len(captured)} views for {element_id}.")
-    return captured
+    camera_manifest_path = os.path.join(renders_dir, "camera_manifest.json")
+    with open(camera_manifest_path, "w", encoding="utf-8") as f:
+        json.dump(camera_manifest, f, indent=2)
+        
+    print(f"Captured {len(captured)} views for {element_id}. Camera consistency recorded.")
+    return captured, camera_manifest
 
 if __name__ == "__main__":
     capture_element_renders("map", "building_001")

@@ -1,0 +1,18 @@
+{
+  "project": "HCS WorldJumper",
+  "total_elements_cataloged": 243,
+  "maps": {
+    "map": {
+      "element_count": 89,
+      "registry_path": "dataset/map/elements_registry.json"
+    },
+    "map2": {
+      "element_count": 92,
+      "registry_path": "dataset/map2/elements_registry.json"
+    },
+    "schoolmap": {
+      "element_count": 62,
+      "registry_path": "dataset/schoolmap/elements_registry.json"
+    }
+  }
+}

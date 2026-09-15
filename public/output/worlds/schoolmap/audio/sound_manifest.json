@@ -1,0 +1,17 @@
+{
+  "map_id": "schoolmap",
+  "surface_footsteps": {
+    "concrete": "audio/footstep_concrete.wav",
+    "wood": "audio/footstep_wood.wav",
+    "grass": "audio/footstep_grass.wav"
+  },
+  "weather_ambience": {
+    "rain": "audio/weather_rain.wav",
+    "wind": "audio/weather_wind.wav",
+    "thunder": "audio/weather_thunder.wav"
+  },
+  "ui": {
+    "click": "audio/ui_click.wav",
+    "transition": "audio/ui_transition.wav"
+  }
+}

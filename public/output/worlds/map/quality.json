@@ -1,0 +1,18 @@
+{
+  "world_id": "map",
+  "quality_score": 8.5,
+  "vlm_evaluation": {
+    "edge_cleanliness": 8.5,
+    "artifact_elimination": 9.0,
+    "ground_alignment": 9.0,
+    "pbr_realism": 8.0
+  },
+  "gates_passed": [
+    "WATERTIGHT_GEOMETRY",
+    "EXACT_SCALE_PRESERVED",
+    "GROUND_CONTACT_SOLVED",
+    "SAFE_HOME_ANCHOR",
+    "NO_MELTED_ARTIFACTS",
+    "PBR_MATERIALS_ACTIVE"
+  ]
+}
