@@ -319,8 +319,23 @@
             if (child.geometry && !child.geometry.attributes.normal) {
               child.geometry.computeVertexNormals();
             }
+            if (child.geometry && child.geometry.attributes.color) {
+              if (Array.isArray(child.material)) {
+                child.material.forEach(m => { m.vertexColors = true; m.needsUpdate = true; });
+              } else if (child.material) {
+                child.material.vertexColors = true;
+                child.material.needsUpdate = true;
+              }
+            }
             if (child.material) {
-              child.material.needsUpdate = true;
+              const mats = Array.isArray(child.material) ? child.material : [child.material];
+              mats.forEach(m => {
+                if (m.map) {
+                  m.map.anisotropy = 8;
+                  m.map.generateMipmaps = true;
+                }
+                m.needsUpdate = true;
+              });
             }
             child.castShadow = true;
             child.receiveShadow = true;

@@ -141,6 +141,14 @@ Photorealistic Multi-World Exploration Engine with WebGPU, Cloud-First Reconstru
             if wav_file.endswith((".wav", ".mp3")):
                 shutil.copy2(os.path.join("assets/audio", wav_file), os.path.join(assets_audio_dst, wav_file))
                 
+    # Texture assets
+    assets_tex_dst = os.path.join(clone_dir, "assets", "textures")
+    if os.path.exists("assets/textures"):
+        if os.path.exists(assets_tex_dst):
+            shutil.rmtree(assets_tex_dst)
+        os.makedirs(os.path.dirname(assets_tex_dst), exist_ok=True)
+        shutil.copytree("assets/textures", assets_tex_dst)
+
     # 4. Remove any node_modules if present in clone
     old_nm = os.path.join(clone_dir, "node_modules")
     if os.path.exists(old_nm):

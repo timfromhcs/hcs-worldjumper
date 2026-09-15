@@ -119,15 +119,32 @@
           this.camera.position.set(0, 2.0, 15);
 
           // Add lighting and stylized backdrop for main menu
-          const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
-          this.scene.add(ambientLight);
-          const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
-          dirLight.position.set(50, 100, 50);
-          this.scene.add(dirLight);
+          this.menuLights = [
+            new THREE.AmbientLight(0xffffff, 0.8),
+            new THREE.DirectionalLight(0xffffff, 1.2)
+          ];
+          this.menuLights[1].position.set(50, 100, 50);
+          this.menuLights.forEach(l => this.scene.add(l));
 
-          const grid = new THREE.GridHelper(300, 60, 0x38bdf8, 0x1e293b);
-          grid.position.y = -0.5;
-          this.scene.add(grid);
+          this.menuGrid = new THREE.GridHelper(300, 60, 0x38bdf8, 0x1e293b);
+          this.menuGrid.position.y = -0.5;
+          this.scene.add(this.menuGrid);
+
+          // PBR Fallback Texture Suite
+          const texLoader = new THREE.TextureLoader();
+          this.pbrTextures = {
+            concrete: texLoader.load('./assets/textures/pbr_suite/concrete_diffuse.png'),
+            roof: texLoader.load('./assets/textures/pbr_suite/roof_tiles_diffuse.png'),
+            foliage: texLoader.load('./assets/textures/pbr_suite/foliage_diffuse.png'),
+            bark: texLoader.load('./assets/textures/pbr_suite/bark_diffuse.png'),
+            asphalt: texLoader.load('./assets/textures/pbr_suite/asphalt_diffuse.png'),
+            metal: texLoader.load('./assets/textures/pbr_suite/metal_diffuse.png')
+          };
+          Object.values(this.pbrTextures).forEach(t => {
+            t.wrapS = THREE.RepeatWrapping;
+            t.wrapT = THREE.RepeatWrapping;
+            t.repeat.set(4, 4);
+          });
 
           // 3. Initialize UI
           await this.ui.init();
@@ -281,6 +298,10 @@
           if (onComplete) onComplete();
         };
 
+        // Hide menu-only grid and lights
+        if (this.menuGrid) this.menuGrid.visible = false;
+        if (this.menuLights) this.menuLights.forEach(l => l.visible = false);
+
         const loader = new GLTFLoader();
         loader.load(worldPath, (gltf) => {
           this.currentWorldModel = gltf.scene;
@@ -288,12 +309,69 @@
 
           this.currentWorldModel.traverse((child) => {
             if (child.isMesh) {
-              if (child.geometry && !child.geometry.attributes.normal) {
-                child.geometry.computeVertexNormals();
+              if (child.geometry) {
+                if (!child.geometry.attributes.normal) {
+                  child.geometry.computeVertexNormals();
+                }
+                // Generate triplanar UVs if missing
+                if (!child.geometry.attributes.uv && child.geometry.attributes.position) {
+                  const pos = child.geometry.attributes.position;
+                  const uvs = new Float32Array(pos.count * 2);
+                  for (let i = 0; i < pos.count; i++) {
+                    const x = pos.getX(i);
+                    const y = pos.getY(i);
+                    const z = pos.getZ(i);
+                    uvs[i * 2] = (x + z) * 0.20;
+                    uvs[i * 2 + 1] = y * 0.20;
+                  }
+                  child.geometry.setAttribute('uv', new THREE.BufferAttribute(uvs, 2));
+                }
               }
-              if (child.material) {
-                child.material.needsUpdate = true;
-              }
+
+              const hasColors = !!(child.geometry && child.geometry.attributes.color);
+              const mats = Array.isArray(child.material) ? child.material : [child.material];
+
+              mats.forEach(mat => {
+                if (!mat) return;
+                // Enable vertex colors for meshes with color attribute
+                if (hasColors) {
+                  mat.vertexColors = true;
+                }
+                // Fallback texture binding if mesh has no texture map
+                if (!mat.map && this.pbrTextures) {
+                  const lowerName = (child.name || '').toLowerCase();
+                  if (lowerName.includes('foliage') || lowerName.includes('veg') || lowerName.includes('leaf') || lowerName.includes('tree')) {
+                    mat.map = this.pbrTextures.foliage;
+                    mat.roughness = 0.82;
+                    mat.metalness = 0.02;
+                  } else if (lowerName.includes('bark') || lowerName.includes('trunk')) {
+                    mat.map = this.pbrTextures.bark;
+                    mat.roughness = 0.88;
+                    mat.metalness = 0.02;
+                  } else if (lowerName.includes('roof') || lowerName.includes('shingle')) {
+                    mat.map = this.pbrTextures.roof;
+                    mat.roughness = 0.70;
+                    mat.metalness = 0.04;
+                  } else if (lowerName.includes('metal') || lowerName.includes('prop') || lowerName.includes('pole')) {
+                    mat.map = this.pbrTextures.metal;
+                    mat.roughness = 0.35;
+                    mat.metalness = 0.85;
+                  } else if (!hasColors) {
+                    mat.map = this.pbrTextures.concrete;
+                    mat.roughness = 0.75;
+                    mat.metalness = 0.05;
+                  }
+                }
+
+                if (mat.map) {
+                  mat.map.anisotropy = 8;
+                  mat.map.generateMipmaps = true;
+                  mat.map.minFilter = THREE.LinearMipmapLinearFilter;
+                  mat.map.magFilter = THREE.LinearFilter;
+                }
+                mat.needsUpdate = true;
+              });
+
               child.castShadow = true;
               child.receiveShadow = true;
               this.colliders.push(child);
