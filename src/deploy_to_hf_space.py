@@ -35,13 +35,21 @@ def deploy():
         func(path)
 
     hf_dir = os.path.abspath("work/hf_deploy")
-    if os.path.exists(hf_dir):
-        try:
-            shutil.rmtree(hf_dir, onexc=handle_remove_readonly)
-        except Exception:
-            subprocess.run(["cmd", "/c", "rd", "/s", "/q", hf_dir], capture_output=True)
-    os.makedirs(hf_dir, exist_ok=True)
-    
+    if not os.path.exists(os.path.join(hf_dir, ".git")):
+        if os.path.exists(hf_dir):
+            try:
+                shutil.rmtree(hf_dir, onexc=handle_remove_readonly)
+            except Exception:
+                subprocess.run(["cmd", "/c", "rd", "/s", "/q", hf_dir], capture_output=True)
+        print(f"Cloning existing Hugging Face Space repository...")
+        clone_res = subprocess.run(["git", "clone", space_repo_url, hf_dir], capture_output=True, text=True)
+        if clone_res.returncode != 0:
+            os.makedirs(hf_dir, exist_ok=True)
+            subprocess.run(["git", "init"], cwd=hf_dir, check=True)
+    else:
+        print("Pulling latest Space repository changes...")
+        subprocess.run(["git", "pull", space_repo_url, "main"], cwd=hf_dir, capture_output=True)
+
     # 3. Create Space README with clean static configuration (root index.html)
     readme_content = """---
 title: HCS WorldJumper
@@ -68,44 +76,44 @@ Photorealistic Multi-World First-Person Exploration Engine with Three.js WebGPU 
 """
     with open(os.path.join(hf_dir, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme_content)
-        
+
     # 4. Copy dist contents DIRECTLY to the root of the Space repository
     print("Copying built production bundle directly to repository root...")
     for item in os.listdir("dist"):
         s = os.path.join("dist", item)
         d = os.path.join(hf_dir, item)
         if os.path.isdir(s):
+            if os.path.exists(d):
+                shutil.rmtree(d, onexc=handle_remove_readonly)
             shutil.copytree(s, d)
         else:
             shutil.copy2(s, d)
-    
+
     # Prune heavy test proof screenshots not needed by web runtime
     for sub in ["proof", "final_proof", "deployment"]:
         p = os.path.join(hf_dir, "artifacts", sub)
         if os.path.exists(p):
             shutil.rmtree(p)
-    
-    # 5. Initialize git and configure Git LFS for ALL binary formats
-    print("Configuring git and Git LFS for binary assets (*.glb, *.png, *.wav)...")
-    subprocess.run(["git", "init"], cwd=hf_dir, check=True)
+
+    # 5. Configure Git and Git LFS for binary assets
+    print("Configuring git and Git LFS...")
     subprocess.run(["git", "config", "user.name", "timfromhcs"], cwd=hf_dir, check=True)
     subprocess.run(["git", "config", "user.email", "timfromhcs@users.noreply.github.com"], cwd=hf_dir, check=True)
-    
-    # Setup LFS for all binary types
     subprocess.run(["git", "lfs", "install"], cwd=hf_dir, check=True)
     for pattern in ["*.glb", "*.png", "*.wav", "*.jpg", "*.mp3"]:
         subprocess.run(["git", "lfs", "track", pattern], cwd=hf_dir, check=True)
     subprocess.run(["git", "add", ".gitattributes"], cwd=hf_dir, check=True)
-    
+
     # Add all files and commit with 'Update space'
     print("Staging deployment files...")
     subprocess.run(["git", "add", "."], cwd=hf_dir, check=True)
-    subprocess.run(["git", "commit", "-m", "Update space: HCS WorldJumper WebGPU runtime"], cwd=hf_dir, check=True)
-    
+    commit_res = subprocess.run(["git", "commit", "-m", "Update space: HCS WorldJumper WebGPU runtime"], cwd=hf_dir, capture_output=True, text=True)
+    print("Commit:", commit_res.stdout.strip() or "No new changes")
+
     # Push to Hugging Face
     print(f"Pushing to Hugging Face Space: https://huggingface.co/spaces/{user}/{space_name}...")
     res = subprocess.run(
-        ["git", "push", space_repo_url, "HEAD:main", "--force"],
+        ["git", "push", space_repo_url, "HEAD:main"],
         cwd=hf_dir,
         capture_output=True,
         text=True
